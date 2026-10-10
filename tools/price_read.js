@@ -12,7 +12,7 @@ window.soldOne = async q => {
     if (stop) break;
     const dm = t.match(/Verkauft\s+(\d+\.\s*\w+\.?\s*\d{4})/); if (!dm) continue;
     const pm = t.match(/EUR\s?([\d.]+,\d\d)/);
-    const ti = (el.querySelector('.s-card__title, .s-item__title') || el).textContent.replace(/\s+/g, ' ').replace(/Neues Angebot/, '').trim().slice(0, 120);
+    const ti = (el.querySelector('.s-card__title, .s-item__title') || el).textContent.replace(/\s+/g, ' ').replace(/Neues Angebot|Wird in neuem Fenster oder Tab geöffnet/g, '').trim().slice(0, 120);
     out.push(dm[1] + '|' + (pm ? pm[1] : '?') + '|' + (/Preisvorschlag akzeptiert/.test(t) ? 'BO' : 'X') + '|' + ti);
     if (out.length >= 40) break;
   }
