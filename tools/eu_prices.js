@@ -72,7 +72,7 @@
     const pm = x.match(/EUR\s?([\d.]+,\d\d)/); if (!pm) return null;
     let s = null; const sm = x.match(/\+\s*(?:ca\.\s*)?EUR\s?([\d.]+,\d\d)\s*(?:Versand|Lieferung)/);
     if (sm) s = num(sm[1]); else if (/Kostenlos(?:e|er)? (?:Versand|Lieferung)/.test(x)) s = 0;
-    const om = x.match(/\baus ([A-ZÄÖÜ][a-zäöüß]+(?: [A-ZÄÖÜ][a-zäöüß]+)?)/);
+    const om = x.match(/(?:Versand|Lieferung|Versandkosten)\s*aus ([A-ZÄÖÜ][a-zäöüß]+(?: [A-ZÄÖÜ][a-zäöüß]+)?)/) || x.match(/(?:EUR\s?[\d.]+,\d\d|Gebot|Gebote|Sofort-Kaufen|Preisvorschlag)\s*aus ([A-ZÄÖÜ][a-zäöüß]+(?: [A-ZÄÖÜ][a-zäöüß]+)?)/);
     const dm = x.match(/Verkauft\s+(\d+\.\s*\w+\.?\s*\d{4})/);
     const id = (((el.querySelector('a[href*="/itm/"]') || {}).href || "").match(/itm\/(\d+)/) || [])[1] || "";
     return { t: ti, p: num(pm[1]), s, o: om ? om[1] : "Deutschland", d: dm ? pdate(dm[1]) : null, bo: /Preisvorschlag akzeptiert/.test(x), id };
