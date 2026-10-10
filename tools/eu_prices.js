@@ -115,11 +115,12 @@
       if (r.eu && r.eu.n >= 3 && r.vs < r.eu.m * 0.6) { r.vs = up(r.eu.m); r.bs = "kon_eu"; } // a single dumping offer: stay at what EU buyers pay
     } else {
       const landed = [r.imp, r.ab].filter((x) => x > 0); const L = landed.length ? Math.min(...landed) : null;
-      const capv = L ? (L - SHIP_DE) * 0.85 : null;                  // no EU competition: up to a bit under the import price
+      let capv = L ? (L - SHIP_DE) * 0.85 : null;
+      if (capv) capv = Math.min(capv, r.m ? Math.max(3 * r.m, r.m + 5) : capv * 0.7); // never more than 3x (or +5 €) of what the card really sells for                  // no EU competition: up to a bit under the import price
       const v = Math.max(base || 0, capv || 0);
       if (v > 0) { r.vs = up(v); r.bs = capv && capv > (base || 0) ? "imp" : (r.eu ? "eu" : "welt"); }
     }
-    r.sic = !!(r.kon || (r.eu && r.eu.n >= 3) || r.n >= 3);
+    r.sic = !!(r.kon || (r.bs !== "imp" && ((r.eu && r.eu.n >= 3) || r.n >= 3))); // an import based price is room to move, never a firm target
     return r;
   };
   window.EU = window.EU || { raw: {}, out: {}, done: 0, total: 0, stop: "" };
