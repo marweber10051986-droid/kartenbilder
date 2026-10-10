@@ -82,6 +82,7 @@
     const r = await fetch(url, { credentials: "include" }); const h = await r.text();
     if (/splashui|challenge|captcha/i.test(r.url + h.slice(0, 4000)) && !/s-card|s-item/.test(h)) return "CHALLENGE";
     const d = new DOMParser().parseFromString(h, "text/html"); const out = []; let stop = false;
+    if (!d.querySelector("li.s-card, li.s-item, .srp-river-answer, .srp-save-null-search")) return "EMPTY"; // eBay sometimes answers a burst with an empty page
     for (const el of d.querySelectorAll("li.s-card, li.s-item, .srp-river-answer")) {
       if (el.classList.contains("srp-river-answer")) { if (/weniger Suchbegriffe|Ergebnisse für/i.test(el.textContent)) stop = true; continue; }
       if (stop) break;
@@ -92,7 +93,7 @@
   const med = (a) => { const s = [...a].sort((x, y) => x - y), n = s.length; return n ? (n % 2 ? s[(n - 1) / 2] : (s[n / 2 - 1] + s[n / 2]) / 2) : null; };
   const r2 = (v) => Math.round(v * 100) / 100;
   const up = (v) => (v > 0 ? Math.max(0.99, r2(v < 10 ? Math.ceil(v * 2) / 2 - 0.01 : Math.ceil(v) - 0.01)) : null);   // x,49 / x,99 up
-  const down = (v) => (v > 0 ? Math.max(0.99, r2(v < 10 ? Math.floor(v * 2) / 2 - 0.01 : Math.floor(v) - 0.01)) : null); // x,49 / x,99 down
+  const down = (v) => (v > 0 ? Math.max(0.99, r2(v < 10 ? Math.floor(v * 2) / 2 - 0.01 : Math.floor(v) - 0.01)) : 0.99); // x,49 / x,99 down
   const OWN = () => new Set(window.CARDS.map((c) => c[10]).filter(Boolean));
   const evalCard = (c, sold, act, own) => {
     let hits = sold.filter((h) => h.d && (today - h.d) / 864e5 <= 90 && h.p >= 0.2 && match(c, h.t)).map((h) => ({ ...h, v: h.bo ? h.p * 0.85 : h.p }));
@@ -124,7 +125,7 @@
     return r;
   };
   window.EU = window.EU || { raw: {}, out: {}, done: 0, total: 0, stop: "" };
-  window.euRun = async (conc = 3) => {
+  window.euRun = async (conc = 2) => {
     const E = window.EU; E.stop = ""; E.run = 1; const own = OWN();
     const qs = [...new Set(window.CARDS.map((c) => c[1]))]; E.total = qs.length; let i = 0;
     const work = async () => {
@@ -132,9 +133,13 @@
         const q = qs[i++];
         if (!E.raw[q]) {
           try {
-            const s = await page(q, true); if (s === "CHALLENGE") { E.stop = "eBay Prüfseite bei: " + q; break; }
-            await new Promise((r) => setTimeout(r, 700 + Math.random() * 700));
-            const a = await page(q, false); if (a === "CHALLENGE") { E.stop = "eBay Prüfseite bei: " + q; break; }
+            let s, a;
+            for (let t = 0; t < 3; t++) { s = await page(q, true); if (s !== "EMPTY") break; await new Promise((r) => setTimeout(r, 8000 * (t + 1))); }
+            if (s === "CHALLENGE") { E.stop = "eBay Prüfseite bei: " + q; break; }
+            await new Promise((r) => setTimeout(r, 900 + Math.random() * 900));
+            for (let t = 0; t < 3; t++) { a = await page(q, false); if (a !== "EMPTY") break; await new Promise((r) => setTimeout(r, 8000 * (t + 1))); }
+            if (a === "CHALLENGE") { E.stop = "eBay Prüfseite bei: " + q; break; }
+            if (s === "EMPTY" || a === "EMPTY") { E.empty = (E.empty || 0) + 1; continue; } // leave this card without a new check
             E.raw[q] = { s, a };
           } catch (e) { E.raw[q] = { s: [], a: [], err: String(e).slice(0, 60) }; }
         }
