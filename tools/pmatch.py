@@ -10,7 +10,7 @@ def pdate(s):
     mo = MON.get(m.group(2)[:3].lower())
     return dt.date(int(m.group(3)), mo, int(m.group(1))) if mo else None
 BAD = r"\b(psa|bgs|sgc|cgc|beckett|graded|gem\s?mint|lot|lots|bundle|konvolut|sammlung|choose|pick|wähle|auswahl|you pick|complete set|team set|proxy|custom|reprint|digital|sealed|box|booster|display|pack)\b"
-PARWORDS = r"\b(refractor|prizm|foil|holo|parallel|gold|silver|rainbow|red|blue|green|purple|orange|pink|black|white|sapphire|xfractor|wave|mojo|shimmer|crackle|lava|ice|cracked|sp|ssp|variation|var|/\d+|numbered|auto|autograph|signed|patch|relic|chrome|mosaic|optic|velocity|disco|hyper|neon|camo|tie.?dye|logofractor|aqua|teal|yellow|bronze|platinum|vintage stock|independence day|xtra points|press proof|holo)\b"
+PARWORDS = r"\b(refractor|prizm|foil|holo|parallel|gold|silver|rainbow|red|blue|green|purple|orange|pink|black|white|sapphire|xfractor|wave|mojo|shimmer|crackle|lava|ice|cracked|sp|ssp|variation|var|/\d+|numbered|auto|autograph|signed|patch|relic|chrome|mosaic|optic|velocity|disco|hyper|neon|camo|tie.?dye|logofractor|aqua|teal|yellow|bronze|platinum|vintage stock|independence day|xtra points|press proof|holo|border|team color|foilboard|leather|pigskin|diamant[eé]|glitter|sandglitter|holofoil|exclusive|fanatics|image variation|photo variation|negative|clear)\b"
 STOP = {"the", "of", "and", "foil", "parallel", "rookie", "rookies", "rc", "base", "[basis]", "variation"}
 
 def norm(s): return re.sub(r"\s+", " ", s.lower())
@@ -34,7 +34,12 @@ def match(card, title):
         alt = re.search(r"[(](.+?)[)]", card["name"])
         key = [w for w in re.findall(r"[a-zäöüß]{3,}", nm) if w not in ("ex", "mega")]
         ok = any(w in t for w in key) or (alt and alt.group(1).lower().split()[0] in t)
-        return bool(ok)
+        if not ok: return False
+        # variants: reverse holo, shatterfoil, cosmos and other foils must match both ways
+        own = (card.get("parallel", "") + " " + card.get("title", "")).lower()
+        for v in ("reverse", "shatterfoil", "cosmos", "masterball", "pokeball", "pokéball"):
+            if (v in own) != (v in t): return False
+        return True
     # sports
     last = card["name"].lower().replace(".", "").split()[-1]
     if last in ("jr", "ii", "iii", "sr") and len(card["name"].split()) > 1: last = card["name"].lower().replace(".", "").split()[-2]
@@ -54,6 +59,8 @@ def match(card, title):
             tt = tt.replace(w, "")
         if re.search(PARWORDS, tt): return False
     else:
+        if par.lower() == "football foil":
+            return "football foil" in t
         words = [w for w in re.findall(r"[a-z0-9&]+", par.lower()) if w not in STOP and len(w) > 1]
         if words and not all(w in t for w in words): return False
     return True
