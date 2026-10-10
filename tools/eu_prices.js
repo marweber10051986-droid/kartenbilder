@@ -117,7 +117,7 @@
     } else {
       const landed = [r.imp, r.ab].filter((x) => x > 0); const L = landed.length ? Math.min(...landed) : null;
       let capv = L ? (L - SHIP_DE) * 0.85 : null;
-      if (capv) capv = Math.min(capv, r.m ? Math.max(3 * r.m, r.m + 5) : capv * 0.7); // never more than 3x (or +5 €) of what the card really sells for                  // no EU competition: up to a bit under the import price
+      if (capv) capv = Math.min(capv, r.m ? Math.max(3 * r.m, r.m + 5) : capv * 0.7); // no EU competition: a bit under the import price, but never more than 3x (or +5 €) of what the card really sells for
       const v = Math.max(base || 0, capv || 0);
       if (v > 0) { r.vs = up(v); r.bs = capv && capv > (base || 0) ? "imp" : (r.eu ? "eu" : "welt"); }
     }
