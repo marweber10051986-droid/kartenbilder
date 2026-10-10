@@ -80,6 +80,7 @@
   const page = async (q, sold) => {
     const url = "https://www.ebay.de/sch/i.html?_nkw=" + encodeURIComponent(q).replace(/%20/g, "+") + (sold ? "&LH_Sold=1&LH_Complete=1" : "&LH_BIN=1&_sop=15") + "&_ipg=60";
     const r = await fetch(url, { credentials: "include" }); const h = await r.text();
+    if (r.status === 403 || r.status === 429) return "CHALLENGE";   // eBay says slow down: stop for today, never push through
     if (/splashui|challenge|captcha/i.test(r.url + h.slice(0, 4000)) && !/s-card|s-item/.test(h)) return "CHALLENGE";
     const d = new DOMParser().parseFromString(h, "text/html"); const out = []; let stop = false;
     if (!d.querySelector("li.s-card, li.s-item, .srp-river-answer, .srp-save-null-search")) return "EMPTY"; // eBay sometimes answers a burst with an empty page
@@ -125,7 +126,7 @@
     return r;
   };
   window.EU = window.EU || { raw: {}, out: {}, done: 0, total: 0, stop: "" };
-  window.euRun = async (conc = 2) => {
+  window.euRun = async (conc = 1) => {
     const E = window.EU; E.stop = ""; E.run = 1; const own = OWN();
     const qs = [...new Set(window.CARDS.map((c) => c[1]))]; E.total = qs.length; let i = 0;
     const work = async () => {
@@ -144,7 +145,7 @@
           } catch (e) { E.raw[q] = { s: [], a: [], err: String(e).slice(0, 60) }; }
         }
         for (const c of window.CARDS.filter((c) => c[1] === q)) E.out[c[0]] = evalCard(c, E.raw[q].s, E.raw[q].a, own);
-        E.done++; await new Promise((r) => setTimeout(r, 700 + Math.random() * 700));
+        E.done++; await new Promise((r) => setTimeout(r, 2500 + Math.random() * 2500));
       }
     };
     await Promise.all([...Array(conc)].map(work)); E.run = 0;
