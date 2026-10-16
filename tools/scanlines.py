@@ -149,7 +149,7 @@ def clean(path, outpath=None):
     out = np.clip(np.round(imf), 0, 255).astype(np.uint8)
     if outpath is None:
         b, e = os.path.splitext(path); outpath = b + '-clean' + (e or '.png')
-    params = [cv2.IMWRITE_WEBP_QUALITY, 92] if outpath.lower().endswith('.webp') else []
+    params = [cv2.IMWRITE_WEBP_QUALITY, 85] if outpath.lower().endswith('.webp') else []
     cv2.imwrite(outpath, out, params)
     for t, x, s, med in found:
         print('streak at x', x, 'slope', round(s, 4), 'strength', round(med, 1))
