@@ -12,3 +12,4 @@ Werden vom täglichen Morgen Abgleich benutzt. Keine Zugangsdaten, keine Käufer
 * `pmatch.py cards.json raw.json YYYY-MM-DD` filtert passende Verkäufe und rechnet den Median.
 * `apply_prices.py vgl.json OUTDIR` macht daraus Update Dateien (`cards.NN.vgl`), alte Felder ohne neuen Wert werden gelöscht.
 * Älter, nur Verkäufe ohne EU Sicht: `price_read.js`, `pmatch.py`, `pmatch.js`.
+* `scan1600.py OUTDIR SCAN…` macht aus Flachbett Scans (1200 dpi) die eBay Bilder: Scan bleibt wie er ist, gleicher Maßstab für alle, mit eigener Hintergrundfarbe auf 1600 x 1600 erweitert.
