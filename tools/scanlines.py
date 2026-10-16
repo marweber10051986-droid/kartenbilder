@@ -57,6 +57,24 @@ def is_design_edge(sm, x0, s, H):
     return float(np.median(d)) > 18
 
 
+def near_background(g, x0, s, H):
+    """The bright rim right at the card edge looks like a streak. If one side of the line is
+    smooth scanner background (no print texture), it is the card edge. Skip it."""
+    rows = np.arange(50, H - 50, 25)
+    sides = []
+    for a, b in ((-40, -12), (12, 40)):
+        st = []
+        for r in rows:
+            xc = int(round(x0 + s * (r - H / 2)))
+            lo, hi = max(0, xc + a), min(g.shape[1], xc + b)
+            if hi - lo < 5:
+                st.append(0.0); continue
+            blk = g[r - 3:r + 4, lo:hi]
+            st.append(float(np.median(np.abs(np.diff(blk, axis=1)))))   # texture, not the shadow gradient
+        sides.append(np.median(st))
+    return min(sides) < 2.5
+
+
 def is_flare(im, x0, s):
     """A streak from the scanner glass adds a stable share k of the free room (255-value)
     along its whole length. A printed line does not follow that rule."""
@@ -137,6 +155,8 @@ def clean(path, outpath=None):
         if med <= 0:                       # the glass streaks of this scanner are always bright
             continue
         if is_design_edge(sm, x, s, g.shape[0]):
+            continue
+        if near_background(g, x, s, g.shape[0]):
             continue
         if not is_flare(imf, x, s):
             continue
