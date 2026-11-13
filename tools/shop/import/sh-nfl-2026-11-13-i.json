@@ -1,0 +1,4516 @@
+[
+ {
+  "name": "Jaxson Dart #91TF-33 1991 Topps New York Giants 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-01",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 2,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Jaxson Dart #91TF-33</strong>, New York Giants, aus <strong>2026 Topps Flagship</strong>. Eine Insert Karte aus dem Set <strong>1991 Topps</strong>, das die Stars der Liga im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite fällt Dart durch seinen blitzschnellen Release auf und scheut sich nicht, die tiefe Mitte des Feldes anzugreifen. Dazu kommen sein robuster Laufstil und echte Führungsqualitäten.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans eines Exemplars, alle Karten dieses Angebots sind im gleichen Zustand, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Jaxson Dart #91TF-33 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der New York Giants, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/jaxson-dart-91tf-33-1991-topps-new-york-giants-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Jaxson Dart #91TF-33 1991 Topps New York Giants 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Jaxson Dart #91TF-33 1991 Topps New York Giants 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/jaxson-dart-91tf-33-1991-topps-new-york-giants-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Jaxson Dart #91TF-33 1991 Topps New York Giants 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Jaxson Dart #91TF-33 1991 Topps New York Giants 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "New York Giants"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "QB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Jaxson Dart"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TF-33"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-01, SC-SH-004-02"
+   }
+  ]
+ },
+ {
+  "name": "De'Von Achane #91TF-35 1991 Topps Miami Dolphins 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-03",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>De'Von Achane #91TF-35</strong>, Miami Dolphins, aus <strong>2026 Topps Flagship</strong>. Eine Insert Karte aus dem Set <strong>1991 Topps</strong>, das die Stars der Liga im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite hat Achane echten Sprinter Speed, der sich perfekt aufs Feld überträgt: Aus 10 Yard Läufen werden bei ihm Verfolgungsjagden.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>De'Von Achane #91TF-35 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Miami Dolphins, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/de-von-achane-91tf-35-1991-topps-miami-dolphins-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "De'Von Achane #91TF-35 1991 Topps Miami Dolphins 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "De'Von Achane #91TF-35 1991 Topps Miami Dolphins 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/de-von-achane-91tf-35-1991-topps-miami-dolphins-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "De'Von Achane #91TF-35 1991 Topps Miami Dolphins 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "De'Von Achane #91TF-35 1991 Topps Miami Dolphins 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Miami Dolphins"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "RB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "De'Von Achane"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TF-35"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-03"
+   }
+  ]
+ },
+ {
+  "name": "Cade Klubnik Rookie #91TR-6 1991 Topps New York Jets 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-04",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 2,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Cade Klubnik #91TR-6</strong>, New York Jets, aus <strong>2026 Topps Flagship</strong>. Eine Rookie Card aus dem Insert Set <strong>1991 Topps Rookies</strong>, das die neuen Spieler im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Die Kartenrückseite beschreibt Klubnik als Quarterback, der Passfenster mutig angreift, mit kurzem, kompaktem Release wirft und genau erkennt, wann seine Receiver einen Vorteil haben.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans eines Exemplars, alle Karten dieses Angebots sind im gleichen Zustand, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Cade Klubnik Rookie #91TR-6 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der New York Jets, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/cade-klubnik-rookie-91tr-6-1991-topps-new-york-jets-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Cade Klubnik Rookie #91TR-6 1991 Topps New York Jets 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Cade Klubnik Rookie #91TR-6 1991 Topps New York Jets 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/cade-klubnik-rookie-91tr-6-1991-topps-new-york-jets-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Cade Klubnik Rookie #91TR-6 1991 Topps New York Jets 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Cade Klubnik Rookie #91TR-6 1991 Topps New York Jets 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "New York Jets"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "QB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Cade Klubnik"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Rookies Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TR-6"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Rookie"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-04, SC-SH-004-05"
+   }
+  ]
+ },
+ {
+  "name": "David Bailey Rookie #91TR-43 1991 Topps New York Jets 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-06",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>David Bailey #91TR-43</strong>, New York Jets, aus <strong>2026 Topps Flagship</strong>. Eine Rookie Card aus dem Insert Set <strong>1991 Topps Rookies</strong>, das die neuen Spieler im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite ist Bailey ein Pass Rusher mit explosivem Antritt, der in seiner letzten College Saison die meisten Sacks im ganzen Land hatte.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>David Bailey Rookie #91TR-43 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der New York Jets, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/david-bailey-rookie-91tr-43-1991-topps-new-york-jets-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "David Bailey Rookie #91TR-43 1991 Topps New York Jets 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "David Bailey Rookie #91TR-43 1991 Topps New York Jets 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/david-bailey-rookie-91tr-43-1991-topps-new-york-jets-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "David Bailey Rookie #91TR-43 1991 Topps New York Jets 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "David Bailey Rookie #91TR-43 1991 Topps New York Jets 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "New York Jets"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "EDGE"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "David Bailey"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Rookies Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TR-43"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Rookie"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-06"
+   }
+  ]
+ },
+ {
+  "name": "Drake London #91TF-5 1991 Topps Atlanta Falcons 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-07",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Drake London #91TF-5</strong>, Atlanta Falcons, aus <strong>2026 Topps Flagship</strong>. Eine Insert Karte aus dem Set <strong>1991 Topps</strong>, das die Stars der Liga im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Die Kartenrückseite vergleicht London mit einem Power Forward beim Rebound: Mit 1,93 m schirmt er Verteidiger ab und holt sich Bälle auch im dichten Verkehr.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Drake London #91TF-5 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Atlanta Falcons, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/drake-london-91tf-5-1991-topps-atlanta-falcons-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Drake London #91TF-5 1991 Topps Atlanta Falcons 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Drake London #91TF-5 1991 Topps Atlanta Falcons 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/drake-london-91tf-5-1991-topps-atlanta-falcons-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Drake London #91TF-5 1991 Topps Atlanta Falcons 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Drake London #91TF-5 1991 Topps Atlanta Falcons 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Atlanta Falcons"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "WR"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Drake London"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TF-5"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-07"
+   }
+  ]
+ },
+ {
+  "name": "Jayden Daniels #91TF-44 1991 Topps Washington Commanders 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-08",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Jayden Daniels #91TF-44</strong>, Washington Commanders, aus <strong>2026 Topps Flagship</strong>. Eine Insert Karte aus dem Set <strong>1991 Topps</strong>, das die Stars der Liga im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite ein Rekord Phänomen mit Videospiel Beinen, der Verteidiger alt aussehen lässt und dazu Ruhe in der Pocket und präzise tiefe Bälle mitbringt.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Jayden Daniels #91TF-44 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Washington Commanders, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/jayden-daniels-91tf-44-1991-topps-washington-commanders-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Jayden Daniels #91TF-44 1991 Topps Washington Commanders 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Jayden Daniels #91TF-44 1991 Topps Washington Commanders 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/jayden-daniels-91tf-44-1991-topps-washington-commanders-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Jayden Daniels #91TF-44 1991 Topps Washington Commanders 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Jayden Daniels #91TF-44 1991 Topps Washington Commanders 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Washington Commanders"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "QB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Jayden Daniels"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TF-44"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-08"
+   }
+  ]
+ },
+ {
+  "name": "Mansoor Delane Rookie #91TR-48 1991 Topps Kansas City Chiefs 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-09",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 2,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Mansoor Delane #91TR-48</strong>, Kansas City Chiefs, aus <strong>2026 Topps Flagship</strong>. Eine Rookie Card aus dem Insert Set <strong>1991 Topps Rookies</strong>, das die neuen Spieler im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite überzeugt Delane in der Press Coverage mit lockeren Hüften und starker Fußarbeit und liest dabei, was der Quarterback vorhat.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans eines Exemplars, alle Karten dieses Angebots sind im gleichen Zustand, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Mansoor Delane Rookie #91TR-48 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Kansas City Chiefs, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/mansoor-delane-rookie-91tr-48-1991-topps-kansas-city-chiefs-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Mansoor Delane Rookie #91TR-48 1991 Topps Kansas City Chiefs 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Mansoor Delane Rookie #91TR-48 1991 Topps Kansas City Chiefs 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/mansoor-delane-rookie-91tr-48-1991-topps-kansas-city-chiefs-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Mansoor Delane Rookie #91TR-48 1991 Topps Kansas City Chiefs 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Mansoor Delane Rookie #91TR-48 1991 Topps Kansas City Chiefs 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Kansas City Chiefs"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "CB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Mansoor Delane"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Rookies Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TR-48"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Rookie"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-09, SC-SH-004-10"
+   }
+  ]
+ },
+ {
+  "name": "Jordyn Tyson Rookie #91TR-20 1991 Topps New Orleans Saints 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-11",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 3,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Jordyn Tyson #91TR-20</strong>, New Orleans Saints, aus <strong>2026 Topps Flagship</strong>. Eine Rookie Card aus dem Insert Set <strong>1991 Topps Rookies</strong>, das die neuen Spieler im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Die Kartenrückseite beschreibt Tyson als Receiver, der auf allen Positionen spielen kann und mit seinen plötzlichen Richtungswechseln auf kurzen Routen schwer zu decken ist.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans eines Exemplars, alle Karten dieses Angebots sind im gleichen Zustand, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Jordyn Tyson Rookie #91TR-20 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der New Orleans Saints, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/jordyn-tyson-rookie-91tr-20-1991-topps-new-orleans-saints-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Jordyn Tyson Rookie #91TR-20 1991 Topps New Orleans Saints 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Jordyn Tyson Rookie #91TR-20 1991 Topps New Orleans Saints 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/jordyn-tyson-rookie-91tr-20-1991-topps-new-orleans-saints-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Jordyn Tyson Rookie #91TR-20 1991 Topps New Orleans Saints 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Jordyn Tyson Rookie #91TR-20 1991 Topps New Orleans Saints 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "New Orleans Saints"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "WR"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Jordyn Tyson"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Rookies Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TR-20"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Rookie"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-11, SC-SH-004-12, SC-SH-004-13"
+   }
+  ]
+ },
+ {
+  "name": "Bijan Robinson #91TF-6 1991 Topps Atlanta Falcons 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-14",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Bijan Robinson #91TF-6</strong>, Atlanta Falcons, aus <strong>2026 Topps Flagship</strong>. Eine Insert Karte aus dem Set <strong>1991 Topps</strong>, das die Stars der Liga im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite gleitet Bijan durch Verteidigungen wie auf frischem Eis, erkennt Lücken, bevor sie entstehen, und hat dazu sichere Hände als Passempfänger.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Bijan Robinson #91TF-6 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Atlanta Falcons, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/bijan-robinson-91tf-6-1991-topps-atlanta-falcons-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Bijan Robinson #91TF-6 1991 Topps Atlanta Falcons 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Bijan Robinson #91TF-6 1991 Topps Atlanta Falcons 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/bijan-robinson-91tf-6-1991-topps-atlanta-falcons-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Bijan Robinson #91TF-6 1991 Topps Atlanta Falcons 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Bijan Robinson #91TF-6 1991 Topps Atlanta Falcons 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Atlanta Falcons"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "RB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Bijan Robinson"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TF-6"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-14"
+   }
+  ]
+ },
+ {
+  "name": "Germie Bernard Rookie #91TR-25 1991 Topps Pittsburgh Steelers 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-15",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Germie Bernard #91TR-25</strong>, Pittsburgh Steelers, aus <strong>2026 Topps Flagship</strong>. Eine Rookie Card aus dem Insert Set <strong>1991 Topps Rookies</strong>, das die neuen Spieler im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite ein geschmeidiger Läufer, der seine Routen in vollem Tempo läuft und Verteidigungen mit seiner Vielseitigkeit auf mehrere Arten unter Druck setzt.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Germie Bernard Rookie #91TR-25 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Pittsburgh Steelers, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/germie-bernard-rookie-91tr-25-1991-topps-pittsburgh-steelers-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Germie Bernard Rookie #91TR-25 1991 Topps Pittsburgh Steelers 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Germie Bernard Rookie #91TR-25 1991 Topps Pittsburgh Steelers 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/germie-bernard-rookie-91tr-25-1991-topps-pittsburgh-steelers-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Germie Bernard Rookie #91TR-25 1991 Topps Pittsburgh Steelers 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Germie Bernard Rookie #91TR-25 1991 Topps Pittsburgh Steelers 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Pittsburgh Steelers"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "WR"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Germie Bernard"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Rookies Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TR-25"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Rookie"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-15"
+   }
+  ]
+ },
+ {
+  "name": "Reggie Virgil Rookie #91TR-40 1991 Topps Arizona Cardinals 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-16",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Reggie Virgil #91TR-40</strong>, Arizona Cardinals, aus <strong>2026 Topps Flagship</strong>. Eine Rookie Card aus dem Insert Set <strong>1991 Topps Rookies</strong>, das die neuen Spieler im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite kam der große, schlanke Receiver in seinen vier College Jahren auf 15,8 Yards pro Catch und ist schnell genug für tiefe Routen.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Reggie Virgil Rookie #91TR-40 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Arizona Cardinals, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/reggie-virgil-rookie-91tr-40-1991-topps-arizona-cardinals-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Reggie Virgil Rookie #91TR-40 1991 Topps Arizona Cardinals 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Reggie Virgil Rookie #91TR-40 1991 Topps Arizona Cardinals 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/reggie-virgil-rookie-91tr-40-1991-topps-arizona-cardinals-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Reggie Virgil Rookie #91TR-40 1991 Topps Arizona Cardinals 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Reggie Virgil Rookie #91TR-40 1991 Topps Arizona Cardinals 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Arizona Cardinals"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "WR"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Reggie Virgil"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Rookies Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TR-40"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Rookie"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-16"
+   }
+  ]
+ },
+ {
+  "name": "Jordan Love #91TF-42 1991 Topps Green Bay Packers 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-17",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Jordan Love #91TF-42</strong>, Green Bay Packers, aus <strong>2026 Topps Flagship</strong>. Eine Insert Karte aus dem Set <strong>1991 Topps</strong>, das die Stars der Liga im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Die Kartenrückseite nennt Love einen Spezialisten für Würfe aus der Bewegung, der den tiefen Ball aus dem Handgelenk mit enormer Armstärke beherrscht.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Jordan Love #91TF-42 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Green Bay Packers, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/jordan-love-91tf-42-1991-topps-green-bay-packers-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Jordan Love #91TF-42 1991 Topps Green Bay Packers 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Jordan Love #91TF-42 1991 Topps Green Bay Packers 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/jordan-love-91tf-42-1991-topps-green-bay-packers-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Jordan Love #91TF-42 1991 Topps Green Bay Packers 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Jordan Love #91TF-42 1991 Topps Green Bay Packers 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Green Bay Packers"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "QB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Jordan Love"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TF-42"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-17"
+   }
+  ]
+ },
+ {
+  "name": "Justin Jefferson #91TF-38 1991 Topps Minnesota Vikings 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-18",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 2,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Justin Jefferson #91TF-38</strong>, Minnesota Vikings, aus <strong>2026 Topps Flagship</strong>. Eine Insert Karte aus dem Set <strong>1991 Topps</strong>, das die Stars der Liga im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite verfolgt Jefferson den Ball über die Schulter wie kein anderer und lässt selbst spektakuläre Catches wie Routine aussehen.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans eines Exemplars, alle Karten dieses Angebots sind im gleichen Zustand, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Justin Jefferson #91TF-38 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Minnesota Vikings, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/justin-jefferson-91tf-38-1991-topps-minnesota-vikings-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Justin Jefferson #91TF-38 1991 Topps Minnesota Vikings 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Justin Jefferson #91TF-38 1991 Topps Minnesota Vikings 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/justin-jefferson-91tf-38-1991-topps-minnesota-vikings-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Justin Jefferson #91TF-38 1991 Topps Minnesota Vikings 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Justin Jefferson #91TF-38 1991 Topps Minnesota Vikings 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Minnesota Vikings"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "WR"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Justin Jefferson"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TF-38"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-18, SC-SH-004-19"
+   }
+  ]
+ },
+ {
+  "name": "Adam Randall Rookie #91TR-45 1991 Topps Baltimore Ravens 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-20",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Adam Randall #91TR-45</strong>, Baltimore Ravens, aus <strong>2026 Topps Flagship</strong>. Eine Rookie Card aus dem Insert Set <strong>1991 Topps Rookies</strong>, das die neuen Spieler im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite fiel Randall den Ravens mit seiner starken Saison 2025 in Clemson auf, als er mit 13 Touchdowns Fünfter in der ACC wurde. Als ehemaliger Receiver ist er auch im Passspiel gefährlich.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Adam Randall Rookie #91TR-45 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Baltimore Ravens, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/adam-randall-rookie-91tr-45-1991-topps-baltimore-ravens-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Adam Randall Rookie #91TR-45 1991 Topps Baltimore Ravens 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Adam Randall Rookie #91TR-45 1991 Topps Baltimore Ravens 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/adam-randall-rookie-91tr-45-1991-topps-baltimore-ravens-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Adam Randall Rookie #91TR-45 1991 Topps Baltimore Ravens 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Adam Randall Rookie #91TR-45 1991 Topps Baltimore Ravens 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Baltimore Ravens"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "RB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Adam Randall"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Rookies Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TR-45"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Rookie"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-20"
+   }
+  ]
+ },
+ {
+  "name": "Jared Goff #91TF-37 1991 Topps Detroit Lions 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-21",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Jared Goff #91TF-37</strong>, Detroit Lions, aus <strong>2026 Topps Flagship</strong>. Eine Insert Karte aus dem Set <strong>1991 Topps</strong>, das die Stars der Liga im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Die Kartenrückseite nennt Goff den Rhythmus und Timing Architekten der Liga, der mit präzisen Pässen seinen Receivern freie Wege öffnet.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Jared Goff #91TF-37 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Detroit Lions, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/jared-goff-91tf-37-1991-topps-detroit-lions-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Jared Goff #91TF-37 1991 Topps Detroit Lions 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Jared Goff #91TF-37 1991 Topps Detroit Lions 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/jared-goff-91tf-37-1991-topps-detroit-lions-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Jared Goff #91TF-37 1991 Topps Detroit Lions 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Jared Goff #91TF-37 1991 Topps Detroit Lions 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Detroit Lions"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "QB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Jared Goff"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TF-37"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-21"
+   }
+  ]
+ },
+ {
+  "name": "James Cook #91TF-12 1991 Topps Buffalo Bills 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-22",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>James Cook #91TF-12</strong>, Buffalo Bills, aus <strong>2026 Topps Flagship</strong>. Eine Insert Karte aus dem Set <strong>1991 Topps</strong>, das die Stars der Liga im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite ist Cook im offenen Raum am stärksten: Mit schneller Beschleunigung schlüpft er durch enge Lücken und sammelt First Downs für die Bills.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>James Cook #91TF-12 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Buffalo Bills, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/james-cook-91tf-12-1991-topps-buffalo-bills-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "James Cook #91TF-12 1991 Topps Buffalo Bills 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "James Cook #91TF-12 1991 Topps Buffalo Bills 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/james-cook-91tf-12-1991-topps-buffalo-bills-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "James Cook #91TF-12 1991 Topps Buffalo Bills 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "James Cook #91TF-12 1991 Topps Buffalo Bills 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Buffalo Bills"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "RB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "James Cook"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TF-12"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-22"
+   }
+  ]
+ },
+ {
+  "name": "Trevor Lawrence #91TF-10 1991 Topps Jacksonville Jaguars 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-23",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Trevor Lawrence #91TF-10</strong>, Jacksonville Jaguars, aus <strong>2026 Topps Flagship</strong>. Eine Insert Karte aus dem Set <strong>1991 Topps</strong>, das die Stars der Liga im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite verbindet Lawrence klassische Quarterback Technik mit moderner Athletik und bleibt auch bei verlängerten Spielzügen ruhig.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Trevor Lawrence #91TF-10 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Jacksonville Jaguars, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/trevor-lawrence-91tf-10-1991-topps-jacksonville-jaguars-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Trevor Lawrence #91TF-10 1991 Topps Jacksonville Jaguars 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Trevor Lawrence #91TF-10 1991 Topps Jacksonville Jaguars 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/trevor-lawrence-91tf-10-1991-topps-jacksonville-jaguars-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Trevor Lawrence #91TF-10 1991 Topps Jacksonville Jaguars 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Trevor Lawrence #91TF-10 1991 Topps Jacksonville Jaguars 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Jacksonville Jaguars"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "QB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Trevor Lawrence"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TF-10"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-23"
+   }
+  ]
+ },
+ {
+  "name": "Brian Thomas Jr. #91TF-9 1991 Topps Jacksonville Jaguars 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-24",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Brian Thomas Jr. #91TF-9</strong>, Jacksonville Jaguars, aus <strong>2026 Topps Flagship</strong>. Eine Insert Karte aus dem Set <strong>1991 Topps</strong>, das die Stars der Liga im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite dehnt Thomas das Feld mit langen, mühelosen Schritten und setzt Defensive Backs mit seiner Beschleunigung unter Druck.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Brian Thomas Jr. #91TF-9 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Jacksonville Jaguars, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/brian-thomas-jr-91tf-9-1991-topps-jacksonville-jaguars-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Brian Thomas Jr. #91TF-9 1991 Topps Jacksonville Jaguars 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Brian Thomas Jr. #91TF-9 1991 Topps Jacksonville Jaguars 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/brian-thomas-jr-91tf-9-1991-topps-jacksonville-jaguars-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Brian Thomas Jr. #91TF-9 1991 Topps Jacksonville Jaguars 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Brian Thomas Jr. #91TF-9 1991 Topps Jacksonville Jaguars 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Jacksonville Jaguars"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "WR"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Brian Thomas Jr."
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TF-9"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-24"
+   }
+  ]
+ },
+ {
+  "name": "Brock Purdy #91TF-3 1991 Topps San Francisco 49ers 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-25",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Brock Purdy #91TF-3</strong>, San Francisco 49ers, aus <strong>2026 Topps Flagship</strong>. Eine Insert Karte aus dem Set <strong>1991 Topps</strong>, das die Stars der Liga im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Die Kartenrückseite vergleicht Purdy mit einem erfahrenen Point Guard: Der Ball kommt pünktlich, Entscheidungen fallen noch schneller, und Druck in der Pocket bringt ihn kaum aus der Ruhe.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Brock Purdy #91TF-3 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der San Francisco 49ers, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/brock-purdy-91tf-3-1991-topps-san-francisco-49ers-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Brock Purdy #91TF-3 1991 Topps San Francisco 49ers 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Brock Purdy #91TF-3 1991 Topps San Francisco 49ers 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/brock-purdy-91tf-3-1991-topps-san-francisco-49ers-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Brock Purdy #91TF-3 1991 Topps San Francisco 49ers 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Brock Purdy #91TF-3 1991 Topps San Francisco 49ers 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "San Francisco 49ers"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "QB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Brock Purdy"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TF-3"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-25"
+   }
+  ]
+ },
+ {
+  "name": "Nico Collins #91TF-47 1991 Topps Houston Texans 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-26",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Nico Collins #91TF-47</strong>, Houston Texans, aus <strong>2026 Topps Flagship</strong>. Eine Insert Karte aus dem Set <strong>1991 Topps</strong>, das die Stars der Liga im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite gewinnt Collins Jump Balls mit seinem großen Körper und seiner Reichweite und ist der verlässliche Fixpunkt für Quarterback CJ Stroud.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Nico Collins #91TF-47 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Houston Texans, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/nico-collins-91tf-47-1991-topps-houston-texans-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Nico Collins #91TF-47 1991 Topps Houston Texans 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Nico Collins #91TF-47 1991 Topps Houston Texans 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/nico-collins-91tf-47-1991-topps-houston-texans-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Nico Collins #91TF-47 1991 Topps Houston Texans 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Nico Collins #91TF-47 1991 Topps Houston Texans 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Houston Texans"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "WR"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Nico Collins"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TF-47"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-26"
+   }
+  ]
+ },
+ {
+  "name": "Caleb Douglas Rookie #91TR-16 1991 Topps Miami Dolphins 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-27",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Caleb Douglas #91TR-16</strong>, Miami Dolphins, aus <strong>2026 Topps Flagship</strong>. Eine Rookie Card aus dem Insert Set <strong>1991 Topps Rookies</strong>, das die neuen Spieler im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite macht ihn seine Spannweite von gut zwei Metern zum Spezialisten für Jump Balls. Am College spielte er für Texas Tech.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Caleb Douglas Rookie #91TR-16 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Miami Dolphins, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/caleb-douglas-rookie-91tr-16-1991-topps-miami-dolphins-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Caleb Douglas Rookie #91TR-16 1991 Topps Miami Dolphins 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Caleb Douglas Rookie #91TR-16 1991 Topps Miami Dolphins 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/caleb-douglas-rookie-91tr-16-1991-topps-miami-dolphins-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Caleb Douglas Rookie #91TR-16 1991 Topps Miami Dolphins 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Caleb Douglas Rookie #91TR-16 1991 Topps Miami Dolphins 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Miami Dolphins"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "WR"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Caleb Douglas"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Rookies Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TR-16"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Rookie"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-27"
+   }
+  ]
+ },
+ {
+  "name": "Kaden Wetjen Rookie #91TR-37 1991 Topps Pittsburgh Steelers 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-28",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Kaden Wetjen #91TR-37</strong>, Pittsburgh Steelers, aus <strong>2026 Topps Flagship</strong>. Eine Rookie Card aus dem Insert Set <strong>1991 Topps Rookies</strong>, das die neuen Spieler im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite wurde Wetjen zweimal zum besten Return Spezialisten der Big Ten gewählt und kam 2025 für Iowa auf 26,8 Yards pro Punt Return.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Kaden Wetjen Rookie #91TR-37 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Pittsburgh Steelers, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/kaden-wetjen-rookie-91tr-37-1991-topps-pittsburgh-steelers-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Kaden Wetjen Rookie #91TR-37 1991 Topps Pittsburgh Steelers 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Kaden Wetjen Rookie #91TR-37 1991 Topps Pittsburgh Steelers 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/kaden-wetjen-rookie-91tr-37-1991-topps-pittsburgh-steelers-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Kaden Wetjen Rookie #91TR-37 1991 Topps Pittsburgh Steelers 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Kaden Wetjen Rookie #91TR-37 1991 Topps Pittsburgh Steelers 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Pittsburgh Steelers"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "WR"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Kaden Wetjen"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Rookies Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TR-37"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Rookie"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-28"
+   }
+  ]
+ },
+ {
+  "name": "Garrett Nussmeier Rookie #91TR-3 1991 Topps Kansas City Chiefs 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-29",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 2,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Garrett Nussmeier #91TR-3</strong>, Kansas City Chiefs, aus <strong>2026 Topps Flagship</strong>. Eine Rookie Card aus dem Insert Set <strong>1991 Topps Rookies</strong>, das die neuen Spieler im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite bringt keine Wurfsituation Nussmeier aus der Ruhe: Mit starkem Arm und Kreativität passt er den Ball in enge Fenster.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans eines Exemplars, alle Karten dieses Angebots sind im gleichen Zustand, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Garrett Nussmeier Rookie #91TR-3 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Kansas City Chiefs, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/garrett-nussmeier-rookie-91tr-3-1991-topps-kansas-city-chiefs-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Garrett Nussmeier Rookie #91TR-3 1991 Topps Kansas City Chiefs 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Garrett Nussmeier Rookie #91TR-3 1991 Topps Kansas City Chiefs 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/garrett-nussmeier-rookie-91tr-3-1991-topps-kansas-city-chiefs-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Garrett Nussmeier Rookie #91TR-3 1991 Topps Kansas City Chiefs 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Garrett Nussmeier Rookie #91TR-3 1991 Topps Kansas City Chiefs 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Kansas City Chiefs"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "QB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Garrett Nussmeier"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Rookies Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TR-3"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Rookie"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-29, SC-SH-004-30"
+   }
+  ]
+ },
+ {
+  "name": "Emmett Johnson Rookie #91TR-13 1991 Topps Kansas City Chiefs 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-31",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Emmett Johnson #91TR-13</strong>, Kansas City Chiefs, aus <strong>2026 Topps Flagship</strong>. Eine Rookie Card aus dem Insert Set <strong>1991 Topps Rookies</strong>, das die neuen Spieler im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite ein echtes Arbeitstier, das in seiner letzten College Saison fünf Spiele mit mehr als 25 Läufen und acht Spiele mit über 100 Yards hatte.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Emmett Johnson Rookie #91TR-13 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Kansas City Chiefs, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/emmett-johnson-rookie-91tr-13-1991-topps-kansas-city-chiefs-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Emmett Johnson Rookie #91TR-13 1991 Topps Kansas City Chiefs 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Emmett Johnson Rookie #91TR-13 1991 Topps Kansas City Chiefs 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/emmett-johnson-rookie-91tr-13-1991-topps-kansas-city-chiefs-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Emmett Johnson Rookie #91TR-13 1991 Topps Kansas City Chiefs 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Emmett Johnson Rookie #91TR-13 1991 Topps Kansas City Chiefs 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Kansas City Chiefs"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "RB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Emmett Johnson"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Rookies Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TR-13"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Rookie"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-31"
+   }
+  ]
+ },
+ {
+  "name": "Jonah Coleman Rookie #91TR-12 1991 Topps Denver Broncos 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-32",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Jonah Coleman #91TR-12</strong>, Denver Broncos, aus <strong>2026 Topps Flagship</strong>. Eine Rookie Card aus dem Insert Set <strong>1991 Topps Rookies</strong>, das die neuen Spieler im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite überzeugt Coleman mit Verlässlichkeit, versteht Laufspiel und Pass Protection und ist damit ein Running Back für alle drei Downs.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Jonah Coleman Rookie #91TR-12 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Denver Broncos, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/jonah-coleman-rookie-91tr-12-1991-topps-denver-broncos-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Jonah Coleman Rookie #91TR-12 1991 Topps Denver Broncos 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Jonah Coleman Rookie #91TR-12 1991 Topps Denver Broncos 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/jonah-coleman-rookie-91tr-12-1991-topps-denver-broncos-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Jonah Coleman Rookie #91TR-12 1991 Topps Denver Broncos 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Jonah Coleman Rookie #91TR-12 1991 Topps Denver Broncos 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Denver Broncos"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "RB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Jonah Coleman"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Rookies Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TR-12"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Rookie"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-32"
+   }
+  ]
+ },
+ {
+  "name": "Kendrick Law Rookie #91TR-42 1991 Topps Detroit Lions 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-33",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Kendrick Law #91TR-42</strong>, Detroit Lions, aus <strong>2026 Topps Flagship</strong>. Eine Rookie Card aus dem Insert Set <strong>1991 Topps Rookies</strong>, das die neuen Spieler im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite bringt Law die Erfahrung aus 46 College Spielen nach Detroit und ist nach kurzen Pässen schnell Richtung Endzone unterwegs.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Kendrick Law Rookie #91TR-42 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Detroit Lions, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/kendrick-law-rookie-91tr-42-1991-topps-detroit-lions-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Kendrick Law Rookie #91TR-42 1991 Topps Detroit Lions 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Kendrick Law Rookie #91TR-42 1991 Topps Detroit Lions 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/kendrick-law-rookie-91tr-42-1991-topps-detroit-lions-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Kendrick Law Rookie #91TR-42 1991 Topps Detroit Lions 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Kendrick Law Rookie #91TR-42 1991 Topps Detroit Lions 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Detroit Lions"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "WR"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Kendrick Law"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Rookies Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TR-42"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Rookie"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-33"
+   }
+  ]
+ },
+ {
+  "name": "Jahmyr Gibbs #91TF-39 1991 Topps Detroit Lions 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-34",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Jahmyr Gibbs #91TF-39</strong>, Detroit Lions, aus <strong>2026 Topps Flagship</strong>. Eine Insert Karte aus dem Set <strong>1991 Topps</strong>, das die Stars der Liga im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite ist Gibbs ein Running Back mit tödlichem zweiten und dritten Gang, der im Screen Game den ersten Verteidiger fast immer ins Leere laufen lässt.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Jahmyr Gibbs #91TF-39 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Detroit Lions, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/jahmyr-gibbs-91tf-39-1991-topps-detroit-lions-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Jahmyr Gibbs #91TF-39 1991 Topps Detroit Lions 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Jahmyr Gibbs #91TF-39 1991 Topps Detroit Lions 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/jahmyr-gibbs-91tf-39-1991-topps-detroit-lions-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Jahmyr Gibbs #91TF-39 1991 Topps Detroit Lions 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Jahmyr Gibbs #91TF-39 1991 Topps Detroit Lions 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Detroit Lions"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "RB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Jahmyr Gibbs"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TF-39"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-34"
+   }
+  ]
+ },
+ {
+  "name": "Tetairoa McMillan #91TF-15 1991 Topps Carolina Panthers 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-35",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 2,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Tetairoa McMillan #91TF-15</strong>, Carolina Panthers, aus <strong>2026 Topps Flagship</strong>. Eine Insert Karte aus dem Set <strong>1991 Topps</strong>, das die Stars der Liga im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite spielt McMillan Receiver wie ein Power Forward: Mit 1,96 m pflückt er Bälle über den Helmen der Verteidiger und gewinnt die 50 zu 50 Bälle.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans eines Exemplars, alle Karten dieses Angebots sind im gleichen Zustand, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Tetairoa McMillan #91TF-15 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Carolina Panthers, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/tetairoa-mcmillan-91tf-15-1991-topps-carolina-panthers-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Tetairoa McMillan #91TF-15 1991 Topps Carolina Panthers 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Tetairoa McMillan #91TF-15 1991 Topps Carolina Panthers 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/tetairoa-mcmillan-91tf-15-1991-topps-carolina-panthers-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Tetairoa McMillan #91TF-15 1991 Topps Carolina Panthers 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Tetairoa McMillan #91TF-15 1991 Topps Carolina Panthers 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Carolina Panthers"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "WR"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Tetairoa McMillan"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TF-15"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-35, SC-SH-004-36"
+   }
+  ]
+ },
+ {
+  "name": "Ashton Jeanty #91TF-27 1991 Topps Las Vegas Raiders 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-37",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Ashton Jeanty #91TF-27</strong>, Las Vegas Raiders, aus <strong>2026 Topps Flagship</strong>. Eine Insert Karte aus dem Set <strong>1991 Topps</strong>, das die Stars der Liga im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Die Kartenrückseite nennt Jeanty den menschlichen Flipperball im Backfield, der dank tiefem Schwerpunkt an direkten Treffern einfach abprallt.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Ashton Jeanty #91TF-27 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Las Vegas Raiders, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/ashton-jeanty-91tf-27-1991-topps-las-vegas-raiders-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Ashton Jeanty #91TF-27 1991 Topps Las Vegas Raiders 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Ashton Jeanty #91TF-27 1991 Topps Las Vegas Raiders 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/ashton-jeanty-91tf-27-1991-topps-las-vegas-raiders-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Ashton Jeanty #91TF-27 1991 Topps Las Vegas Raiders 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Ashton Jeanty #91TF-27 1991 Topps Las Vegas Raiders 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Las Vegas Raiders"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "RB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Ashton Jeanty"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TF-27"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-37"
+   }
+  ]
+ },
+ {
+  "name": "Brock Bowers #91TF-34 1991 Topps Las Vegas Raiders 2026 Topps Flagship NFL",
+  "sku": "SC-SH-004-38",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Brock Bowers #91TF-34</strong>, Las Vegas Raiders, aus <strong>2026 Topps Flagship</strong>. Eine Insert Karte aus dem Set <strong>1991 Topps</strong>, das die Stars der Liga im Look der Topps Karten von 1991 zeigt, inklusive 35 Jahre Jubiläumslogo. Laut Kartenrückseite ist Bowers ein Mismatch ohne feste Position: Er läuft Routen wie ein Slot Receiver und blockt wie ein Guard.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Brock Bowers #91TF-34 1991 Topps, 2026 Topps Flagship: originale NFL Insert Karte der Las Vegas Raiders, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/brock-bowers-91tf-34-1991-topps-las-vegas-raiders-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Brock Bowers #91TF-34 1991 Topps Las Vegas Raiders 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Brock Bowers #91TF-34 1991 Topps Las Vegas Raiders 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-004/brock-bowers-91tf-34-1991-topps-las-vegas-raiders-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Brock Bowers #91TF-34 1991 Topps Las Vegas Raiders 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Brock Bowers #91TF-34 1991 Topps Las Vegas Raiders 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Las Vegas Raiders"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "TE"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Insert"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Brock Bowers"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Insert Set",
+    "options": [
+     "1991 Topps Football"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "91TF-34"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-004-38"
+   }
+  ]
+ }
+]
