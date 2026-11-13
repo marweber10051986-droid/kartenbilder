@@ -1,0 +1,1472 @@
+[
+ {
+  "name": "Emeka Egbuka #261 Future Stars Tampa Bay Buccaneers 2026 Topps Flagship NFL",
+  "sku": "SC-SH-002-33",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "1.50",
+  "manage_stock": true,
+  "stock_quantity": 3,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Emeka Egbuka #261</strong>, Tampa Bay Buccaneers, aus dem Future Stars Subset von <strong>2026 Topps Flagship</strong>. Die Buccaneers haben den Wide Receiver von Ohio State 2025 in der ersten Runde gedraftet. In seiner ersten Saison fing er laut Kartenrückseite 63 Pässe für 938 Yards und sechs Touchdowns, schon in Woche 1 fing er den spielentscheidenden Touchdown. Future Stars zeigt die besten jungen Spieler der Liga nach ihrer ersten Saison, mit Topps All Rookie Team Pokal auf der Vorderseite.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans eines Exemplars, alle Karten dieses Angebots sind im gleichen Zustand, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Emeka Egbuka #261 Future Stars, 2026 Topps Flagship: originale NFL Sammelkarte der Tampa Bay Buccaneers, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-002/emeka-egbuka-261-future-stars-tampa-bay-buccaneers-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Emeka Egbuka #261 Future Stars Tampa Bay Buccaneers 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Emeka Egbuka #261 Future Stars Tampa Bay Buccaneers 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-002/emeka-egbuka-261-future-stars-tampa-bay-buccaneers-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Emeka Egbuka #261 Future Stars Tampa Bay Buccaneers 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Emeka Egbuka #261 Future Stars Tampa Bay Buccaneers 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Tampa Bay Buccaneers"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "WR"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Emeka Egbuka"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "261"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Future Stars"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-002-33, SC-SH-002-34, SC-SH-002-35"
+   }
+  ]
+ },
+ {
+  "name": "Colston Loveland #270 Future Stars Chicago Bears 2026 Topps Flagship NFL",
+  "sku": "SC-SH-002-36",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "1.50",
+  "manage_stock": true,
+  "stock_quantity": 3,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Colston Loveland #270</strong>, Chicago Bears, aus dem Future Stars Subset von <strong>2026 Topps Flagship</strong>. Die Bears haben den Tight End von Michigan 2025 in der ersten Runde gedraftet. Als Rookie fing er laut Kartenrückseite 58 Pässe für 713 Yards und sechs Touchdowns, gegen die Bengals gelangen ihm zwei Touchdowns inklusive eines 58 Yard Game Winners. Future Stars zeigt die besten jungen Spieler der Liga nach ihrer ersten Saison, mit Topps All Rookie Team Pokal auf der Vorderseite.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans eines Exemplars, alle Karten dieses Angebots sind im gleichen Zustand, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Colston Loveland #270 Future Stars, 2026 Topps Flagship: originale NFL Sammelkarte der Chicago Bears, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-002/colston-loveland-270-future-stars-chicago-bears-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Colston Loveland #270 Future Stars Chicago Bears 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Colston Loveland #270 Future Stars Chicago Bears 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-002/colston-loveland-270-future-stars-chicago-bears-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Colston Loveland #270 Future Stars Chicago Bears 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Colston Loveland #270 Future Stars Chicago Bears 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Chicago Bears"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "TE"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Colston Loveland"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "270"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Future Stars"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-002-36, SC-SH-002-37, SC-SH-002-38"
+   }
+  ]
+ },
+ {
+  "name": "Cam Skattebo #268 Future Stars New York Giants 2026 Topps Flagship NFL",
+  "sku": "SC-SH-002-39",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "1.50",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Cam Skattebo #268</strong>, New York Giants, aus dem Future Stars Subset von <strong>2026 Topps Flagship</strong>. Die Giants haben den Running Back von Arizona State 2025 in der vierten Runde gedraftet. In nur acht Spielen kam er laut Kartenrückseite auf 410 Rushing Yards, fünf Touchdowns und 24 Catches und wurde mit seiner harten Spielweise schnell zum Fan Liebling. Future Stars zeigt die besten jungen Spieler der Liga nach ihrer ersten Saison, mit Topps All Rookie Team Pokal auf der Vorderseite.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Cam Skattebo #268 Future Stars, 2026 Topps Flagship: originale NFL Sammelkarte der New York Giants, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-002/cam-skattebo-268-future-stars-new-york-giants-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Cam Skattebo #268 Future Stars New York Giants 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Cam Skattebo #268 Future Stars New York Giants 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-002/cam-skattebo-268-future-stars-new-york-giants-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Cam Skattebo #268 Future Stars New York Giants 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Cam Skattebo #268 Future Stars New York Giants 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "New York Giants"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "RB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Cam Skattebo"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "268"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Future Stars"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-002-39"
+   }
+  ]
+ },
+ {
+  "name": "Cam Ward #264 Future Stars Tennessee Titans 2026 Topps Flagship NFL",
+  "sku": "SC-SH-002-40",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "1.50",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Cam Ward #264</strong>, Tennessee Titans, aus dem Future Stars Subset von <strong>2026 Topps Flagship</strong>. Die Titans haben den Quarterback von Miami 2025 in der ersten Runde gedraftet. In seiner Rookie Saison warf er laut Kartenrückseite für 3.169 Yards und 15 Touchdowns in 17 Spielen. Future Stars zeigt die besten jungen Spieler der Liga nach ihrer ersten Saison, mit Topps All Rookie Team Pokal auf der Vorderseite.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Cam Ward #264 Future Stars, 2026 Topps Flagship: originale NFL Sammelkarte der Tennessee Titans, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-002/cam-ward-264-future-stars-tennessee-titans-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Cam Ward #264 Future Stars Tennessee Titans 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Cam Ward #264 Future Stars Tennessee Titans 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-002/cam-ward-264-future-stars-tennessee-titans-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Cam Ward #264 Future Stars Tennessee Titans 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Cam Ward #264 Future Stars Tennessee Titans 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Tennessee Titans"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "QB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Cam Ward"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "264"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Future Stars"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-002-40"
+   }
+  ]
+ },
+ {
+  "name": "Matthew Golden #263 Future Stars Green Bay Packers 2026 Topps Flagship NFL",
+  "sku": "SC-SH-002-41",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "1.50",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Matthew Golden #263</strong>, Green Bay Packers, aus dem Future Stars Subset von <strong>2026 Topps Flagship</strong>. Die Packers haben den Wide Receiver von Texas 2025 in der ersten Runde gedraftet. Laut Kartenrückseite war er der erste Receiver seit Anfang der 2000er, den Green Bay in Runde eins geholt hat. Future Stars zeigt die besten jungen Spieler der Liga nach ihrer ersten Saison, mit Topps All Rookie Team Pokal auf der Vorderseite.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Matthew Golden #263 Future Stars, 2026 Topps Flagship: originale NFL Sammelkarte der Green Bay Packers, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-002/matthew-golden-263-future-stars-green-bay-packers-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Matthew Golden #263 Future Stars Green Bay Packers 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Matthew Golden #263 Future Stars Green Bay Packers 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-002/matthew-golden-263-future-stars-green-bay-packers-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Matthew Golden #263 Future Stars Green Bay Packers 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Matthew Golden #263 Future Stars Green Bay Packers 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Green Bay Packers"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "WR"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Matthew Golden"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "263"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Future Stars"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-002-41"
+   }
+  ]
+ },
+ {
+  "name": "Tetairoa McMillan #269 Future Stars Carolina Panthers 2026 Topps Flagship NFL",
+  "sku": "SC-SH-002-42",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "1.50",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Tetairoa McMillan #269</strong>, Carolina Panthers, aus dem Future Stars Subset von <strong>2026 Topps Flagship</strong>. Die Panthers haben den Wide Receiver von Arizona 2025 in der ersten Runde gedraftet. Als Rookie knackte er laut Kartenrückseite direkt die 1.000 Yard Marke, mit 70 Catches für 1.014 Yards und sieben Touchdowns. Future Stars zeigt die besten jungen Spieler der Liga nach ihrer ersten Saison, mit Topps All Rookie Team Pokal auf der Vorderseite.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Tetairoa McMillan #269 Future Stars, 2026 Topps Flagship: originale NFL Sammelkarte der Carolina Panthers, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-002/tetairoa-mcmillan-269-future-stars-carolina-panthers-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Tetairoa McMillan #269 Future Stars Carolina Panthers 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Tetairoa McMillan #269 Future Stars Carolina Panthers 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-002/tetairoa-mcmillan-269-future-stars-carolina-panthers-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Tetairoa McMillan #269 Future Stars Carolina Panthers 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Tetairoa McMillan #269 Future Stars Carolina Panthers 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Carolina Panthers"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "WR"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Tetairoa McMillan"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "269"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Future Stars"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-002-42"
+   }
+  ]
+ },
+ {
+  "name": "Jaxson Dart #266 Future Stars New York Giants 2026 Topps Flagship NFL",
+  "sku": "SC-SH-002-43",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "1.50",
+  "manage_stock": true,
+  "stock_quantity": 5,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Jaxson Dart #266</strong>, New York Giants, aus dem Future Stars Subset von <strong>2026 Topps Flagship</strong>. Die Giants haben den Quarterback von Ole Miss 2025 in der ersten Runde gedraftet. In 14 Spielen warf er laut Kartenrückseite für 2.272 Yards und 15 Touchdowns bei nur fünf Interceptions. Future Stars zeigt die besten jungen Spieler der Liga nach ihrer ersten Saison, mit Topps All Rookie Team Pokal auf der Vorderseite.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans eines Exemplars, alle Karten dieses Angebots sind im gleichen Zustand, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Jaxson Dart #266 Future Stars, 2026 Topps Flagship: originale NFL Sammelkarte der New York Giants, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-002/jaxson-dart-266-future-stars-new-york-giants-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Jaxson Dart #266 Future Stars New York Giants 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Jaxson Dart #266 Future Stars New York Giants 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-002/jaxson-dart-266-future-stars-new-york-giants-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Jaxson Dart #266 Future Stars New York Giants 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Jaxson Dart #266 Future Stars New York Giants 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "New York Giants"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "QB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Jaxson Dart"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "266"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Future Stars"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-002-43, SC-SH-002-44, SC-SH-002-45, SC-SH-002-46, SC-SH-002-47"
+   }
+  ]
+ },
+ {
+  "name": "Quinshon Judkins #267 Future Stars Cleveland Browns 2026 Topps Flagship NFL",
+  "sku": "SC-SH-002-48",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "1.50",
+  "manage_stock": true,
+  "stock_quantity": 3,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Quinshon Judkins #267</strong>, Cleveland Browns, aus dem Future Stars Subset von <strong>2026 Topps Flagship</strong>. Die Browns haben den Running Back von Ohio State 2025 in der zweiten Runde gedraftet. Als Rookie lief er laut Kartenrückseite für 827 Yards und sieben Touchdowns. Future Stars zeigt die besten jungen Spieler der Liga nach ihrer ersten Saison, mit Topps All Rookie Team Pokal auf der Vorderseite.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans eines Exemplars, alle Karten dieses Angebots sind im gleichen Zustand, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Quinshon Judkins #267 Future Stars, 2026 Topps Flagship: originale NFL Sammelkarte der Cleveland Browns, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-002/quinshon-judkins-267-future-stars-cleveland-browns-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Quinshon Judkins #267 Future Stars Cleveland Browns 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Quinshon Judkins #267 Future Stars Cleveland Browns 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-002/quinshon-judkins-267-future-stars-cleveland-browns-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Quinshon Judkins #267 Future Stars Cleveland Browns 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Quinshon Judkins #267 Future Stars Cleveland Browns 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Cleveland Browns"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "RB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Quinshon Judkins"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "267"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Future Stars"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-002-48, SC-SH-002-49, SC-SH-002-50"
+   }
+  ]
+ },
+ {
+  "name": "Tyler Warren #265 Future Stars Indianapolis Colts 2026 Topps Flagship NFL",
+  "sku": "SC-SH-003-01",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "1.50",
+  "manage_stock": true,
+  "stock_quantity": 2,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Tyler Warren #265</strong>, Indianapolis Colts, aus dem Future Stars Subset von <strong>2026 Topps Flagship</strong>. Die Colts haben den Tight End von Penn State 2025 in der ersten Runde gedraftet. Als Rookie fing er laut Kartenrückseite 76 Pässe für 817 Yards und vier Touchdowns. Future Stars zeigt die besten jungen Spieler der Liga nach ihrer ersten Saison, mit Topps All Rookie Team Pokal auf der Vorderseite.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans eines Exemplars, alle Karten dieses Angebots sind im gleichen Zustand, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Tyler Warren #265 Future Stars, 2026 Topps Flagship: originale NFL Sammelkarte der Indianapolis Colts, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-003/tyler-warren-265-future-stars-indianapolis-colts-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Tyler Warren #265 Future Stars Indianapolis Colts 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Tyler Warren #265 Future Stars Indianapolis Colts 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-003/tyler-warren-265-future-stars-indianapolis-colts-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Tyler Warren #265 Future Stars Indianapolis Colts 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Tyler Warren #265 Future Stars Indianapolis Colts 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Indianapolis Colts"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "TE"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Tyler Warren"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "265"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Future Stars"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-003-01, SC-SH-003-02"
+   }
+  ]
+ },
+ {
+  "name": "Ashton Jeanty #262 Future Stars Las Vegas Raiders 2026 Topps Flagship NFL",
+  "sku": "SC-SH-003-03",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "1.50",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Ashton Jeanty #262</strong>, Las Vegas Raiders, aus dem Future Stars Subset von <strong>2026 Topps Flagship</strong>. Die Raiders haben den Running Back von Boise State 2025 in der ersten Runde gedraftet. Als Rookie kam er laut Kartenrückseite auf 975 Rushing Yards, fünf Touchdowns und 55 Catches. Future Stars zeigt die besten jungen Spieler der Liga nach ihrer ersten Saison, mit Topps All Rookie Team Pokal auf der Vorderseite.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Ashton Jeanty #262 Future Stars, 2026 Topps Flagship: originale NFL Sammelkarte der Las Vegas Raiders, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-003/ashton-jeanty-262-future-stars-las-vegas-raiders-2026-topps-flagship-nfl-vorderseite.webp",
+    "name": "Ashton Jeanty #262 Future Stars Las Vegas Raiders 2026 Topps Flagship NFL Sammelkarte Vorderseite",
+    "alt": "Ashton Jeanty #262 Future Stars Las Vegas Raiders 2026 Topps Flagship NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-003/ashton-jeanty-262-future-stars-las-vegas-raiders-2026-topps-flagship-nfl-rueckseite.webp",
+    "name": "Ashton Jeanty #262 Future Stars Las Vegas Raiders 2026 Topps Flagship NFL Sammelkarte Rückseite",
+    "alt": "Ashton Jeanty #262 Future Stars Las Vegas Raiders 2026 Topps Flagship NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Las Vegas Raiders"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "RB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Ashton Jeanty"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Flagship"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "262"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Future Stars"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-003-03"
+   }
+  ]
+ }
+]
