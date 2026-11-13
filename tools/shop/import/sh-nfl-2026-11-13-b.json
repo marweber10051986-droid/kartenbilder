@@ -1,0 +1,149 @@
+[
+ {
+  "name": "Jadarian Price Rookie #393 Seattle Seahawks 2026 Topps Heritage NFL",
+  "sku": "SC-SH-002-06",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "1.50",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 19
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Jadarian Price #393</strong>, Seattle Seahawks, aus dem Set <strong>2026 Topps Heritage</strong>. Eine Rookie Card des Running Backs, den die Seahawks 2026 in der ersten Runde gedraftet haben. In seiner letzten Saison für Notre Dame lief er 2025 für 674 Yards und 11 Touchdowns bei 6,0 Yards pro Lauf und trug dazu zwei Kickoffs in die Endzone zurück. Das Design im Stil der Topps Karten von 1978 mit Footballlogo und Kartonrückseite macht die Heritage Serie zu einem Liebling bei Set Sammlern.</p>\n<p>Eine originale NFL Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst und siehst, ob sich ein Grading bei PSA oder BGS für dich lohnt.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/nfl/\">NFL Sammelkarten</a>.</p>",
+  "short_description": "<p>Jadarian Price Rookie #393, 2026 Topps Heritage: originale NFL Rookie Card der Seattle Seahawks, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-002/jadarian-price-rookie-393-seattle-seahawks-2026-topps-heritage-nfl-vorderseite.webp",
+    "name": "Jadarian Price Rookie #393 Seattle Seahawks 2026 Topps Heritage NFL Sammelkarte Vorderseite",
+    "alt": "Jadarian Price Rookie #393 Seattle Seahawks 2026 Topps Heritage NFL Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/SC-SH-002/jadarian-price-rookie-393-seattle-seahawks-2026-topps-heritage-nfl-rueckseite.webp",
+    "name": "Jadarian Price Rookie #393 Seattle Seahawks 2026 Topps Heritage NFL Sammelkarte Rückseite",
+    "alt": "Jadarian Price Rookie #393 Seattle Seahawks 2026 Topps Heritage NFL Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Seattle Seahawks"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "RB"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Heritage"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Jadarian Price"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "NFL"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026 Topps Heritage"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "393"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Besonderheiten",
+    "options": [
+     "Rookie"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 12
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_shop_only",
+    "value": "1"
+   },
+   {
+    "key": "_rk_slots",
+    "value": "SC-SH-002-06"
+   }
+  ]
+ }
+]
