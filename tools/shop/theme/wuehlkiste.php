@@ -80,7 +80,9 @@ function rk_wuehlkiste_section() {
 	$total = (int) $d['total'];
 
 	$css = '<style>
-.rk-wk{position:relative}
+.rk-main{overflow-x:clip}
+.rk-wk{position:relative;isolation:isolate;padding-top:90px!important;padding-bottom:90px!important}
+.rk-wk::before{content:"";position:absolute;top:0;bottom:0;left:calc(50% - 50vw);right:calc(50% - 50vw);background:var(--rk-panel,#141414);border-top:1px solid var(--rk-line,#262626);border-bottom:1px solid var(--rk-line,#262626);z-index:-1}
 .rk-wk__badge{display:inline-block;background:var(--rk-red,#ff3b30);color:#fff;font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:15px;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;transform:rotate(-3deg);margin-bottom:10px}
 .rk-wk__stats{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.12);margin:8px 0 28px}
 .rk-wk__stat{background:#0b0b0b;padding:18px 20px}
