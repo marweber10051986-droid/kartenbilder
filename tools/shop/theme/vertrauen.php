@@ -136,3 +136,11 @@ window.addEventListener('pageshow',function(e){if(e.persisted)load()});
 </script>
 	<?php
 }, 50 );
+
+/* Kartensuche Startseite: roter Balken ueber die ganze Breite, graues Suchfeld */
+add_action( 'wp_head', function () {
+	if ( ! is_front_page() ) {
+		return;
+	}
+	echo '<style>.rk-bigsearch{background:var(--rk-red,#ff3b30)!important;padding:26px var(--rk-pad) 28px!important;width:100%}.rk-bigsearch .rk-kicker{color:#fff!important;margin-bottom:10px}.rk-bigsearch .rk-kicker .rk-dot{background:#fff!important}.rk-bigsearch form>div{background:#d9d9d9!important;border:0!important}.rk-bigsearch form>div:focus-within{box-shadow:0 0 0 3px #0b0b0b}.rk-bigsearch input,.rk-bigsearch input:focus,.rk-bigsearch input:-webkit-autofill{background:#d9d9d9!important;color:#111!important;-webkit-text-fill-color:#111}.rk-bigsearch input::placeholder{color:#555!important}.rk-bigsearch button{background:#0b0b0b!important;color:#fff!important}.rk-bigsearch button:hover{background:#fff!important;color:#0b0b0b!important}</style>';
+}, 99 );
