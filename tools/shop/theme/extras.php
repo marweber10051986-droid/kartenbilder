@@ -36,7 +36,7 @@ function rk_filter_extra_fields() {
 }
 
 add_action( 'wp_head', function () {
-	echo '<style>.rk-filters{grid-template-columns:repeat(3,minmax(0,1fr))!important}.rk-filters .rk-filters__txt{width:100%;font-family:var(--rk-body);font-size:15px;background:var(--rk-ink);color:var(--rk-paper);border:1px solid var(--rk-line);padding:12px 14px;border-radius:0;box-sizing:border-box;height:100%}.rk-filters .rk-filters__txt:focus{outline:none;border-color:var(--rk-red)}.rk-filters .rk-filters__txt.is-set{border-color:var(--rk-red)}.rk-filters__reset,.rk-filters__want{grid-column:1/-1;justify-self:start}.rk-filters__want{color:#fff!important;font-size:14px;opacity:.8;text-decoration:underline}@media(max-width:700px){.rk-filters{grid-template-columns:1fr 1fr!important}}</style>';
+	echo '<style>.rk-filters{grid-template-columns:repeat(3,minmax(0,1fr))!important}.rk-filters .rk-filters__txt{width:100%;font-family:var(--rk-body);font-size:15px;background:var(--rk-ink);color:var(--rk-paper);border:1px solid var(--rk-line);padding:12px 14px;border-radius:0;box-sizing:border-box;height:100%}.rk-filters .rk-filters__txt:focus{outline:none;border-color:var(--rk-red)}.rk-filters .rk-filters__txt.is-set{border-color:var(--rk-red)}.rk-filters__reset,.rk-filters__want{grid-column:1/-1;justify-self:start}.rk-filters__reset{order:98}.rk-filters__want{order:99}.rk-filters__want{color:#fff!important;font-size:14px;opacity:.8;text-decoration:underline}@media(max-width:700px){.rk-filters{grid-template-columns:1fr 1fr!important}}</style>';
 }, 98 );
 
 function rk_title_like_where( $where, $q ) {
@@ -78,6 +78,7 @@ function rk_rel_ids( $args, $exclude, $n ) {
 		'post_status'         => 'publish',
 		'fields'              => 'ids',
 		'posts_per_page'      => $n,
+		'suppress_filters'    => false,
 		'post__not_in'        => $exclude,
 		'no_found_rows'       => true,
 		'ignore_sticky_posts' => true,
