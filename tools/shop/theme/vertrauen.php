@@ -85,3 +85,54 @@ add_filter( 'render_block', function ( $content, $block ) {
 		. 'function sub(){if(!window.wp||!wp.data||!wp.data.select("wc/store/cart")){return setTimeout(sub,500)}var last=-1;wp.data.subscribe(function(){try{var c=wp.data.select("wc/store/cart").getCartData();var q=0;(c.items||[]).forEach(function(i){q+=i.quantity});if(q!==last){last=q;render(q)}}catch(e){}})}sub();})();</script>';
 	return $bar . $content;
 }, 10, 2 );
+
+/* ------------------------------------------------------------------
+ * Mengenrabatt Hinweis im ganzen Shop: kleine Pille unten links,
+ * sobald Karten im Warenkorb liegen. Nicht im Warenkorb und Checkout,
+ * dort gibt es den grossen Balken. Schliessbar bis sich die Menge aendert.
+ * ------------------------------------------------------------------ */
+add_action( 'wp_footer', function () {
+	if ( is_admin() || ( function_exists( 'is_cart' ) && ( is_cart() || is_checkout() ) ) ) {
+		return;
+	}
+	$cart = function_exists( 'wc_get_cart_url' ) ? wc_get_cart_url() : '/warenkorb/';
+	?>
+<style>
+#rk-nd{position:fixed;left:16px;bottom:16px;z-index:9990;max-width:min(360px,calc(100vw - 32px));background:#0b0b0b;color:#fff;border:1px solid rgba(255,255,255,.25);border-left:3px solid var(--rk-red,#ff3b30);padding:10px 34px 10px 14px;font-family:"Barlow Condensed",sans-serif;font-size:16px;letter-spacing:.03em;text-transform:uppercase;line-height:1.25;box-shadow:0 6px 22px rgba(0,0,0,.35);transform:translateY(140%);opacity:0;transition:transform .35s,opacity .35s;pointer-events:none}
+#rk-nd.on{transform:none;opacity:1;pointer-events:auto}
+#rk-nd b{color:var(--rk-red,#ff3b30)}
+#rk-nd a{color:#fff!important;text-decoration:underline;display:inline-block;margin-top:2px;font-size:14px;opacity:.85}
+#rk-nd .rk-nd__bar{height:3px;background:rgba(255,255,255,.18);margin-top:7px}
+#rk-nd .rk-nd__bar i{display:block;height:100%;background:var(--rk-red,#ff3b30);transition:width .4s}
+#rk-nd button{position:absolute;top:2px;right:4px;background:none;border:0;color:#fff;opacity:.6;font-size:20px;line-height:1;cursor:pointer;padding:4px 6px}
+@media(max-width:700px){#rk-nd{left:10px;right:10px;bottom:10px;max-width:none;font-size:15px}}
+</style>
+<div id="rk-nd" role="status" aria-live="polite"><button type="button" aria-label="Schließen">×</button><span id="rk-nd-t"></span><div class="rk-nd__bar"><i id="rk-nd-f"></i></div><a href="<?php echo esc_url( $cart ); ?>">Zum Warenkorb</a></div>
+<script>
+(function(){
+var T=[[3,5],[5,10],[10,15]],el=document.getElementById('rk-nd'),tx=document.getElementById('rk-nd-t'),fl=document.getElementById('rk-nd-f'),last=-1,closed=-1,busy=false;
+function show(n){
+ if(n<1){el.classList.remove('on');last=n;return}
+ var nx=null,cur=0;for(var i=0;i<T.length;i++){if(n>=T[i][0])cur=T[i][1];else if(!nx)nx=T[i]}
+ if(!nx){tx.innerHTML='<b>'+cur+' % Mengenrabatt</b> aktiv. Mehr geht nicht.'}
+ else{var d=nx[0]-n;tx.innerHTML=(cur?'<b>'+cur+' %</b> aktiv. ':'')+'Noch <b>'+d+(d===1?' Karte':' Karten')+'</b> bis <b>'+nx[1]+' % Rabatt</b>'}
+ fl.style.width=Math.min(100,n/10*100)+'%';
+ if(n!==last){closed=-1}
+ last=n;
+ if(closed!==n)el.classList.add('on');
+}
+function load(){
+ if(busy)return;busy=true;
+ fetch('/wp-json/wc/store/v1/cart',{credentials:'same-origin'}).then(function(r){return r.json()}).then(function(c){
+  var q=0;(c.items||[]).forEach(function(i){q+=i.quantity});show(q);
+ }).catch(function(){}).then(function(){busy=false});
+}
+el.querySelector('button').addEventListener('click',function(){closed=last;el.classList.remove('on')});
+load();
+['added_to_cart','removed_from_cart','wc-blocks_added_to_cart'].forEach(function(e){document.addEventListener(e,function(){setTimeout(load,400)});if(window.jQuery)jQuery(document.body).on(e,function(){setTimeout(load,400)})});
+document.addEventListener('click',function(ev){if(ev.target.closest&&ev.target.closest('.add_to_cart_button,.single_add_to_cart_button,.wp-block-button__link,button[name=add-to-cart]')){setTimeout(load,1200);setTimeout(load,2800)}});
+window.addEventListener('pageshow',function(e){if(e.persisted)load()});
+})();
+</script>
+	<?php
+}, 50 );

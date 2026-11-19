@@ -108,7 +108,7 @@ function rk_wuehlkiste_section() {
 		. '</div><a class="rk-link-arrow" href="' . esc_url( $link ) . '">Ab in die Kiste <span aria-hidden="true">↗</span></a></div>'
 		. '<div class="rk-wk__stats">'
 		. '<div class="rk-wk__stat"><b>0,80<i>€</i></b><span>pro Karte, egal ob Star oder Rollenspieler</span></div>'
-		. '<div class="rk-wk__stat"><b>10 = 8<i>€</i></b><span>zehn Karten, acht Euro, plus Mengenrabatt</span></div>'
+		. '<div class="rk-wk__stat"><b>10 = 6,80<i>€</i></b><span>zehn Karten mit 15 % Mengenrabatt</span></div>'
 		. '<div class="rk-wk__stat"><b>' . $total . '</b><span>Karten zum Durchwühlen, täglich neu gemischt</span></div>'
 		. '</div>'
 		. '<div class="rk-car" style="--rk-car-dur:' . (int) $secs . 's"><ul class="rk-car__track">' . $track . '</ul></div>'
