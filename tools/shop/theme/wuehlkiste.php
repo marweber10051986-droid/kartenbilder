@@ -17,7 +17,7 @@ function rk_wk_data() {
 		'return'       => 'ids',
 	) );
 	$counts = array();
-	foreach ( array( 'nfl' => 'NFL', 'nba' => 'NBA', 'mlb' => 'MLB', 'fussball' => 'Fußball' ) as $slug => $label ) {
+	foreach ( array( 'mlb' => 'MLB', 'nba' => 'NBA', 'nfl' => 'NFL', 'tcg' => 'TCG', 'fussball' => 'Fußball' ) as $slug => $label ) {
 		$c = count( wc_get_products( array(
 			'tag'          => array( 'wuehlkiste' ),
 			'category'     => array( $slug ),
@@ -26,9 +26,7 @@ function rk_wk_data() {
 			'limit'        => -1,
 			'return'       => 'ids',
 		) ) );
-		if ( $c ) {
-			$counts[ $slug ] = array( $label, $c );
-		}
+		$counts[ $slug ] = array( $label, $c );
 	}
 	mt_srand( (int) wp_date( 'Ymd' ) );
 	shuffle( $ids );
@@ -75,7 +73,7 @@ function rk_wuehlkiste_section() {
 	$secs  = max( 30, $n * $reps * 3 );
 	$chips = '';
 	foreach ( $d['counts'] as $slug => $c ) {
-		$chips .= '<a class="rk-wk__chip" href="' . esc_url( add_query_arg( 'product_cat', $slug, $link ) ) . '">' . esc_html( $c[0] ) . ' <b>' . (int) $c[1] . '</b></a>';
+		$chips .= $c[1] ? '<a class="rk-wk__chip" href="' . esc_url( add_query_arg( 'product_cat', $slug, $link ) ) . '">' . esc_html( $c[0] ) . ' <b>' . (int) $c[1] . '</b></a>' : '<span class="rk-wk__chip rk-wk__chip--leer">' . esc_html( $c[0] ) . ' <b>0</b></span>';
 	}
 	$total = (int) $d['total'];
 
@@ -97,7 +95,7 @@ function rk_wuehlkiste_section() {
 .rk-wk__chips>span{font-size:13px;opacity:.7;text-transform:uppercase;letter-spacing:.06em;margin-right:4px}
 .rk-wk__chip{border:1px solid rgba(255,255,255,.25);color:#fff!important;text-decoration:none;padding:8px 14px;font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:17px;letter-spacing:.04em;text-transform:uppercase;transition:border-color .2s,background .2s}
 .rk-wk__chip b{color:var(--rk-red,#ff3b30);margin-left:4px}
-.rk-wk__chip:hover{border-color:var(--rk-red,#ff3b30);background:rgba(255,59,48,.12)}
+.rk-wk__chip--leer{opacity:.35;cursor:default}.rk-wk__chip:hover{border-color:var(--rk-red,#ff3b30);background:rgba(255,59,48,.12)}
 @media(max-width:700px){.rk-wk__stats{grid-template-columns:1fr}.rk-wk__stat{padding:14px 16px}.rk-wk__foot{flex-direction:column;align-items:flex-start}}
 </style>';
 
@@ -114,7 +112,7 @@ function rk_wuehlkiste_section() {
 		. '<div class="rk-wk__stat"><b>' . $total . '</b><span>Karten zum Durchwühlen, täglich neu gemischt</span></div>'
 		. '</div>'
 		. '<div class="rk-car" style="--rk-car-dur:' . (int) $secs . 's"><ul class="rk-car__track">' . $track . '</ul></div>'
-		. '<div class="rk-wk__foot"><div class="rk-wk__chips"><span>Wühlen nach Liga:</span>' . $chips . '</div>'
+		. '<div class="rk-wk__foot"><div class="rk-wk__chips"><span>Wühlen nach Sportart:</span>' . $chips . '</div>'
 		. '<a class="rk-btn" href="' . esc_url( $link ) . '">Jetzt wühlen <span aria-hidden="true">↗</span></a></div>'
 		. '</section>';
 }
