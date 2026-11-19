@@ -48,20 +48,21 @@ function rk_ebay_bar() {
 	$s = rk_ebay_stats();
 	return rk_ebay_css() . '<section class="rk-eb" aria-label="Bewertungen auf eBay"><div class="rk-eb__in">'
 		. '<a href="' . esc_url( $s['profil'] ) . '" target="_blank" rel="noopener"><span class="rk-eb__stars" aria-hidden="true">★★★★★</span><span class="rk-eb__big">' . (int) $s['quote'] . ' %</span><span class="rk-eb__txt">positive Bewertungen auf eBay</span></a>'
-		. '<span class="rk-eb__it"><b>' . (int) $s['neg'] . '</b> negative Bewertungen</span>'
-		. '<span class="rk-eb__it">Verkäufer auf eBay seit <b>' . (int) $s['seit'] . '</b></span>'
-		. '<span class="rk-eb__it">Versand nur <b>1,10 €</b> pro Bestellung</span>'
+		. '<span class="rk-eb__it">Seit <b>über 6 Jahren</b> im Sammelkarten Business tätig</span>'
 		. '</div></section>';
 }
 
-add_filter( 'render_block', function ( $content ) {
+add_filter( 'render_block', function ( $content, $block ) {
 	static $done = false;
-	if ( ! $done && is_front_page() && false !== strpos( $content, 'rk-bigsearch' ) ) {
-		$done = true;
-		return rk_ebay_bar() . $content;
+	if ( $done || empty( $block['blockName'] ) || 'core/template-part' !== $block['blockName'] || false === strpos( $content, 'rk-site-header' ) ) {
+		return $content;
 	}
-	return $content;
-}, 8 );
+	if ( function_exists( 'is_cart' ) && ( is_cart() || is_checkout() ) ) {
+		return $content;
+	}
+	$done = true;
+	return $content . rk_ebay_bar();
+}, 8, 2 );
 
 add_action( 'woocommerce_single_product_summary', function () {
 	$s = rk_ebay_stats();
@@ -144,3 +145,61 @@ add_action( 'wp_head', function () {
 	}
 	echo '<style>.rk-bigsearch{background:var(--rk-red,#ff3b30)!important;padding:26px var(--rk-pad) 28px!important;width:100%}.rk-bigsearch .rk-kicker{color:#fff!important;margin-bottom:10px}.rk-bigsearch .rk-kicker .rk-dot{background:#fff!important}.rk-bigsearch form>div{background:#d9d9d9!important;border:0!important}.rk-bigsearch form>div:focus-within{box-shadow:0 0 0 3px #0b0b0b}.rk-bigsearch input,.rk-bigsearch input:focus,.rk-bigsearch input:-webkit-autofill{background:#d9d9d9!important;color:#111!important;-webkit-text-fill-color:#111}.rk-bigsearch input::placeholder{color:#555!important}.rk-bigsearch button{background:#0b0b0b!important;color:#fff!important}.rk-bigsearch button:hover{background:#fff!important;color:#0b0b0b!important}</style>';
 }, 99 );
+
+/* ------------------------------------------------------------------
+ * Echte eBay Bewertungen vor "Verpenn keinen Drop".
+ * Texte stehen 1:1 so im eBay Bewertungsprofil. eBay zeigt nur
+ * "Letzter Monat", darum steht das Kaufdatum aus dem Verkäufer Cockpit dabei.
+ * ------------------------------------------------------------------ */
+function rk_ebay_reviews_data() {
+	return array(
+		array( 'u' => 'anub1zz', 'd' => '08.11.2026', 'i' => 'Leonard Williams #183 Neon Green Pulsar', 't' => 'Alles perfekt! Karte im Top-Zustand, schnell versendet und super verpackt. Sehr zuverlässiger Verkäufer – jederzeit wieder.' ),
+		array( 'u' => 'bball_lsa', 'd' => '15.11.2026', 'i' => 'Vince Carter #83 Raptors', 't' => 'Schneller Versand mit guter und sicherer Verpackung. Die Karte ist im top Zustand, wie beschrieben.' ),
+		array( 'u' => 'redhothooligan', 'd' => '09.11.2026', 'i' => 'D\'Andre Swift #148 Pink Sparkle Chrome', 't' => 'Top Qualität, schneller Versand. Jederzeit gerne wieder...Vielen Dank !!!' ),
+		array( 'u' => 'pay_pat', 'd' => '04.11.2026', 'i' => 'Mewtu 150/165 Holo Rare', 't' => 'Schöne Karte, super Kommunikation und schneller Versand: Alles TOP!' ),
+		array( 'u' => 'tyhoon3010', 'd' => '20.10.2026', 'i' => 'Koraidon 047/084 Holo Rare', 't' => 'Top Zustand der Karte und schnelle Lieferung. Sehr gerne wieder.' ),
+	);
+}
+
+function rk_ebay_reviews_html() {
+	$s   = rk_ebay_stats();
+	$out = '<style>
+.rk-rv{background:#0b0b0b;border-top:1px solid rgba(255,255,255,.12);padding:70px 0 64px;color:#fff}
+.rk-rv__in{width:min(1100px,calc(100% - 40px));margin:0 auto}
+.rk-rv__k{font-family:var(--rk-mono,monospace);font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--rk-red,#ff3b30);margin:0 0 12px}
+.rk-rv__h{font-family:"Barlow Condensed",sans-serif;font-weight:800;font-size:clamp(36px,6vw,64px);line-height:.95;text-transform:uppercase;margin:0 0 10px}
+.rk-rv__h span{color:var(--rk-red,#ff3b30)}
+.rk-rv__s{opacity:.7;font-size:15px;margin:0 0 30px}
+.rk-rv__g{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}
+.rk-rv__c{border:1px solid rgba(255,255,255,.18);background:#111;padding:18px 18px 16px;display:flex;flex-direction:column;gap:12px}
+.rk-rv__st{color:#ffb800;letter-spacing:2px;font-size:16px}
+.rk-rv__t{font-size:15px;line-height:1.45;margin:0;flex:1}
+.rk-rv__m{font-family:var(--rk-mono,monospace);font-size:12px;letter-spacing:.04em;opacity:.65;line-height:1.5;border-top:1px solid rgba(255,255,255,.12);padding-top:10px}
+.rk-rv__m b{color:#fff;font-weight:600}
+.rk-rv__a{display:inline-block;margin-top:26px;color:#fff!important;font-family:var(--rk-mono,monospace);font-size:13px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;border-bottom:1px solid var(--rk-red,#ff3b30);padding-bottom:3px}
+</style>';
+	$out .= '<section class="rk-rv" aria-label="Bewertungen von Käufern auf eBay"><div class="rk-rv__in">'
+		. '<p class="rk-rv__k">Echte Käufer, echte Bewertungen</p>'
+		. '<h2 class="rk-rv__h">Das sagen <span>Sammler.</span></h2>'
+		. '<p class="rk-rv__s">Direkt aus unserem eBay Profil, nichts verändert. Datum ist der Kauftag.</p><div class="rk-rv__g">';
+	foreach ( rk_ebay_reviews_data() as $r ) {
+		$out .= '<figure class="rk-rv__c" style="margin:0"><div class="rk-rv__st" aria-label="5 von 5 Sternen">★★★★★</div>'
+			. '<blockquote class="rk-rv__t" style="margin:0;padding:0;border:0">„' . esc_html( $r['t'] ) . '“</blockquote>'
+			. '<figcaption class="rk-rv__m"><b>' . esc_html( $r['u'] ) . '</b> auf eBay<br>Kauf am ' . esc_html( $r['d'] ) . '<br>' . esc_html( $r['i'] ) . '</figcaption></figure>';
+	}
+	$out .= '</div><a class="rk-rv__a" href="' . esc_url( $s['profil'] ) . '" target="_blank" rel="noopener">Alle Bewertungen auf eBay ↗</a></div></section>';
+	return $out;
+}
+
+add_filter( 'render_block', function ( $content ) {
+	static $done = false;
+	if ( $done || ! is_front_page() ) {
+		return $content;
+	}
+	$needle = '<section class="rk-cta">';
+	if ( false !== strpos( $content, $needle ) ) {
+		$done = true;
+		return str_replace( $needle, rk_ebay_reviews_html() . $needle, $content );
+	}
+	return $content;
+}, 9 );
