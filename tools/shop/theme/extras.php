@@ -23,16 +23,7 @@ function rk_parallel_options() {
 }
 
 function rk_filter_extra_fields() {
-	$sp   = isset( $_GET['rk_spieler'] ) ? sanitize_text_field( wp_unslash( $_GET['rk_spieler'] ) ) : ''; // phpcs:ignore
-	$pa   = isset( $_GET['rk_parallel'] ) ? sanitize_text_field( wp_unslash( $_GET['rk_parallel'] ) ) : ''; // phpcs:ignore
-	$h    = '<label class="rk-filters__field"><span class="rk-filters__label screen-reader-text">Spieler</span><input type="search" name="rk_spieler" value="' . esc_attr( $sp ) . '" placeholder="Spieler, z. B. Cam Ward" aria-label="Spieler" class="rk-filters__txt' . ( '' !== $sp ? ' is-set' : '' ) . '" onchange="this.form.submit()"></label>';
-	$h   .= '<label class="rk-filters__field"><span class="rk-filters__label screen-reader-text">Parallel</span><select name="rk_parallel" aria-label="Parallel"' . ( '' !== $pa ? ' class="is-set"' : '' ) . '><option value="">Parallel: Alle</option>';
-	foreach ( rk_parallel_options() as $k => $l ) {
-		$h .= '<option value="' . esc_attr( $k ) . '"' . selected( $pa, $k, false ) . '>' . esc_html( $l ) . '</option>';
-	}
-	$h .= '</select></label>';
-	$h .= '<a class="rk-filters__want" href="' . esc_url( home_url( '/suchauftrag/' ) ) . '">Karte nicht gefunden? Suchauftrag aufgeben →</a>';
-	return $h;
+	return '<a class="rk-filters__want" href="' . esc_url( home_url( '/suchauftrag/' ) ) . '">Karte nicht gefunden? Suchauftrag aufgeben →</a>';
 }
 
 add_action( 'wp_head', function () {
@@ -96,7 +87,7 @@ function rk_rel_list( $ids ) {
 		if ( ! $p ) {
 			continue;
 		}
-		$o .= '<li><a href="' . esc_url( get_permalink( $id ) ) . '"><span class="rk-rel__img">' . $p->get_image( 'woocommerce_thumbnail' ) . '</span><span class="rk-rel__n">' . esc_html( $p->get_name() ) . '</span><span class="rk-rel__p">' . wp_kses_post( $p->get_price_html() ) . '</span></a></li>';
+		$o .= '<li><a href="' . esc_url( get_permalink( $id ) ) . '"><span class="rk-rel__img">' . $p->get_image( 'medium' ) . '</span><span class="rk-rel__n">' . esc_html( $p->get_name() ) . '</span><span class="rk-rel__p">' . wp_kses_post( $p->get_price_html() ) . '</span></a></li>';
 	}
 	return $o . '</ul>';
 }
@@ -204,3 +195,45 @@ add_filter( 'render_block', function ( $content, $block ) {
 	$note = '<div class="rk-dl" style="margin:0 0 22px;padding:14px 18px;border:1px solid rgba(255,255,255,.2);background:#0b0b0b;color:#fff;font-size:15px;line-height:1.5"><b style="color:var(--rk-red,#ff3b30);font-family:var(--rk-mono,monospace);font-size:12px;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:4px">Lieferung</b>Wir verschicken innerhalb von 1 Werktag. Die Sendungsnummer bekommst du per E Mail. Zustellung in Deutschland meist in 1 bis 3 Werktagen, Versand 1,10 € pro Bestellung.</div>';
 	return $note . $content;
 }, 9, 2 );
+
+/* ------------------------------------------------------------------
+ * Aufraeumen: keine doppelten "Aehnliche Produkte", Kartenbilder ganz zeigen
+ * ------------------------------------------------------------------ */
+add_filter( 'render_block', function ( $content, $block ) {
+	if ( ! function_exists( 'is_product' ) || ! is_product() || empty( $block['blockName'] ) ) {
+		return $content;
+	}
+	if ( 'core/heading' === $block['blockName'] && false !== strpos( $content, 'Ähnliche Produkte' ) ) {
+		return '';
+	}
+	if ( 'woocommerce/product-collection' === $block['blockName'] && ! empty( $block['attrs']['collection'] ) && false !== strpos( (string) $block['attrs']['collection'], 'related' ) ) {
+		return '';
+	}
+	return $content;
+}, 10, 2 );
+
+/* Warenkorb, Checkout und Mini Warenkorb: Bild in Originalformat statt 1:1 Ausschnitt */
+add_filter( 'woocommerce_store_api_cart_item_images', function ( $images ) {
+	foreach ( (array) $images as $k => $im ) {
+		$is_arr = is_array( $im );
+		$id     = (int) ( $is_arr ? ( $im['id'] ?? 0 ) : ( $im->id ?? 0 ) );
+		$m      = $id ? wp_get_attachment_image_src( $id, 'medium' ) : false;
+		if ( ! $m ) {
+			continue;
+		}
+		if ( $is_arr ) {
+			$images[ $k ]['thumbnail'] = $m[0];
+			$images[ $k ]['src']       = $m[0];
+			$images[ $k ]['srcset']    = '';
+		} else {
+			$images[ $k ]->thumbnail = $m[0];
+			$images[ $k ]->src       = $m[0];
+			$images[ $k ]->srcset    = '';
+		}
+	}
+	return $images;
+}, 10, 1 );
+
+add_action( 'wp_head', function () {
+	echo '<style>table.wc-block-cart-items .wc-block-cart-item__image img,.wc-block-components-order-summary-item__image img,.wc-block-mini-cart__products-table .wc-block-cart-item__image img{width:72px!important;height:auto!important;max-height:none!important;object-fit:contain!important;aspect-ratio:auto!important}.wc-block-cart-item__image,.wc-block-components-order-summary-item__image{width:auto!important;height:auto!important}.rk-rel__img img{height:auto!important;object-fit:contain!important;aspect-ratio:auto!important}</style>';
+}, 99 );
