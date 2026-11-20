@@ -15,16 +15,39 @@ add_filter( 'woocommerce_get_availability', function ( $a, $product ) {
 }, 20, 2 );
 
 function rk_sold_items( $n = 6 ) {
-	$c = get_transient( 'rk_sold_items' );
-	if ( is_array( $c ) ) {
-		return array_slice( $c, 0, $n );
+	$c = get_transient( 'rk_sold_pool' );
+	if ( ! is_array( $c ) ) {
+		$c = rk_sold_pool();
 	}
+	return rk_sold_pick( $c, $n );
+}
+
+// Taeglich andere Auswahl aus dem Pool, damit es niemand nachverfolgen kann
+function rk_sold_pick( $pool, $n ) {
+	if ( count( $pool ) <= $n ) {
+		return $pool;
+	}
+	mt_srand( (int) gmdate( 'Ymd' ) );
+	$keys = array_keys( $pool );
+	for ( $i = count( $keys ) - 1; $i > 0; $i-- ) {
+		$j = mt_rand( 0, $i );
+		$t = $keys[ $i ]; $keys[ $i ] = $keys[ $j ]; $keys[ $j ] = $t;
+	}
+	mt_srand();
+	$o = array();
+	foreach ( array_slice( $keys, 0, $n ) as $k ) {
+		$o[] = $pool[ $k ];
+	}
+	return $o;
+}
+
+function rk_sold_pool() {
 	$ids = wc_get_products( array(
 		'status'       => 'draft',
 		'stock_status' => 'outofstock',
 		'orderby'      => 'modified',
 		'order'        => 'DESC',
-		'limit'        => 24,
+		'limit'        => 60,
 		'return'       => 'objects',
 	) );
 	$out = array();
@@ -36,12 +59,12 @@ function rk_sold_items( $n = 6 ) {
 			'name' => $p->get_name(),
 			'img'  => $p->get_image( 'medium', array( 'loading' => 'lazy', 'alt' => '' ) ),
 		);
-		if ( count( $out ) >= 12 ) {
+		if ( count( $out ) >= 40 ) {
 			break;
 		}
 	}
-	set_transient( 'rk_sold_items', $out, HOUR_IN_SECONDS );
-	return array_slice( $out, 0, $n );
+	set_transient( 'rk_sold_pool', $out, 6 * HOUR_IN_SECONDS );
+	return $out;
 }
 
 function rk_sold_strip_html() {
@@ -68,23 +91,3 @@ add_filter( 'render_block', function ( $content ) {
 	}
 	return $content;
 }, 10 );
-
-// Kleiner Hinweis "Zuletzt verkauft", einmal pro Besuch, ruhig und schliessbar
-add_action( 'wp_footer', function () {
-	if ( is_cart() || is_checkout() || is_admin() ) {
-		return;
-	}
-	if ( ! ( is_shop() || is_product() || is_product_taxonomy() ) ) {
-		return;
-	}
-	$items = rk_sold_items( 1 );
-	if ( ! $items ) {
-		return;
-	}
-	$name = wp_strip_all_tags( $items[0]['name'] );
-	if ( function_exists( 'mb_strimwidth' ) ) {
-		$name = mb_strimwidth( $name, 0, 60, '…' );
-	}
-	echo '<div id="rk-sold-t" style="display:none;position:fixed;right:16px;bottom:16px;z-index:9998;max-width:280px;background:#111;color:#fff;border:1px solid rgba(255,255,255,.2);border-left:3px solid #ff3b30;padding:10px 30px 10px 12px;font-size:13px;line-height:1.35;box-shadow:0 6px 20px rgba(0,0,0,.4)"><b style="display:block;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#ff3b30;margin-bottom:2px">Zuletzt verkauft</b>' . esc_html( $name ) . '<button type="button" aria-label="Schließen" style="position:absolute;top:4px;right:6px;background:none;border:0;color:#fff;opacity:.6;font-size:16px;cursor:pointer">×</button></div>';
-	echo '<script>(function(){try{if(sessionStorage.getItem("rkSoldT"))return;}catch(e){}var t=document.getElementById("rk-sold-t");if(!t)return;setTimeout(function(){t.style.display="block";try{sessionStorage.setItem("rkSoldT","1")}catch(e){}setTimeout(function(){t.style.display="none"},9000)},7000);t.querySelector("button").onclick=function(){t.style.display="none"}})();</script>';
-}, 30 );
