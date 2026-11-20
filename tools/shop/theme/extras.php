@@ -239,7 +239,7 @@ add_filter( 'woocommerce_store_api_cart_item_images', function ( $images ) {
 }, 10, 1 );
 
 add_action( 'wp_head', function () {
-	echo '<style>table.wc-block-cart-items .wc-block-cart-item__image img,.wc-block-components-order-summary-item__image img,.wc-block-mini-cart__products-table .wc-block-cart-item__image img{width:72px!important;height:auto!important;max-height:none!important;object-fit:contain!important;aspect-ratio:auto!important}.wc-block-cart-item__image,.wc-block-components-order-summary-item__image{width:auto!important;height:auto!important}</style>';
+	echo '<style>table.wc-block-cart-items .wc-block-cart-item__image img,.wc-block-components-order-summary-item__image img,.wc-block-mini-cart__products-table .wc-block-cart-item__image img{width:72px!important;height:auto!important;max-height:none!important;object-fit:contain!important;aspect-ratio:auto!important}.wc-block-cart-item__image,.wc-block-components-order-summary-item__image{width:auto!important;height:auto!important}.wc-block-cart-items .wc-block-cart-item__image{padding-right:18px!important}table.wc-block-mini-cart-items td.wc-block-cart-item__image{padding-right:0!important}table.wc-block-mini-cart-items td.wc-block-cart-item__image img{width:46px!important}.wc-block-components-order-summary-item__image{margin-right:14px!important}</style>';
 }, 99 );
 
 // Hero: Ladenfoto ganz leicht als Hintergrund (5 %)
