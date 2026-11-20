@@ -225,10 +225,14 @@ add_filter( 'woocommerce_store_api_cart_item_images', function ( $images ) {
 			$images[ $k ]['thumbnail'] = $m[0];
 			$images[ $k ]['src']       = $m[0];
 			$images[ $k ]['srcset']    = '';
+			$images[ $k ]['thumbnail_srcset'] = '';
+			$images[ $k ]['thumbnail_sizes']  = '';
 		} else {
 			$images[ $k ]->thumbnail = $m[0];
 			$images[ $k ]->src       = $m[0];
 			$images[ $k ]->srcset    = '';
+			$images[ $k ]->thumbnail_srcset = '';
+			$images[ $k ]->thumbnail_sizes  = '';
 		}
 	}
 	return $images;
