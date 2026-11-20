@@ -194,7 +194,7 @@ add_filter( 'render_block', function ( $content, $block ) {
 	}
 	$note = '<div class="rk-dl" style="margin:0 0 22px;padding:14px 18px;border:1px solid rgba(255,255,255,.2);background:#0b0b0b;color:#fff;font-size:15px;line-height:1.5"><b style="color:var(--rk-red,#ff3b30);font-family:var(--rk-mono,monospace);font-size:12px;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:4px">Lieferung</b>Wir verschicken innerhalb von 1 Werktag. Die Sendungsnummer bekommst du per E Mail. Zustellung in Deutschland meist in 1 bis 3 Werktagen, Versand 1,10 € pro Bestellung.</div>';
 	return $note . $content;
-}, 9, 2 );
+}, 20, 2 ); /* nach WooCommerce, sonst klaut der Hinweis das data-block-name der Kasse */
 
 /* ------------------------------------------------------------------
  * Aufraeumen: keine doppelten "Aehnliche Produkte", Kartenbilder ganz zeigen
