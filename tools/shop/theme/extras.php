@@ -237,3 +237,11 @@ add_filter( 'woocommerce_store_api_cart_item_images', function ( $images ) {
 add_action( 'wp_head', function () {
 	echo '<style>table.wc-block-cart-items .wc-block-cart-item__image img,.wc-block-components-order-summary-item__image img,.wc-block-mini-cart__products-table .wc-block-cart-item__image img{width:72px!important;height:auto!important;max-height:none!important;object-fit:contain!important;aspect-ratio:auto!important}.wc-block-cart-item__image,.wc-block-components-order-summary-item__image{width:auto!important;height:auto!important}</style>';
 }, 99 );
+
+// Hero: Ladenfoto ganz leicht als Hintergrund (5 %)
+add_action( 'wp_head', function () {
+	if ( ! is_front_page() ) {
+		return;
+	}
+	echo '<style>.rk-hero{isolation:isolate}.rk-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:url(' . esc_url( content_url( '/uploads/2026/11/rookie-laden-hero.jpg' ) ) . ') center/cover no-repeat;opacity:.05;pointer-events:none}</style>'; // phpcs:ignore
+}, 30 );
