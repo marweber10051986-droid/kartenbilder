@@ -10,7 +10,7 @@ function rk_rg_is_any() {
 	return is_page() && ( RK_RG_HUB === get_queried_object_id() || RK_RG_HUB === (int) wp_get_post_parent_id( get_queried_object_id() ) );
 }
 function rk_rg_minutes( $id ) {
-	$t = wp_strip_all_tags( preg_replace( '/<(style|script)[^>]*>.*?<\/\1>/s', '', get_post_field( 'post_content', $id ) ) );
+	$t = wp_strip_all_tags( preg_replace( '/<(style|script|table)[^>]*>.*?<\/\1>/s', '', get_post_field( 'post_content', $id ) ) );
 	return max( 2, (int) ceil( str_word_count( $t, 0, 'äöüÄÖÜß' ) / 210 ) );
 }
 function rk_rg_tag( $slug ) {
@@ -197,6 +197,7 @@ add_action( 'wp_head', function () {
 .rk-rg-vs__seite{background:#121214;border:1px solid rgba(255,255,255,.08);padding:16px}
 .rk-rg-vs__seite h3{margin:0 0 8px!important}
 .rk-rg-vs__seite ul{margin:0;padding-left:18px;font-size:14px}
+.rk-rg-vs .rk-rg-karten{margin:0!important;height:100%}.rk-rg-vs .rk-rg-karten__grid{grid-template-columns:1fr 1fr}
 .rk-rg-vs__mitte{display:grid;place-items:center;font:700 30px "Barlow Condensed",Impact,sans-serif;color:#ff3b30}
 .rk-rg-karten{margin:30px 0 38px!important;padding:18px;background:#101012;border:1px solid rgba(255,255,255,.08)}
 .rk-rg-karten__kopf{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:14px}
