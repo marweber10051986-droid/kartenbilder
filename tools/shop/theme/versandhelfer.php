@@ -1,7 +1,7 @@
 
 /* ===== Versandhelfer: zeigt bei jeder Bestellung, womit sie verschickt wird =====
    12 g pro Karte inkl. Penny Sleeve und Toploader, plus Verpackung.
-   Versandarten: 1 = DE Brief, 3 = DE versichert, 4 = EU Maxibrief mit Tracking, 2 = EU versichert */
+   Versandarten: 1 = DE Brief 1,10, 3 = DE versichert 7,69 bis 5 kg, 2 = EU mit Sendungsnummer 14,49 bis 2 kg */
 function rk_vh_info( $order ) {
 	if ( ! $order instanceof WC_Order ) {
 		return null;
@@ -40,21 +40,13 @@ function rk_vh_info( $order ) {
 		$pack = 'Luftpolsterumschlag, ohne Sendungsverfolgung';
 	} elseif ( 3 === $inst ) {
 		$gb    = $g + 150;
-		$prod  = $gb <= 2000 ? 'DHL Paket 2 kg' : ( $gb <= 5000 ? 'DHL Paket 5 kg' : 'DHL Paket 10 kg' );
+		$prod  = $gb <= 5000 ? 'DHL Paket 5 kg' : 'DHL Paket 10 kg (über 5 kg, Kunde hat 7,69 € bezahlt)';
 		$pack  = 'Karton, versichert mit Sendungsverfolgung';
 		$porto = $dhl;
-	} elseif ( 4 === $inst ) {
-		$gb   = $g + 10;
-		$prod = $gb <= 1000 ? 'Maxibrief International + Tracking' : 'Maxibrief International bis 2 kg + Tracking';
-		$pack = 'Luftpolsterumschlag, Sendungsnummer an den Kunden';
-		if ( $gb > 2000 ) {
-			$prod  = 'Zu schwer für einen Brief: DHL Päckchen International nehmen';
-			$porto = $dhl;
-		}
 	} elseif ( 2 === $inst ) {
 		$gb    = $g + 150;
-		$prod  = $gb <= 2000 ? 'DHL Päckchen International' : 'DHL Paket International';
-		$pack  = 'Karton, versichert mit Sendungsverfolgung';
+		$prod  = $gb <= 2000 ? 'DHL Päckchen International' : 'DHL Paket International (über 2 kg, Kunde hat 14,49 € bezahlt)';
+		$pack  = 'Karton, mit Sendungsnummer';
 		$porto = $dhl;
 	} else {
 		return array( 'prod' => 'Versandart unbekannt: ' . ( $name ? $name : 'keine' ), 'pack' => '', 'hint' => '', 'gramm' => $g, 'karten' => $karten, 'land' => $land, 'link' => $porto, 'kunde' => $name );
