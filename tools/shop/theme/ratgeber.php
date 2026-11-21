@@ -204,7 +204,7 @@ add_action( 'wp_head', function () {
 .rk-rg-karten__kopf span{font:600 20px "Barlow Condensed",Impact,sans-serif;text-transform:uppercase;letter-spacing:.04em}
 .rk-rg-karten__kopf a{font-size:13px;color:#ff3b30;text-decoration:none;white-space:nowrap}
 .rk-rg-karten__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.rk-rg-karte{display:flex;flex-direction:column;color:#fff;text-decoration:none}
+.rk-rg-karte{display:flex;flex-direction:column;color:#fff;text-decoration:none;min-width:0}.rk-rg-vs>div{min-width:0}.rk-rg-karte__img img{max-width:100%}
 .rk-rg-karte__img{display:grid;place-items:center;aspect-ratio:3/4;background:radial-gradient(circle at 50% 30%,#232327,#141416);padding:10px;overflow:hidden}
 .rk-rg-karte__img img{max-height:100%;width:auto;object-fit:contain;transition:transform .25s ease}
 .rk-rg-karte:hover .rk-rg-karte__img img{transform:scale(1.05) rotate(-1deg)}
