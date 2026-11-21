@@ -53,7 +53,7 @@ add_shortcode( 'rk_karten', function ( $a ) {
 		return '';
 	}
 	do_action( 'litespeed_tag_add', 'rkcl' );
-	$key   = 'rkrg_' . md5( wp_json_encode( $a ) . gmdate( 'Ymd' ) ) . '_' . get_option( 'rkcl_v', 1 );
+	$key   = 'rkrg2_' . md5( wp_json_encode( $a ) . gmdate( 'Ymd' ) ) . '_' . get_option( 'rkcl_v', 1 );
 	$items = get_transient( $key );
 	if ( false === $items ) {
 		global $wpdb;
@@ -74,7 +74,7 @@ add_shortcode( 'rk_karten', function ( $a ) {
 			if ( ! $p || ! $p->is_in_stock() || (float) $p->get_price() < (float) $a['min'] || ! $p->get_image_id() ) {
 				continue;
 			}
-			$items[] = array( 'u' => get_permalink( $id ), 'n' => html_entity_decode( get_the_title( $id ), ENT_QUOTES ), 'p' => (float) $p->get_price(), 'i' => wp_get_attachment_image_url( $p->get_image_id(), 'woocommerce_thumbnail' ), 'd' => get_post_time( 'U', true, $id ) );
+			$items[] = array( 'u' => get_permalink( $id ), 'n' => html_entity_decode( get_the_title( $id ), ENT_QUOTES ), 'p' => (float) $p->get_price(), 'i' => wp_get_attachment_image_url( $p->get_image_id(), 'medium' ), 'd' => get_post_time( 'U', true, $id ) );
 		}
 		if ( 'preis' === $a['sort'] ) {
 			usort( $items, function ( $x, $y ) { return $y['p'] <=> $x['p']; } );
