@@ -1,0 +1,2017 @@
+[
+ {
+  "name": "Anthony Caci #MW-28 Matchwinner 2026-27 Topps Flagship Bundesliga",
+  "sku": "FB-AA-002-47",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 23
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Anthony Caci #MW-28 Matchwinner</strong>, 1. FSV Mainz 05, aus dem Set <strong>2026-27 Topps Flagship Bundesliga</strong>. Laut Kartenrückseite brach er 2024/25 bei Mainz seinen eigenen Rekord bei den Torvorlagen in einer Saison.</p>\n<p>Eine originale Fußball Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/fussball/\">Fußball Sammelkarten</a>.</p>",
+  "short_description": "<p>Anthony Caci #MW-28 Matchwinner, 2026-27 Topps Flagship Bundesliga: originale Bundesliga Sammelkarte von 1. FSV Mainz 05, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-002/FB-AA-002-47-anthony-caci-mw-28-front.webp",
+    "name": "Anthony Caci #MW-28 Matchwinner 2026-27 Topps Flagship Bundesliga Sammelkarte Vorderseite",
+    "alt": "Anthony Caci #MW-28 Matchwinner 2026-27 Topps Flagship Bundesliga Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-002/FB-AA-002-47-anthony-caci-mw-28-back.webp",
+    "name": "Anthony Caci #MW-28 Matchwinner 2026-27 Topps Flagship Bundesliga Sammelkarte Rückseite",
+    "alt": "Anthony Caci #MW-28 Matchwinner 2026-27 Topps Flagship Bundesliga Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "1. FSV Mainz 05"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "Abwehr"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Matchwinner"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship Bundesliga"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Anthony Caci"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "Bundesliga"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026-27"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026-27 Topps Flagship Bundesliga"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "MW-28"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Insert",
+    "options": [
+     "Matchwinner"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Sprache",
+    "options": [
+     "Englisch"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_slots",
+    "value": "FB-AA-002-47"
+   },
+   {
+    "key": "_rk_desc_v2",
+    "value": "1"
+   }
+  ]
+ },
+ {
+  "name": "Arthur Theate #GG-06 Global Gladiators 2026-27 Topps Flagship Bundesliga",
+  "sku": "FB-AA-002-48",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 23
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Arthur Theate #GG-06 Global Gladiators</strong>, Eintracht Frankfurt, aus dem Set <strong>2026-27 Topps Flagship Bundesliga</strong>. Laut Kartenrückseite gewann er in der Saison 2025/26 190 Zweikämpfe und 53 Kopfballduelle.</p>\n<p>Eine originale Fußball Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/fussball/\">Fußball Sammelkarten</a>.</p>",
+  "short_description": "<p>Arthur Theate #GG-06 Global Gladiators, 2026-27 Topps Flagship Bundesliga: originale Bundesliga Sammelkarte von Eintracht Frankfurt, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-002/FB-AA-002-48-arthur-theate-gg-06-front.webp",
+    "name": "Arthur Theate #GG-06 Global Gladiators 2026-27 Topps Flagship Bundesliga Sammelkarte Vorderseite",
+    "alt": "Arthur Theate #GG-06 Global Gladiators 2026-27 Topps Flagship Bundesliga Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-002/FB-AA-002-48-arthur-theate-gg-06-back.webp",
+    "name": "Arthur Theate #GG-06 Global Gladiators 2026-27 Topps Flagship Bundesliga Sammelkarte Rückseite",
+    "alt": "Arthur Theate #GG-06 Global Gladiators 2026-27 Topps Flagship Bundesliga Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Eintracht Frankfurt"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "Abwehr"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Global Gladiators"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship Bundesliga"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Arthur Theate"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "Bundesliga"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026-27"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026-27 Topps Flagship Bundesliga"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "GG-06"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Insert",
+    "options": [
+     "Global Gladiators"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Sprache",
+    "options": [
+     "Englisch"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_slots",
+    "value": "FB-AA-002-48"
+   },
+   {
+    "key": "_rk_desc_v2",
+    "value": "1"
+   }
+  ]
+ },
+ {
+  "name": "El Chadaille Bitshiabu #BM-12 Beast Mode 2026-27 Topps Flagship Bundesliga",
+  "sku": "FB-AA-002-49",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 23
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>El Chadaille Bitshiabu #BM-12 Beast Mode</strong>, RB Leipzig, aus dem Set <strong>2026-27 Topps Flagship Bundesliga</strong>. Laut Kartenrückseite kam er in der Saison 2025/26 auf eine Passquote von 93,2 Prozent.</p>\n<p>Eine originale Fußball Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/fussball/\">Fußball Sammelkarten</a>.</p>",
+  "short_description": "<p>El Chadaille Bitshiabu #BM-12 Beast Mode, 2026-27 Topps Flagship Bundesliga: originale Bundesliga Sammelkarte von RB Leipzig, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-002/FB-AA-002-49-el-chadaille-bitshiabu-bm-12-front.webp",
+    "name": "El Chadaille Bitshiabu #BM-12 Beast Mode 2026-27 Topps Flagship Bundesliga Sammelkarte Vorderseite",
+    "alt": "El Chadaille Bitshiabu #BM-12 Beast Mode 2026-27 Topps Flagship Bundesliga Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-002/FB-AA-002-49-el-chadaille-bitshiabu-bm-12-back.webp",
+    "name": "El Chadaille Bitshiabu #BM-12 Beast Mode 2026-27 Topps Flagship Bundesliga Sammelkarte Rückseite",
+    "alt": "El Chadaille Bitshiabu #BM-12 Beast Mode 2026-27 Topps Flagship Bundesliga Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "RB Leipzig"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "Abwehr"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Beast Mode"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship Bundesliga"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "El Chadaille Bitshiabu"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "Bundesliga"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026-27"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026-27 Topps Flagship Bundesliga"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "BM-12"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Insert",
+    "options": [
+     "Beast Mode"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Sprache",
+    "options": [
+     "Englisch"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_slots",
+    "value": "FB-AA-002-49"
+   },
+   {
+    "key": "_rk_desc_v2",
+    "value": "1"
+   }
+  ]
+ },
+ {
+  "name": "Marco Friedl #MW-04 Matchwinner 2026-27 Topps Flagship Bundesliga",
+  "sku": "FB-AA-002-50",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 23
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Marco Friedl #MW-04 Matchwinner</strong>, SV Werder Bremen, aus dem Set <strong>2026-27 Topps Flagship Bundesliga</strong>. Laut Kartenrückseite führt er Werder Bremen als Kapitän an.</p>\n<p>Eine originale Fußball Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/fussball/\">Fußball Sammelkarten</a>.</p>",
+  "short_description": "<p>Marco Friedl #MW-04 Matchwinner, 2026-27 Topps Flagship Bundesliga: originale Bundesliga Sammelkarte von SV Werder Bremen, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-002/FB-AA-002-50-marco-friedl-mw-04-front.webp",
+    "name": "Marco Friedl #MW-04 Matchwinner 2026-27 Topps Flagship Bundesliga Sammelkarte Vorderseite",
+    "alt": "Marco Friedl #MW-04 Matchwinner 2026-27 Topps Flagship Bundesliga Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-002/FB-AA-002-50-marco-friedl-mw-04-back.webp",
+    "name": "Marco Friedl #MW-04 Matchwinner 2026-27 Topps Flagship Bundesliga Sammelkarte Rückseite",
+    "alt": "Marco Friedl #MW-04 Matchwinner 2026-27 Topps Flagship Bundesliga Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "SV Werder Bremen"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "Abwehr"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Matchwinner"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship Bundesliga"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Marco Friedl"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "Bundesliga"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026-27"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026-27 Topps Flagship Bundesliga"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "MW-04"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Insert",
+    "options": [
+     "Matchwinner"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Sprache",
+    "options": [
+     "Englisch"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_slots",
+    "value": "FB-AA-002-50"
+   },
+   {
+    "key": "_rk_desc_v2",
+    "value": "1"
+   }
+  ]
+ },
+ {
+  "name": "Aleix Garcia #SB-10 Stars of the Bundesliga 2026-27 Topps Flagship Bundesliga",
+  "sku": "FB-AA-005-01",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 23
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Aleix Garcia #SB-10 Stars of the Bundesliga</strong>, Bayer 04 Leverkusen, aus dem Set <strong>2026-27 Topps Flagship Bundesliga</strong>. Ein Insert aus der Serie Stars of the Bundesliga.</p>\n<p>Eine originale Fußball Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/fussball/\">Fußball Sammelkarten</a>.</p>",
+  "short_description": "<p>Aleix Garcia #SB-10 Stars of the Bundesliga, 2026-27 Topps Flagship Bundesliga: originale Bundesliga Sammelkarte von Bayer 04 Leverkusen, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-005/FB-AA-005-01-aleix-garcia-sb-10-front.webp",
+    "name": "Aleix Garcia #SB-10 Stars of the Bundesliga 2026-27 Topps Flagship Bundesliga Sammelkarte Vorderseite",
+    "alt": "Aleix Garcia #SB-10 Stars of the Bundesliga 2026-27 Topps Flagship Bundesliga Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-005/FB-AA-005-01-aleix-garcia-sb-10-back.webp",
+    "name": "Aleix Garcia #SB-10 Stars of the Bundesliga 2026-27 Topps Flagship Bundesliga Sammelkarte Rückseite",
+    "alt": "Aleix Garcia #SB-10 Stars of the Bundesliga 2026-27 Topps Flagship Bundesliga Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Bayer 04 Leverkusen"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "Mittelfeld"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Stars of the Bundesliga"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Flagship Bundesliga"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Aleix Garcia"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "Bundesliga"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2026-27"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2026-27 Topps Flagship Bundesliga"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "SB-10"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Insert",
+    "options": [
+     "Stars of the Bundesliga"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Sprache",
+    "options": [
+     "Englisch"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_slots",
+    "value": "FB-AA-005-01"
+   },
+   {
+    "key": "_rk_desc_v2",
+    "value": "1"
+   }
+  ]
+ },
+ {
+  "name": "Mario Gomez #445 Bundesliga Legende 2021-22 Topps Match Attax Bundesliga",
+  "sku": "FB-AA-005-02",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "1",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 23
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Mario Gomez #445 Bundesliga Legende</strong>, VfB Stuttgart, aus dem Set <strong>2021-22 Topps Match Attax Bundesliga</strong>. Eine Bundesliga Legende Karte aus Match Attax 2021/22.</p>\n<p>Eine originale Fußball Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/fussball/\">Fußball Sammelkarten</a>.</p>",
+  "short_description": "<p>Mario Gomez #445 Bundesliga Legende, 2021-22 Topps Match Attax Bundesliga: originale Bundesliga Sammelkarte von VfB Stuttgart, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-005/FB-AA-005-02-mario-gomez-445-front.webp",
+    "name": "Mario Gomez #445 Bundesliga Legende 2021-22 Topps Match Attax Bundesliga Sammelkarte Vorderseite",
+    "alt": "Mario Gomez #445 Bundesliga Legende 2021-22 Topps Match Attax Bundesliga Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-005/FB-AA-005-02-mario-gomez-445-back.webp",
+    "name": "Mario Gomez #445 Bundesliga Legende 2021-22 Topps Match Attax Bundesliga Sammelkarte Rückseite",
+    "alt": "Mario Gomez #445 Bundesliga Legende 2021-22 Topps Match Attax Bundesliga Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "VfB Stuttgart"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "Sturm"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Bundesliga Legende"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Match Attax Bundesliga"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Mario Gomez"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "Bundesliga"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2021-22"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2021-22 Topps Match Attax Bundesliga"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "445"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Insert",
+    "options": [
+     "Bundesliga Legende"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Sprache",
+    "options": [
+     "Deutsch"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_slots",
+    "value": "FB-AA-005-02"
+   },
+   {
+    "key": "_rk_desc_v2",
+    "value": "1"
+   }
+  ]
+ },
+ {
+  "name": "Filip Kostic #143 Star-Spieler 2021-22 Topps Match Attax Bundesliga",
+  "sku": "FB-AA-005-03",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "1",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 23
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Filip Kostic #143 Star-Spieler</strong>, Eintracht Frankfurt, aus dem Set <strong>2021-22 Topps Match Attax Bundesliga</strong>. Eine Star-Spieler Karte aus Match Attax 2021/22.</p>\n<p>Eine originale Fußball Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/fussball/\">Fußball Sammelkarten</a>.</p>",
+  "short_description": "<p>Filip Kostic #143 Star-Spieler, 2021-22 Topps Match Attax Bundesliga: originale Bundesliga Sammelkarte von Eintracht Frankfurt, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-005/FB-AA-005-03-filip-kostic-143-front.webp",
+    "name": "Filip Kostic #143 Star-Spieler 2021-22 Topps Match Attax Bundesliga Sammelkarte Vorderseite",
+    "alt": "Filip Kostic #143 Star-Spieler 2021-22 Topps Match Attax Bundesliga Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-005/FB-AA-005-03-filip-kostic-143-back.webp",
+    "name": "Filip Kostic #143 Star-Spieler 2021-22 Topps Match Attax Bundesliga Sammelkarte Rückseite",
+    "alt": "Filip Kostic #143 Star-Spieler 2021-22 Topps Match Attax Bundesliga Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Eintracht Frankfurt"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "Sturm"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Star-Spieler"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Match Attax Bundesliga"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Filip Kostic"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "Bundesliga"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2021-22"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2021-22 Topps Match Attax Bundesliga"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "143"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Insert",
+    "options": [
+     "Star-Spieler"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Sprache",
+    "options": [
+     "Deutsch"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_slots",
+    "value": "FB-AA-005-03"
+   },
+   {
+    "key": "_rk_desc_v2",
+    "value": "1"
+   }
+  ]
+ },
+ {
+  "name": "Daichi Kamada #142 Matchwinner 2021-22 Topps Match Attax Bundesliga",
+  "sku": "FB-AA-005-04",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "1",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 23
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Daichi Kamada #142 Matchwinner</strong>, Eintracht Frankfurt, aus dem Set <strong>2021-22 Topps Match Attax Bundesliga</strong>. Eine Matchwinner Karte aus Match Attax 2021/22.</p>\n<p>Eine originale Fußball Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/fussball/\">Fußball Sammelkarten</a>.</p>",
+  "short_description": "<p>Daichi Kamada #142 Matchwinner, 2021-22 Topps Match Attax Bundesliga: originale Bundesliga Sammelkarte von Eintracht Frankfurt, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-005/FB-AA-005-04-daichi-kamada-142-front.webp",
+    "name": "Daichi Kamada #142 Matchwinner 2021-22 Topps Match Attax Bundesliga Sammelkarte Vorderseite",
+    "alt": "Daichi Kamada #142 Matchwinner 2021-22 Topps Match Attax Bundesliga Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-005/FB-AA-005-04-daichi-kamada-142-back.webp",
+    "name": "Daichi Kamada #142 Matchwinner 2021-22 Topps Match Attax Bundesliga Sammelkarte Rückseite",
+    "alt": "Daichi Kamada #142 Matchwinner 2021-22 Topps Match Attax Bundesliga Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Eintracht Frankfurt"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "Mittelfeld"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Matchwinner"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Match Attax Bundesliga"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Daichi Kamada"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "Bundesliga"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2021-22"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2021-22 Topps Match Attax Bundesliga"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "142"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Insert",
+    "options": [
+     "Matchwinner"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Sprache",
+    "options": [
+     "Deutsch"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_slots",
+    "value": "FB-AA-005-04"
+   },
+   {
+    "key": "_rk_desc_v2",
+    "value": "1"
+   }
+  ]
+ },
+ {
+  "name": "Ermedin Demirovic #162 Helden von Morgen 2021-22 Topps Match Attax Bundesliga",
+  "sku": "FB-AA-005-05",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "1",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 23
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Ermedin Demirovic #162 Helden von Morgen</strong>, SC Freiburg, aus dem Set <strong>2021-22 Topps Match Attax Bundesliga</strong>. Eine Helden von Morgen Karte aus Match Attax 2021/22.</p>\n<p>Eine originale Fußball Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/fussball/\">Fußball Sammelkarten</a>.</p>",
+  "short_description": "<p>Ermedin Demirovic #162 Helden von Morgen, 2021-22 Topps Match Attax Bundesliga: originale Bundesliga Sammelkarte von SC Freiburg, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-005/FB-AA-005-05-ermedin-demirovic-162-front.webp",
+    "name": "Ermedin Demirovic #162 Helden von Morgen 2021-22 Topps Match Attax Bundesliga Sammelkarte Vorderseite",
+    "alt": "Ermedin Demirovic #162 Helden von Morgen 2021-22 Topps Match Attax Bundesliga Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-005/FB-AA-005-05-ermedin-demirovic-162-back.webp",
+    "name": "Ermedin Demirovic #162 Helden von Morgen 2021-22 Topps Match Attax Bundesliga Sammelkarte Rückseite",
+    "alt": "Ermedin Demirovic #162 Helden von Morgen 2021-22 Topps Match Attax Bundesliga Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "SC Freiburg"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "Sturm"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Helden von Morgen"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Match Attax Bundesliga"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Ermedin Demirovic"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "Bundesliga"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2021-22"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2021-22 Topps Match Attax Bundesliga"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "162"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Insert",
+    "options": [
+     "Helden von Morgen"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Sprache",
+    "options": [
+     "Deutsch"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_slots",
+    "value": "FB-AA-005-05"
+   },
+   {
+    "key": "_rk_desc_v2",
+    "value": "1"
+   }
+  ]
+ },
+ {
+  "name": "Nelson Weiper #478 Super Power 2025-26 Topps Match Attax Bundesliga",
+  "sku": "FB-AA-005-06",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "1",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 23
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Nelson Weiper #478 Super Power</strong>, 1. FSV Mainz 05, aus dem Set <strong>2025-26 Topps Match Attax Bundesliga</strong>. Eine Super Power Karte aus Match Attax 2025/26.</p>\n<p>Eine originale Fußball Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/fussball/\">Fußball Sammelkarten</a>.</p>",
+  "short_description": "<p>Nelson Weiper #478 Super Power, 2025-26 Topps Match Attax Bundesliga: originale Bundesliga Sammelkarte von 1. FSV Mainz 05, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-005/FB-AA-005-06-nelson-weiper-478-front.webp",
+    "name": "Nelson Weiper #478 Super Power 2025-26 Topps Match Attax Bundesliga Sammelkarte Vorderseite",
+    "alt": "Nelson Weiper #478 Super Power 2025-26 Topps Match Attax Bundesliga Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-005/FB-AA-005-06-nelson-weiper-478-back.webp",
+    "name": "Nelson Weiper #478 Super Power 2025-26 Topps Match Attax Bundesliga Sammelkarte Rückseite",
+    "alt": "Nelson Weiper #478 Super Power 2025-26 Topps Match Attax Bundesliga Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "1. FSV Mainz 05"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "Sturm"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Super Power"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Match Attax Bundesliga"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Nelson Weiper"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "Bundesliga"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2025-26"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2025-26 Topps Match Attax Bundesliga"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "478"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Insert",
+    "options": [
+     "Super Power"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Sprache",
+    "options": [
+     "Deutsch"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_slots",
+    "value": "FB-AA-005-06"
+   },
+   {
+    "key": "_rk_desc_v2",
+    "value": "1"
+   }
+  ]
+ },
+ {
+  "name": "Nico Schlotterbeck #410 Victory 2025-26 Topps Match Attax Bundesliga",
+  "sku": "FB-AA-005-07",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "2",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 23
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Nico Schlotterbeck #410 Victory</strong>, Borussia Dortmund, aus dem Set <strong>2025-26 Topps Match Attax Bundesliga</strong>. Eine Victory Karte aus Match Attax 2025/26.</p>\n<p>Eine originale Fußball Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/fussball/\">Fußball Sammelkarten</a>.</p>",
+  "short_description": "<p>Nico Schlotterbeck #410 Victory, 2025-26 Topps Match Attax Bundesliga: originale Bundesliga Sammelkarte von Borussia Dortmund, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-005/FB-AA-005-07-nico-schlotterbeck-410-front.webp",
+    "name": "Nico Schlotterbeck #410 Victory 2025-26 Topps Match Attax Bundesliga Sammelkarte Vorderseite",
+    "alt": "Nico Schlotterbeck #410 Victory 2025-26 Topps Match Attax Bundesliga Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-005/FB-AA-005-07-nico-schlotterbeck-410-back.webp",
+    "name": "Nico Schlotterbeck #410 Victory 2025-26 Topps Match Attax Bundesliga Sammelkarte Rückseite",
+    "alt": "Nico Schlotterbeck #410 Victory 2025-26 Topps Match Attax Bundesliga Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "Borussia Dortmund"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "Abwehr"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Victory"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Match Attax Bundesliga"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Nico Schlotterbeck"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "Bundesliga"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2025-26"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2025-26 Topps Match Attax Bundesliga"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "410"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Insert",
+    "options": [
+     "Victory"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Sprache",
+    "options": [
+     "Deutsch"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_slots",
+    "value": "FB-AA-005-07"
+   },
+   {
+    "key": "_rk_desc_v2",
+    "value": "1"
+   }
+  ]
+ },
+ {
+  "name": "Armindo Sieb #355 Rising Star 2025-26 Topps Match Attax Bundesliga",
+  "sku": "FB-AA-005-08",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "1",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 23
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Armindo Sieb #355 Rising Star</strong>, 1. FSV Mainz 05, aus dem Set <strong>2025-26 Topps Match Attax Bundesliga</strong>. Eine Rising Star Karte aus Match Attax 2025/26.</p>\n<p>Eine originale Fußball Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/fussball/\">Fußball Sammelkarten</a>.</p>",
+  "short_description": "<p>Armindo Sieb #355 Rising Star, 2025-26 Topps Match Attax Bundesliga: originale Bundesliga Sammelkarte von 1. FSV Mainz 05, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-005/FB-AA-005-08-armindo-sieb-355-front.webp",
+    "name": "Armindo Sieb #355 Rising Star 2025-26 Topps Match Attax Bundesliga Sammelkarte Vorderseite",
+    "alt": "Armindo Sieb #355 Rising Star 2025-26 Topps Match Attax Bundesliga Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-005/FB-AA-005-08-armindo-sieb-355-back.webp",
+    "name": "Armindo Sieb #355 Rising Star 2025-26 Topps Match Attax Bundesliga Sammelkarte Rückseite",
+    "alt": "Armindo Sieb #355 Rising Star 2025-26 Topps Match Attax Bundesliga Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "1. FSV Mainz 05"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "Sturm"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Rising Star"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Match Attax Bundesliga"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Armindo Sieb"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "Bundesliga"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2025-26"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2025-26 Topps Match Attax Bundesliga"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "355"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Insert",
+    "options": [
+     "Rising Star"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Sprache",
+    "options": [
+     "Deutsch"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_slots",
+    "value": "FB-AA-005-08"
+   },
+   {
+    "key": "_rk_desc_v2",
+    "value": "1"
+   }
+  ]
+ },
+ {
+  "name": "Daniel-Kofi Kyereh #428 Matchwinner 2021-22 Topps Match Attax Bundesliga",
+  "sku": "FB-AA-005-09",
+  "type": "simple",
+  "status": "publish",
+  "regular_price": "1",
+  "manage_stock": true,
+  "stock_quantity": 1,
+  "categories": [
+   {
+    "id": 23
+   },
+   {
+    "id": 16
+   }
+  ],
+  "description": "<p><strong>Daniel-Kofi Kyereh #428 Matchwinner</strong>, FC St. Pauli, aus dem Set <strong>2021-22 Topps Match Attax Bundesliga</strong>. Eine Matchwinner Karte aus Match Attax 2021/22, aus seiner Zeit beim FC St. Pauli in der 2. Bundesliga.</p>\n<p>Eine originale Fußball Sammelkarte von Topps, die du hier einzeln kaufst, genau so, wie du sie auf den Scans siehst.</p>\n<p><strong>Zustand:</strong> Ungegradet (Raw), direkt aus dem Pack in den Sleeve. Die Bilder sind echte Scans genau dieser Karte, keine Stockfotos. So prüfst du Ecken, Kanten, Oberfläche und Zentrierung selbst.</p>\n<p><strong>Versand:</strong> Die Karte kommt in Penny Sleeve und Toploader im gepolsterten Umschlag und geht innerhalb von einem Werktag raus. In Deutschland zahlst du 1,10 € pro Bestellung, egal wie viele Karten du kaufst.</p>\n<p>Noch mehr Karten findest du bei unseren <a href=\"/produktkategorie/fussball/\">Fußball Sammelkarten</a>.</p>",
+  "short_description": "<p>Daniel-Kofi Kyereh #428 Matchwinner, 2021-22 Topps Match Attax Bundesliga: originale 2. Bundesliga Sammelkarte von FC St. Pauli, ungegradet, mit echten Scans von Vorder und Rückseite.</p>",
+  "images": [
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-005/FB-AA-005-09-daniel-kofi-kyereh-428-front.webp",
+    "name": "Daniel-Kofi Kyereh #428 Matchwinner 2021-22 Topps Match Attax Bundesliga Sammelkarte Vorderseite",
+    "alt": "Daniel-Kofi Kyereh #428 Matchwinner 2021-22 Topps Match Attax Bundesliga Sammelkarte Vorderseite"
+   },
+   {
+    "src": "https://raw.githubusercontent.com/marweber10051986-droid/kartenbilder/main/FB-AA-005/FB-AA-005-09-daniel-kofi-kyereh-428-back.webp",
+    "name": "Daniel-Kofi Kyereh #428 Matchwinner 2021-22 Topps Match Attax Bundesliga Sammelkarte Rückseite",
+    "alt": "Daniel-Kofi Kyereh #428 Matchwinner 2021-22 Topps Match Attax Bundesliga Sammelkarte Rückseite"
+   }
+  ],
+  "attributes": [
+   {
+    "id": 1,
+    "options": [
+     "FC St. Pauli"
+    ],
+    "visible": true,
+    "position": 0
+   },
+   {
+    "id": 2,
+    "options": [
+     "Sturm"
+    ],
+    "visible": true,
+    "position": 1
+   },
+   {
+    "id": 3,
+    "options": [
+     "Matchwinner"
+    ],
+    "visible": true,
+    "position": 2
+   },
+   {
+    "id": 4,
+    "options": [
+     "Topps Match Attax Bundesliga"
+    ],
+    "visible": true,
+    "position": 3
+   },
+   {
+    "name": "Spieler",
+    "options": [
+     "Daniel-Kofi Kyereh"
+    ],
+    "visible": true,
+    "position": 4
+   },
+   {
+    "name": "Liga",
+    "options": [
+     "2. Bundesliga"
+    ],
+    "visible": true,
+    "position": 5
+   },
+   {
+    "name": "Saison",
+    "options": [
+     "2021-22"
+    ],
+    "visible": true,
+    "position": 6
+   },
+   {
+    "name": "Hersteller",
+    "options": [
+     "Topps"
+    ],
+    "visible": true,
+    "position": 7
+   },
+   {
+    "name": "Set",
+    "options": [
+     "2021-22 Topps Match Attax Bundesliga"
+    ],
+    "visible": true,
+    "position": 8
+   },
+   {
+    "name": "Kartennummer",
+    "options": [
+     "428"
+    ],
+    "visible": true,
+    "position": 9
+   },
+   {
+    "name": "Insert",
+    "options": [
+     "Matchwinner"
+    ],
+    "visible": true,
+    "position": 10
+   },
+   {
+    "name": "Variante",
+    "options": [
+     "Base"
+    ],
+    "visible": true,
+    "position": 11
+   },
+   {
+    "name": "Sprache",
+    "options": [
+     "Deutsch"
+    ],
+    "visible": true,
+    "position": 12
+   },
+   {
+    "name": "Zustand",
+    "options": [
+     "Raw, ungegradet"
+    ],
+    "visible": true,
+    "position": 13
+   }
+  ],
+  "meta_data": [
+   {
+    "key": "_rk_slots",
+    "value": "FB-AA-005-09"
+   },
+   {
+    "key": "_rk_desc_v2",
+    "value": "1"
+   }
+  ]
+ }
+]
