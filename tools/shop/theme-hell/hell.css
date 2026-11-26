@@ -213,3 +213,19 @@ html body .rk-wk__chip--leer{color:#9ca3af!important;background:#f7f8fa!importan
 html body .rk-rv__m b,html body .rk-rv__c b{color:#14171c!important}
 html body .rk-rv__a{border-bottom-color:#d7191f!important}
 html body .rk-footer__giant{color:#e9ebef!important}
+/* Produktkarten im Shop als weisse Karten */
+html body .wc-block-product-template li.wc-block-product{background:#fff;border:1px solid #e4e6ea;border-radius:16px;padding:12px 12px 14px;box-sizing:border-box;transition:box-shadow .2s,transform .2s}
+html body .wc-block-product-template li.wc-block-product:hover{box-shadow:0 16px 34px rgba(17,24,39,.10);transform:translateY(-3px)}
+html body .wc-block-product-template li.wc-block-product .wc-block-components-product-image img,html body .wc-block-product:hover .wc-block-components-product-image img{border:0!important;background:#f7f8fa!important;border-radius:10px!important;box-shadow:none!important;transform:none!important}
+html body .wc-block-product-template li.wc-block-product .wp-block-post-title{font-size:14px!important;line-height:1.35!important;min-height:calc(1.35em * 3)!important;text-align:left!important;margin:12px 2px 0!important}
+html body .wc-block-product-template li.wc-block-product .wp-block-post-title a{font-size:14px!important;font-weight:600!important}
+html body .wc-block-product-template li.wc-block-product .wp-block-woocommerce-product-price{text-align:left!important;margin:6px 2px 0!important}
+html body .wc-block-product-template li.wc-block-product .wc-block-components-product-price{font-size:18px!important;color:#14171c!important}
+html body .wc-block-product-template li.wc-block-product .wp-block-button__link,html body .wc-block-product-template li.wc-block-product .wc-block-components-product-button__button{padding:11px 16px!important;font-size:14px!important}
+/* Hinweis unten links (Mengenrabatt) */
+html body #rk-nd{background:#fff;color:#14171c;border:1px solid #e4e6ea;border-left:4px solid #d7191f;border-radius:12px;font-family:Manrope,Arial,sans-serif;text-transform:none;letter-spacing:0;font-size:14px;box-shadow:0 12px 30px rgba(17,24,39,.16)}
+html body #rk-nd a{color:#14171c!important;font-weight:700;opacity:1}
+html body #rk-nd button{color:#6b7280}
+html body #rk-nd .rk-nd__bar{border-radius:99px;overflow:hidden}
+/* Kategorie Kopf */
+html body .wp-block-query-title,html body .wp-block-term-description{color:#14171c}
