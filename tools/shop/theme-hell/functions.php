@@ -548,7 +548,7 @@ function rk_ebay_css() {
 function rk_ebay_bar() {
 	$s = rk_ebay_stats();
 	return rk_ebay_css() . '<section class="rk-eb" aria-label="Bewertungen auf eBay"><div class="rk-eb__in">'
-		. '<a href="' . esc_url( $s['profil'] ) . '" target="_blank" rel="noopener"><span class="rk-eb__stars" aria-hidden="true">★★★★★</span><span class="rk-eb__big">' . (int) $s['quote'] . ' %</span><span class="rk-eb__txt">positive Bewertungen auf eBay</span></a>'
+		. '<a href="' . esc_url( $s['profil'] ) . '" target="_blank" rel="noopener"><span class="rk-eb__big">' . (int) $s['quote'] . ' %</span><span class="rk-eb__txt">positive Bewertungen auf eBay</span></a>'
 		. '<span class="rk-eb__it"><b>Ab 70 €</b> versandkostenfreie Lieferung in DE</span>'
 		. '<span class="rk-eb__it">Seit <b>über 6 Jahren</b> im Sammelkarten Business tätig</span>'
 		. '</div></section>';
@@ -2052,7 +2052,7 @@ html body .rk-wk__chip:hover{border-color:#d7191f!important;background:#fff5f5!i
 html body .rk-wk__tag{border-radius:6px;box-shadow:0 4px 10px rgba(17,24,39,.18)!important}
 /* Bewertungsleiste, Fortschrittsbalken */
 html body .rk-eb{background:#fff!important;border-color:#e4e6ea!important}
-html body .rk-eb__in,html body .rk-eb__in a,html body .rk-eb__big{color:#14171c!important}
+html body .rk-eb__in,html body .rk-eb__in a{color:#14171c!important}
 html body .rk-eb__it{opacity:1!important;color:#4b5563}
 html body .rk-ebp{border:1px solid #e4e6ea!important;border-radius:12px;background:#fff}
 html body .rk-cb{background:#fff!important;color:#14171c!important;border:1px solid #e4e6ea!important;border-radius:12px}
@@ -2183,7 +2183,7 @@ html body.single-product form.cart button.single_add_to_cart_button.button.alt.w
 html body .woocommerce div.product div.images img,html body .woocommerce-product-gallery__image img{border-radius:14px}
 html body .woocommerce-product-gallery__wrapper{border-radius:16px;overflow:hidden}
 html body .rk-eb__in{font-family:Manrope,Arial,sans-serif!important;text-transform:none!important;letter-spacing:0!important;font-size:15px!important}
-html body .rk-eb__big{font-size:20px!important}
+html body .rk-eb__in .rk-eb__big{font-size:inherit!important;font-weight:700!important;line-height:inherit!important;color:var(--rk-red,#ff3b30)!important}
 /* Warenkorb und Kasse */
 html body .rk-dl{background:#fff!important;color:#14171c!important;border:1px solid #e4e6ea!important;border-left:4px solid #d7191f!important;border-radius:12px!important}
 html body .rk-dl *{color:#14171c}
