@@ -1970,6 +1970,13 @@ html body .woocommerce div.product div.images img,html body .woocommerce-product
 html body .woocommerce-product-gallery__wrapper{border-radius:16px;overflow:hidden}
 html body .rk-eb__in{font-family:Manrope,Arial,sans-serif!important;text-transform:none!important;letter-spacing:0!important;font-size:15px!important}
 html body .rk-eb__big{font-size:20px!important}
+/* Warenkorb und Kasse */
+html body .rk-dl{background:#fff!important;color:#14171c!important;border:1px solid #e4e6ea!important;border-left:4px solid #d7191f!important;border-radius:12px!important}
+html body .rk-dl *{color:#14171c}
+html body .rk-dl b,html body .rk-dl strong,html body .rk-dl span:first-child{color:#d7191f}
+html body .rk-cb{font-family:Manrope,Arial,sans-serif!important}
+html body .rk-cb__t{text-transform:none!important;letter-spacing:0!important;font-weight:700}
+html body .rk-cb__lab{color:#6b7280;opacity:1!important}
 
 RK_HELL
 	. '</style>'; // phpcs:ignore
