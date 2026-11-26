@@ -551,6 +551,7 @@ a.rk-eb__it:hover .rk-eb__t{text-decoration:underline;text-underline-offset:3px}
 
 function rk_ebay_bar() {
 	$s = rk_ebay_stats();
+	return ''; // Leiste entfernt am 26.11.2026, Inhalte stehen jetzt in der Laufschrift oben.
 	return rk_ebay_css() . '<section class="rk-eb" aria-label="Warum Rookie Business"><div class="rk-eb__in">'
 		. '<a class="rk-eb__it" href="' . esc_url( $s['profil'] ) . '" target="_blank" rel="noopener"><span class="rk-eb__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11v9H4v-9z"/><path d="M7 11l4-8a2.5 2.5 0 0 1 3 3l-1 4h5.5a2 2 0 0 1 2 2.4l-1.4 6.6a2 2 0 0 1-2 1.6H7"/></svg></span><span class="rk-eb__t"><b>' . (int) $s['quote'] . ' %</b> positive Bewertungen auf eBay</span></a>'
 		. '<div class="rk-eb__it"><span class="rk-eb__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h11v10H3z"/><path d="M14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></span><span class="rk-eb__t"><b>Ab 70 €</b> versandkostenfrei in DE</span></div>'
@@ -2007,6 +2008,22 @@ add_action( 'wp_head', function () {
 .rk-ak__err{border-color:var(--rk-red);background:rgba(255,59,48,.08)}
 @media(max-width:900px){.rk-sell__trust,.rk-sell__steps{grid-template-columns:1fr 1fr}.rk-sell__trust li:nth-child(3){border-left:0}.rk-sell__trust li:nth-child(n+3){border-top:1px solid var(--rk-line)}.rk-sell__two{grid-template-columns:1fr}.rk-ak__grid{grid-template-columns:1fr}.rk-sell__who{flex-direction:column;align-items:flex-start}}
 @media(max-width:560px){.rk-sell__trust,.rk-sell__steps{grid-template-columns:1fr}.rk-sell__trust li+li{border-left:0;border-top:1px solid var(--rk-line)}}
+/* Footer: Das Prinzip, Über den Shop, Häufige Fragen (26.11.2026) */
+.rk-fx{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px;margin:48px 0 0;padding:40px 0 0;border-top:1px solid var(--rk-line)}
+.rk-fx__h{font-family:var(--rk-display);font-weight:800;text-transform:uppercase;font-size:26px;line-height:1.02;margin:12px 0 14px;color:var(--rk-paper)}
+.rk-fx__p{color:var(--rk-muted);font-size:13px;line-height:1.7;margin:0 0 12px}
+.rk-fx .rk-list li{padding:14px 0}
+.rk-fx .rk-list p{max-width:none}
+.rk-fx__links{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}
+.rk-fx__links a{border:1px solid var(--rk-line);padding:6px 10px;font-family:var(--rk-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--rk-paper)!important;text-decoration:none}
+.rk-fx__links a:hover{border-color:var(--rk-red);color:var(--rk-red)!important}
+.rk-fx .rk-faq{margin-top:12px}
+.rk-fx .rk-faq__item summary{font-size:14px}
+.rk-fx .rk-faq__item p{font-size:13px}
+@media(max-width:1000px){.rk-fx{grid-template-columns:1fr 1fr}.rk-fx__faq{grid-column:1/-1}}
+@media(max-width:640px){.rk-fx{grid-template-columns:1fr;gap:34px}}
+.rk-ticker a{color:inherit!important;text-decoration:none}
+.rk-ticker a:hover{color:var(--rk-red)!important}
 RK_DARK
 	. '</style>'; // phpcs:ignore
 }, 999 );
