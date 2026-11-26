@@ -567,7 +567,7 @@ add_filter( 'render_block', function ( $content, $block ) {
 
 add_action( 'woocommerce_single_product_summary', function () {
 	$s = rk_ebay_stats();
-	echo rk_ebay_css() . '<div class="rk-ebp"><span class="rk-eb__stars" aria-hidden="true">★★★★★</span><span>' . (int) $s['quote'] . ' % positive Bewertungen auf <a href="' . esc_url( $s['profil'] ) . '" target="_blank" rel="noopener">eBay</a>, Versand 1,10 €, ab 50 € kostenlos</span></div>'; // phpcs:ignore
+	echo rk_ebay_css() . '<div class="rk-ebp"><span class="rk-eb__stars" aria-hidden="true">★★★★★</span><span>' . (int) $s['quote'] . ' % positive Bewertungen auf <a href="' . esc_url( $s['profil'] ) . '" target="_blank" rel="noopener">eBay</a>, Versand 1,10 €, ab 70 € kostenlos</span></div>'; // phpcs:ignore
 }, 35 );
 
 /* Mengenrabatt Fortschritt im Warenkorb (Stufen: 10 = 10 %, 20 = 20 %, 30 = 25 %) */
@@ -898,7 +898,7 @@ add_filter( 'render_block', function ( $content, $block ) {
 	if ( empty( $block['blockName'] ) || ! in_array( $block['blockName'], array( 'woocommerce/cart', 'woocommerce/checkout' ), true ) ) {
 		return $content;
 	}
-	$note = '<div class="rk-dl" style="margin:0 0 22px;padding:14px 18px;border:1px solid rgba(255,255,255,.2);background:#0b0b0b;color:#fff;font-size:15px;line-height:1.5"><b style="color:var(--rk-red,#ff3b30);font-family:var(--rk-mono,monospace);font-size:12px;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:4px">Lieferung</b>Wir verschicken innerhalb von 1 Werktag. Die Sendungsnummer bekommst du per E Mail. Zustellung in Deutschland meist in 1 bis 3 Werktagen, Versand 1,10 € pro Bestellung, ab 50 € Warenwert kostenlos.</div>';
+	$note = '<div class="rk-dl" style="margin:0 0 22px;padding:14px 18px;border:1px solid rgba(255,255,255,.2);background:#0b0b0b;color:#fff;font-size:15px;line-height:1.5"><b style="color:var(--rk-red,#ff3b30);font-family:var(--rk-mono,monospace);font-size:12px;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:4px">Lieferung</b>Wir verschicken innerhalb von 1 Werktag. Die Sendungsnummer bekommst du per E Mail. Zustellung in Deutschland meist in 1 bis 3 Werktagen, Versand 1,10 € pro Bestellung, ab 70 € Warenwert kostenlos.</div>';
 	return $note . $content;
 }, 20, 2 ); /* nach WooCommerce, sonst klaut der Hinweis das data-block-name der Kasse */
 
@@ -1648,6 +1648,11 @@ function rk_vh_info( $order ) {
 		$prod  = $gb <= 2000 ? 'DHL Päckchen International' : 'DHL Paket International (über 2 kg, Kunde hat nur 14,49 € bezahlt)';
 		$pack  = 'Karton, mit Sendungsnummer';
 		$porto = $dhl;
+	} elseif ( in_array( $land, array( 'CH', 'GB' ), true ) ) {
+		$gb    = $g + 150;
+		$prod  = $gb <= 2000 ? 'DHL Päckchen International mit Zollinhaltserklärung (CN22)' : 'DHL Paket International mit Zollinhaltserklärung (über 2 kg, Kunde hat nur 19,49 € bezahlt)';
+		$pack  = 'Karton, versichert mit Sendungsnummer, Zollinhaltserklärung ausfüllen';
+		$porto = $dhl;
 	} else {
 		return array( 'prod' => 'Versandart unbekannt: ' . ( $name ? $name : 'keine' ), 'pack' => '', 'hint' => '', 'gramm' => $g, 'karten' => $karten, 'land' => $land, 'link' => $porto, 'kunde' => $name );
 	}
@@ -1729,9 +1734,9 @@ add_action( 'admin_head', function () {
 	echo '<style>.rk-vh{font-size:13px;line-height:1.5}.rk-vh a{font-weight:600}</style>';
 } );
 
-// v2.1 (26.11.2026): Gratisversand ab 50 €, Kundenkonto Link, Karten verkaufen Formular.
+// v2.1 (26.11.2026): Gratisversand ab 70 €, Kundenkonto Link, Karten verkaufen Formular.
 
-/* Ab 50 € Warenwert: kostenloser Brief, der 1,10 € Brief wird dann ausgeblendet. */
+/* Ab 70 € Warenwert: kostenloser Brief, der 1,10 € Brief wird dann ausgeblendet. */
 add_filter( 'woocommerce_package_rates', function ( $rates ) {
 	$free = false;
 	foreach ( $rates as $r ) {
@@ -1798,8 +1803,11 @@ function rk_ankauf_form() {
 			</select>
 		</label>
 	</div>
-	<label>Deine Preisvorstellung und Infos zu den Karten
-		<textarea name="ak_text" rows="5" maxlength="3000" placeholder="Spieler, Set, Nummer, Zustand und was du dir pro Karte oder insgesamt vorstellst."></textarea>
+	<label>Deine Wunschpreisvorstellung *
+		<input type="text" name="ak_preis" required maxlength="200" placeholder="z. B. 60 € für alles oder 5 € pro Karte">
+	</label>
+	<label>Infos zu den Karten (optional)
+		<textarea name="ak_text" rows="5" maxlength="3000" placeholder="Spieler, Set, Nummer, Zustand, Besonderheiten."></textarea>
 	</label>
 	<label class="rk-ak__file">Fotos von Vorder und Rückseite * <small>JPG, PNG oder WEBP, bis zu 20 Bilder, je max. 8 MB</small>
 		<input type="file" name="ak_fotos[]" accept="image/jpeg,image/png,image/webp" multiple required>
@@ -1818,7 +1826,7 @@ function rk_ankauf_form() {
 
 function rk_ankauf_error_text( $code ) {
 	$t = array(
-		'fehlt'   => 'Bitte gib Name, E-Mail und mindestens ein Foto an und bestätige die Einwilligung.',
+		'fehlt'   => 'Bitte gib Name, E-Mail, deine Wunschpreisvorstellung und mindestens ein Foto an und bestätige die Einwilligung.',
 		'mail'    => 'Bitte gib eine gültige E-Mail Adresse an.',
 		'fotos'   => 'Bitte lade nur JPG, PNG oder WEBP Bilder hoch, höchstens 20 Stück und je bis 8 MB.',
 		'liste'   => 'Die Preisliste muss PDF, CSV, XLSX oder ein Bild sein und darf höchstens 8 MB groß sein.',
@@ -1850,7 +1858,8 @@ function rk_ankauf_handle() {
 	}
 	$name  = sanitize_text_field( wp_unslash( $_POST['ak_name'] ?? '' ) );
 	$email = sanitize_email( wp_unslash( $_POST['ak_email'] ?? '' ) );
-	if ( '' === $name || empty( $_POST['ak_ok'] ) || empty( $_FILES['ak_fotos']['name'][0] ) ) {
+	$preis = sanitize_text_field( wp_unslash( $_POST['ak_preis'] ?? '' ) );
+	if ( '' === $name || '' === $preis || empty( $_POST['ak_ok'] ) || empty( $_FILES['ak_fotos']['name'][0] ) ) {
 		$go( 'fehlt' );
 	}
 	if ( ! is_email( $email ) ) {
@@ -1900,7 +1909,8 @@ function rk_ankauf_handle() {
 	}
 	$body  = "Neue Ankauf Anfrage über rookie-business.de\n\n";
 	$body .= "Name: $name\nE-Mail: $email\nInstagram: " . ( $insta ? $insta : '-' ) . "\nArt: $art\nAnzahl: " . ( $anzahl ? $anzahl : '-' ) . "\nAuszahlung: $zahl\n\n";
-	$body .= "Nachricht und Preisvorstellung:\n" . ( $text ? $text : '-' ) . "\n\nAnhänge: " . count( $files ) . " Dateien\n";
+	$body .= "Wunschpreis: $preis\n\n";
+	$body .= "Infos zu den Karten:\n" . ( $text ? $text : '-' ) . "\n\nAnhänge: " . count( $files ) . " Dateien\n";
 	$ok = wp_mail( 'shop@rookie-business.de', 'Ankauf Anfrage von ' . $name, $body, array( 'Reply-To: ' . $name . ' <' . $email . '>' ), $files );
 	foreach ( $files as $p ) {
 		@unlink( $p ); // phpcs:ignore
