@@ -2228,6 +2228,12 @@ html body .rk-ak__ok{background:#ecfdf3;border:1px solid #a6e9c1}
 html body .rk-ak__err{background:#fff5f5;border:1px solid #f3b4b6}
 @media(max-width:900px){html body .rk-sell__trust,html body .rk-sell__steps{grid-template-columns:1fr 1fr}html body .rk-sell__two{grid-template-columns:1fr}html body .rk-ak__grid{grid-template-columns:1fr}html body .rk-sell__who{flex-direction:column;align-items:flex-start}}
 @media(max-width:560px){html body .rk-sell__trust,html body .rk-sell__steps{grid-template-columns:1fr}}
+html body .rk-page .wp-block-post-content > .rk-sell,html body .rk-sell{max-width:1180px!important;width:100%!important;margin-left:auto!important;margin-right:auto!important;padding-left:0;padding-right:0}
+html body .rk-sell h2,html body .rk-sell .rk-h2{margin-top:10px!important;margin-bottom:0!important}
+html body .rk-sell h3{margin-top:14px!important}
+html body .rk-sell p{max-width:none}
+html body .rk-sell .rk-sell__lead,html body .rk-sell .rk-sell__p{max-width:70ch}
+html body .rk-sell .rk-sell__lead{margin-left:auto;margin-right:auto}
 
 RK_HELL
 	. '</style>'; // phpcs:ignore
