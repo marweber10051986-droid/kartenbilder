@@ -1,0 +1,50 @@
+<!-- wp:html -->
+<div class="rk-ticker" aria-label="Info">
+	<div class="rk-ticker__track">
+		<span><i class="rk-dot"></i>NFL. NBA. MLB. TCG. Jede Karte echt gescannt.</span>
+		<span class="rk-muted">Versand 1,10 € pro Bestellung in DE</span>
+		<span><i class="rk-dot"></i>Penny Sleeve und Toploader</span>
+		<span class="rk-muted">Raus innerhalb von 1 Werktag</span>
+		<span aria-hidden="true"><i class="rk-dot"></i>NFL. NBA. MLB. TCG. Jede Karte echt gescannt.</span>
+		<span aria-hidden="true" class="rk-muted">Versand 1,10 € pro Bestellung in DE</span>
+		<span aria-hidden="true"><i class="rk-dot"></i>Penny Sleeve und Toploader</span>
+		<span aria-hidden="true" class="rk-muted">Raus innerhalb von 1 Werktag</span>
+	</div>
+</div>
+<!-- /wp:html -->
+
+<!-- wp:group {"tagName":"header","className":"rk-header","layout":{"type":"flex","justifyContent":"space-between","flexWrap":"nowrap"}} -->
+<header class="wp-block-group rk-header">
+	<!-- wp:html -->
+	<a class="rk-logo" href="{{home}}">ROOKIE<span class="rk-logo__sub">BUSINESS</span><sup>°</sup></a>
+	<!-- /wp:html -->
+
+	<!-- wp:html -->
+	<nav class="rk-nav" aria-label="Hauptmenü">
+		<a href="{{shop}}">Zum Shop</a>
+		<a href="{{cat:nfl}}">NFL</a>
+		<a href="{{cat:nba}}">NBA</a>
+		<a href="{{cat:mlb}}">MLB</a>
+		<a href="{{cat:fussball}}">Fußball</a>
+		<a href="{{cat:tcg}}">TCG</a>
+	</nav>
+	<!-- /wp:html -->
+
+	<!-- wp:group {"className":"rk-header__right","layout":{"type":"flex","flexWrap":"nowrap"}} -->
+	<div class="wp-block-group rk-header__right">
+		<!-- wp:html -->
+		<form class="rk-hsearch rk-hide-mobile" role="search" method="get" action="{{home}}">
+			<label class="screen-reader-text" for="rk-hs">Karten suchen</label>
+			<input id="rk-hs" type="search" name="s" placeholder="Karte suchen" autocomplete="off">
+			<input type="hidden" name="post_type" value="product">
+			<button type="submit" aria-label="Suchen"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></button>
+		</form>
+		<!-- /wp:html -->
+		<!-- wp:html -->
+		<a class="rk-link-arrow rk-hide-mobile" href="{{shop}}?orderby=date">Neu eingetroffen <span aria-hidden="true">↗</span></a>
+		<!-- /wp:html -->
+		<!-- wp:woocommerce/mini-cart {"hasHiddenPrice":true} /-->
+	</div>
+	<!-- /wp:group -->
+</header>
+<!-- /wp:group -->
