@@ -549,6 +549,7 @@ function rk_ebay_bar() {
 	$s = rk_ebay_stats();
 	return rk_ebay_css() . '<section class="rk-eb" aria-label="Bewertungen auf eBay"><div class="rk-eb__in">'
 		. '<a href="' . esc_url( $s['profil'] ) . '" target="_blank" rel="noopener"><span class="rk-eb__stars" aria-hidden="true">★★★★★</span><span class="rk-eb__big">' . (int) $s['quote'] . ' %</span><span class="rk-eb__txt">positive Bewertungen auf eBay</span></a>'
+		. '<span class="rk-eb__it"><b>Ab 70 €</b> versandkostenfreie Lieferung in DE</span>'
 		. '<span class="rk-eb__it">Seit <b>über 6 Jahren</b> im Sammelkarten Business tätig</span>'
 		. '</div></section>';
 }
