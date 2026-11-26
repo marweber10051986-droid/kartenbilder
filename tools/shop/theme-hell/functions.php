@@ -1952,7 +1952,9 @@ add_action( 'wp_head', function () {
 .rk-acc{display:inline-flex;align-items:center;gap:8px;color:var(--rk-paper,#fff)!important;text-decoration:none;font-family:var(--rk-mono);font-size:var(--rk-small,13px);letter-spacing:.08em;text-transform:uppercase}
 .rk-acc svg{width:18px;height:18px}
 .rk-acc:hover{color:var(--rk-red)!important}
-@media(max-width:900px){.rk-acc__t{display:none}}
+.rk-nav a,.rk-acc,.rk-header__right a{white-space:nowrap}
+.rk-nav{gap:clamp(16px,1.7vw,30px)!important}
+@media(max-width:1300px){.rk-acc__t{display:none}}
 .rk-sell{max-width:1180px;margin:0 auto!important;padding:0 0 60px;box-sizing:border-box;color:var(--rk-paper)}
 .rk-page .wp-block-post-content>.rk-sell{max-width:1180px!important;width:100%!important}
 .rk-sell p{max-width:none}
