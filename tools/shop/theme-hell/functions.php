@@ -573,8 +573,18 @@ add_filter( 'render_block', function ( $content, $block ) {
 
 add_action( 'woocommerce_single_product_summary', function () {
 	$s = rk_ebay_stats();
-	echo rk_ebay_css() . '<div class="rk-ebp"><span class="rk-eb__stars" aria-hidden="true">★★★★★</span><span>' . (int) $s['quote'] . ' % positive Bewertungen auf <a href="' . esc_url( $s['profil'] ) . '" target="_blank" rel="noopener">eBay</a>, Versand 1,10 €, ab 70 € kostenlos</span></div>'; // phpcs:ignore
+	echo rk_ebay_css() . '<div class="rk-ebp"><span class="rk-eb__stars" aria-hidden="true">★★★★★</span><span>' . (int) $s['quote'] . ' % positive Bewertungen auf <a href="' . esc_url( $s['profil'] ) . '" target="_blank" rel="noopener">eBay</a>, raus innerhalb von 1 Werktag</span></div>'; // phpcs:ignore
 }, 35 );
+
+/* Direkt unter dem Preis: Mengenrabatt und Gratisversand (26.11.2026) */
+add_action( 'woocommerce_single_product_summary', function () {
+	$shop = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : home_url( '/' );
+	echo '<div class="rk-pv">'
+		. '<div class="rk-pv__row"><span class="rk-pv__ic" aria-hidden="true">%</span><span><b>Mengenrabatt</b> 10 % ab 10 Karten, 20 % ab 20, 25 % ab 30. Wird im Warenkorb automatisch abgezogen.</span></div>'
+		. '<div class="rk-pv__row"><span class="rk-pv__ic" aria-hidden="true">€</span><span><b>Ab 70 €</b> versandkostenfrei in DE, darunter nur 1,10 € pro Bestellung.</span></div>'
+		. '<a class="rk-pv__more" href="' . esc_url( $shop ) . '">Mehr Karten sammeln und sparen <span aria-hidden="true">↗</span></a>'
+		. '</div>'; // phpcs:ignore
+}, 11 );
 
 /* Mengenrabatt Fortschritt im Warenkorb (Stufen: 10 = 10 %, 20 = 20 %, 30 = 25 %) */
 add_filter( 'render_block', function ( $content, $block ) {
@@ -2024,6 +2034,13 @@ add_action( 'wp_head', function () {
 @media(max-width:640px){.rk-fx{grid-template-columns:1fr;gap:34px}}
 .rk-ticker a{color:inherit!important;text-decoration:none}
 .rk-ticker a:hover{color:var(--rk-red)!important}
+/* Produktseite: Hinweis unter dem Preis */
+.rk-pv{margin:14px 0 20px;border:1px solid var(--rk-line);border-left:3px solid var(--rk-red);background:var(--rk-panel);padding:12px 14px;display:grid;gap:8px}
+.rk-pv__row{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45;color:#cfcfcf}
+.rk-pv__row b{color:var(--rk-red);font-weight:700}
+.rk-pv__ic{flex:none;width:22px;height:22px;display:grid;place-items:center;border:1px solid rgba(255,59,48,.55);border-radius:50%;color:var(--rk-red);font:700 12px var(--rk-mono)}
+.rk-pv__more{justify-self:start;margin-top:2px;font-family:var(--rk-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--rk-paper)!important;text-decoration:none;border-bottom:1px solid var(--rk-red);padding-bottom:3px}
+.rk-pv__more:hover{color:var(--rk-red)!important}
 RK_DARK
 	. '</style>'; // phpcs:ignore
 }, 999 );
