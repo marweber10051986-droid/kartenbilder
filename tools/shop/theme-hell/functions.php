@@ -521,14 +521,18 @@ function rk_ebay_css() {
 	}
 	$done = true;
 	return '<style>
-.rk-eb{background:#0b0b0b;border-top:1px solid rgba(255,255,255,.12);border-bottom:1px solid rgba(255,255,255,.12);margin:0;padding:0}
-.rk-eb__in{max-width:1280px;margin:0 auto;padding:14px 20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px 34px;font-family:"Barlow Condensed",sans-serif;font-size:17px;letter-spacing:.04em;text-transform:uppercase;color:#fff}
-.rk-eb__in a{color:#fff!important;text-decoration:none;display:inline-flex;align-items:center;gap:10px}
+.rk-eb{background:#0b0b0b;border-bottom:1px solid var(--rk-line,#262626);margin:0;padding:0}
+.rk-eb__in{max-width:1340px;margin:0 auto;padding:0 var(--rk-pad,20px);display:grid;grid-template-columns:repeat(3,1fr);list-style:none;font-family:"Barlow Condensed",sans-serif;font-size:18px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:#fff;line-height:1.15}
+.rk-eb__it{display:flex;align-items:center;justify-content:center;gap:12px;padding:13px 16px;margin:0;color:#fff!important;text-decoration:none;text-align:left}
+.rk-eb__it+.rk-eb__it{border-left:1px solid var(--rk-line,#262626)}
+.rk-eb__it b{color:var(--rk-red,#ff3b30);font-weight:800}
+.rk-eb__ic{flex:none;width:32px;height:32px;display:grid;place-items:center;border:1px solid rgba(255,59,48,.55);border-radius:50%;color:var(--rk-red,#ff3b30)}
+.rk-eb__ic svg{width:16px;height:16px}
+a.rk-eb__it:hover{background:#141414}
+a.rk-eb__it:hover .rk-eb__t{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:900px){.rk-eb__in{font-size:15px;padding:0}.rk-eb__it{padding:10px 10px;gap:8px}.rk-eb__ic{width:26px;height:26px}.rk-eb__ic svg{width:13px;height:13px}}
+@media(max-width:640px){.rk-eb__in{grid-template-columns:1fr}.rk-eb__it{justify-content:flex-start;padding:8px 20px}.rk-eb__it+.rk-eb__it{border-left:0;border-top:1px solid var(--rk-line,#262626)}}
 .rk-eb__stars{color:#ffb800;letter-spacing:2px;font-size:18px}
-.rk-eb__big{font-weight:800;font-size:26px;color:#fff;line-height:1}
-.rk-eb__in a:hover .rk-eb__txt{text-decoration:underline}
-.rk-eb__it{opacity:.8}
-.rk-eb__it b{color:var(--rk-red,#ff3b30)}
 .rk-ebp{display:flex;align-items:center;gap:10px;margin:14px 0;padding:10px 14px;border:1px solid rgba(255,255,255,.2);font-size:14px}
 .rk-ebp a{color:inherit;text-decoration:underline}
 .rk-ebp .rk-eb__stars{font-size:15px}
@@ -541,16 +545,16 @@ function rk_ebay_css() {
 .rk-cb__lab{position:relative;height:18px;margin-top:8px;font-size:13px;opacity:.75;letter-spacing:.04em}
 .rk-cb__lab span{position:absolute;transform:translateX(-50%);white-space:nowrap}
 .rk-cb__lab span:first-child{transform:none}
-@media(max-width:700px){.rk-eb__in{font-size:15px;gap:8px 20px}.rk-cb__lab{font-size:11px}}
+@media(max-width:700px){.rk-cb__lab{font-size:11px}}
 </style>';
 }
 
 function rk_ebay_bar() {
 	$s = rk_ebay_stats();
-	return rk_ebay_css() . '<section class="rk-eb" aria-label="Bewertungen auf eBay"><div class="rk-eb__in">'
-		. '<a href="' . esc_url( $s['profil'] ) . '" target="_blank" rel="noopener"><span class="rk-eb__big">' . (int) $s['quote'] . ' %</span><span class="rk-eb__txt">positive Bewertungen auf eBay</span></a>'
-		. '<span class="rk-eb__it"><b>Ab 70 €</b> versandkostenfreie Lieferung in DE</span>'
-		. '<span class="rk-eb__it">Seit <b>über 6 Jahren</b> im Sammelkarten Business tätig</span>'
+	return rk_ebay_css() . '<section class="rk-eb" aria-label="Warum Rookie Business"><div class="rk-eb__in">'
+		. '<a class="rk-eb__it" href="' . esc_url( $s['profil'] ) . '" target="_blank" rel="noopener"><span class="rk-eb__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11v9H4v-9z"/><path d="M7 11l4-8a2.5 2.5 0 0 1 3 3l-1 4h5.5a2 2 0 0 1 2 2.4l-1.4 6.6a2 2 0 0 1-2 1.6H7"/></svg></span><span class="rk-eb__t"><b>' . (int) $s['quote'] . ' %</b> positive Bewertungen auf eBay</span></a>'
+		. '<div class="rk-eb__it"><span class="rk-eb__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h11v10H3z"/><path d="M14 9h4l3 3v4h-7"/><circle cx="7" cy="17.5" r="1.8"/><circle cx="17" cy="17.5" r="1.8"/></svg></span><span class="rk-eb__t"><b>Ab 70 €</b> versandkostenfrei in DE</span></div>'
+		. '<div class="rk-eb__it"><span class="rk-eb__ic" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><span class="rk-eb__t"><b>Über 6 Jahre</b> im Sammelkarten Business</span></div>'
 		. '</div></section>';
 }
 
@@ -1941,311 +1945,65 @@ add_filter( 'render_block', function ( $content, $block ) {
 }, 10, 2 );
 
 
-// v2.0 Hell: helles Design mit roten Akzenten (26.11.2026). Zurück zum dunklen Look: diesen Block löschen.
+// v2.2 Dunkel: neue Elemente (Konto, Karten verkaufen, Ankauf) im dunklen Look (26.11.2026).
 add_action( 'wp_head', function () {
-	echo '<style id="rk-hell">' . <<<'RK_HELL'
-/* v2.0 Hell: sauberes weiss/hellgraues Design mit roten Akzenten (26.11.2026) */
-:root{
---rk-ink:#f3f4f6;--rk-panel:#ffffff;--rk-line:#e4e6ea;--rk-muted:#6b7280;--rk-paper:#14171c;--rk-red:#d7191f;
---rk-red-d:#b3141a;--rk-soft:#f7f8fa;--rk-text:#14171c;--rk-radius:14px;
---rk-display:Manrope,Arial,sans-serif;--rk-mono:Manrope,Arial,sans-serif;--rk-body:Manrope,Arial,sans-serif;
---wp--preset--color--ink:#f3f4f6;--wp--preset--color--panel:#ffffff;--wp--preset--color--line:#e4e6ea;--wp--preset--color--muted:#6b7280;--wp--preset--color--paper:#14171c;--wp--preset--color--signal:#d7191f;
---wp--preset--font-family--display:Manrope,Arial,sans-serif;--wp--preset--font-family--mono:Manrope,Arial,sans-serif;
-}
-html,body{background:#f3f4f6!important;color:#14171c}
-body{font-family:Manrope,Arial,sans-serif}
-::selection{background:#d7191f;color:#fff}
-a{color:#14171c}
-html body h1,html body h2,html body h3,html body h4,html body h5,html body h6,html body .wp-block-heading{font-family:Manrope,Arial,sans-serif!important;font-weight:800;text-transform:none!important;letter-spacing:-.02em!important;color:#14171c}
-/* kleine Labels: freundlich statt Mono */
-html body .rk-label,html body .rk-kicker,html body .rk-nav a,html body .rk-ticker,html body .rk-link-arrow,html body .rk-btn,html body .rk-hero__sub,html body .rk-hero__foot,html body .rk-section__foot,html body .rk-cat__meta,html body .rk-list__title,html body .rk-list b,html body .rk-footer__bottom,html body .rk-drop__date,html body .rk-drop__clock span,html body .rk-filters__label,html body .rk-car__price,html body .rk-deal2__tiers span{font-family:Manrope,Arial,sans-serif!important;letter-spacing:.02em!important}
-html body .rk-label{color:#6b7280;font-weight:600;font-size:13px!important;text-transform:uppercase;letter-spacing:.06em!important}
-html body .rk-kicker{color:#d7191f;font-weight:700}
-html body .rk-h2,html body .rk-hero__title,html body .rk-cta__title,html body .rk-deal2__title,html body .rk-cat__title,html body .rk-drop__title,html body .rk-footer__giant,html body .rk-page__title,html body .rk-wk__stat b,html body .rk-deal2__tiers b{font-family:Manrope,Arial,sans-serif!important;text-transform:none!important;letter-spacing:-.03em!important}
-html body .rk-h2{font-size:clamp(30px,3.6vw,48px)!important;line-height:1.05!important;font-weight:800;color:#14171c}
-html body .rk-outline{color:#9ca3af;-webkit-text-stroke:0}
-html body .rk-red,html body .rk-h2 .rk-red{color:#d7191f}
-html body .rk-muted{color:#6b7280}
-/* Buttons */
-html body .rk-btn,html body .woocommerce a.button,html body .woocommerce button.button,html body .woocommerce input.button,html body .woocommerce #respond input#submit,html body .woocommerce a.button.alt,html body .woocommerce button.button.alt,html body .wc-block-components-button:not(.is-link),html body .wp-block-button__link,html body .wc-block-components-checkout-place-order-button,html body .wp-element-button{
-background:#d7191f!important;color:#fff!important;border:1px solid #d7191f!important;border-radius:999px!important;font-family:Manrope,Arial,sans-serif!important;font-weight:700!important;text-transform:none!important;letter-spacing:0!important;box-shadow:none!important}
-html body .rk-btn:hover,html body .woocommerce a.button:hover,html body .woocommerce button.button:hover,html body .woocommerce a.button.alt:hover,html body .woocommerce button.button.alt:hover,html body .wc-block-components-button:not(.is-link):hover,html body .wp-block-button__link:hover,html body .wp-element-button:hover{background:#b3141a!important;border-color:#b3141a!important;color:#fff!important}
-html body .rk-btn{padding:15px 26px;font-size:15px!important;gap:12px}
-html body .rk-link-arrow{color:#14171c;font-weight:700;text-transform:none!important;font-size:15px!important}
-html body .rk-link-arrow:hover{color:#d7191f}
-html body .woocommerce ul.products li.product .button{background:#fff!important;color:#14171c!important;border:1px solid #d5d8de!important}
-html body .woocommerce ul.products li.product .button:hover{background:#14171c!important;color:#fff!important;border-color:#14171c!important}
-/* Ticker: rote Leiste */
-html body .rk-ticker{background:#d7191f;color:#fff;border-bottom:0;font-weight:600;text-transform:none!important}
-html body .rk-ticker .rk-muted{color:rgba(255,255,255,.85)}
-html body .rk-ticker .rk-dot{background:#fff}
-/* Header weiss */
-html body .rk-site-header{background:rgba(255,255,255,.96)!important;backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid #e4e6ea;box-shadow:0 1px 0 rgba(17,24,39,.02)}
-html body .rk-logo{color:#14171c!important;font-family:"Barlow Condensed",Impact,sans-serif!important;text-transform:uppercase}
-html body .rk-logo .rk-logo__sub{font-family:"Barlow Condensed",Impact,sans-serif!important;color:#d7191f!important}
-html body .rk-nav a{color:#374151;font-weight:600;text-transform:none!important;font-size:15px!important}
-html body .rk-nav a:hover{color:#d7191f}
-html body .rk-header .wc-block-mini-cart__button{color:#14171c}
-html body .rk-hsearch{background:#f3f4f6;border:1px solid #e4e6ea;border-radius:999px;padding:0 4px}
-html body .rk-hsearch input{color:#14171c;font-family:Manrope,Arial,sans-serif;font-size:14px}
-html body .rk-hsearch input::placeholder{text-transform:none;color:#6b7280}
-html body .rk-hsearch button{color:#14171c}
-html body .rk-hsearch:focus-within{border-color:#d7191f;background:#fff}
-/* Hero hell */
-html body .rk-hero{background:radial-gradient(1200px 500px at 50% 0%,#ffffff 0%,#f3f4f6 70%)}
-html body .rk-hero::before{opacity:.035!important}
-html body .rk-hero__title{color:#14171c;font-weight:800;font-size:clamp(40px,7vw,104px)!important;line-height:1!important;white-space:normal!important}
-html body .rk-hero__sub{color:#4b5563!important;text-transform:none!important;font-size:clamp(16px,1.4vw,20px)!important;line-height:1.6!important;letter-spacing:0!important}
-html body .rk-hero__foot{color:#6b7280;text-transform:none!important}
-html body .rk-card{filter:drop-shadow(0 18px 28px rgba(17,24,39,.18))}
-html body .rk-stamp{background:#fff;border-radius:8px}
-/* Sektionen als weisse Flaechen */
-html body .rk-section__head{border-bottom-color:#e4e6ea}
-html body .rk-section__lead,html body .rk-section__aside p:first-child{color:#4b5563;font-size:16px}
-html body .rk-section__foot{border-top-color:#e4e6ea;color:#6b7280;text-transform:none!important}
-/* Kategorien */
-html body .rk-cat{background:#fff!important;border:1px solid #e4e6ea;border-radius:18px;box-shadow:0 1px 2px rgba(17,24,39,.04);transition:box-shadow .25s,transform .25s,border-color .25s}
-html body .rk-cat:hover{border-color:#e4e6ea;box-shadow:0 18px 40px rgba(17,24,39,.10);transform:translateY(-3px)}
-html body .rk-cat__title{color:#14171c;font-weight:800}
-html body .rk-cat__meta{color:#6b7280;text-transform:none!important}
-html body .rk-cat__arrow{color:#d7191f}
-html body .rk-cat__cards img{filter:drop-shadow(0 14px 22px rgba(17,24,39,.20))}
-/* Roter CTA Block */
-html body .rk-cta{background:#d7191f;color:#fff;border-radius:22px;margin:0 var(--rk-pad)}
-html body .rk-cta__title,html body .rk-cta__text,html body .rk-cta .rk-label,html body .rk-cta .rk-kicker{color:#fff!important}
-html body .rk-cta__big{color:#fff!important;border-bottom-color:rgba(255,255,255,.4)}
-html body .rk-cta__big:hover{color:#fff!important;border-color:#fff;opacity:.85}
-html body .rk-nl__label,html body .rk-nl__consent,html body .rk-nl__consent a,html body .rk-nl__msg{color:#fff!important}
-html body .rk-nl .rk-nl__row{border-radius:999px;overflow:hidden;background:#fff}
-html body .rk-nl .rk-nl__row input.rk-nl__email{background:#fff!important;color:#14171c!important}
-html body .rk-nl .rk-nl__row input.rk-nl__email::placeholder{color:#6b7280}
-html body .rk-nl .rk-nl__btn{background:#14171c;color:#fff;border-left:0;font-family:Manrope,Arial,sans-serif;font-weight:700;text-transform:none;letter-spacing:0}
-html body .rk-nl__consent input{accent-color:#14171c}
-/* Mindset, Listen, Texte */
-html body .rk-mindset__intro,html body .rk-page .wp-block-post-content p,html body .rk-page .wp-block-post-content li,html body .rk-product-desc p,html body .rk-seo__text p,html body .rk-faq__item p,html body .rk-seo-text p,html body .rk-rg-list li,html body .rk-footer__brand .rk-bio__text,html body .rk-deal .rk-drop__date,html body .rk-deal2__note{color:#4b5563!important}
-html body .rk-list li,html body .rk-mindset__intro,html body .rk-faq__item,html body .rk-faq__item:last-child,html body .rk-seo-text,html body .rk-rg-list li,html body .rk-rg-list li:last-child{border-color:#e4e6ea!important}
-html body .rk-list p{color:#6b7280}
-html body .rk-page .wp-block-post-content a,html body .rk-product-desc a,html body .rk-bio__text strong{color:#14171c}
-html body .rk-seo__links a,html body .rk-rg-cta a{border:1px solid #d5d8de;border-radius:999px;color:#14171c!important;background:#fff;text-transform:none;letter-spacing:0}
-html body .rk-seo__links a:hover,html body .rk-rg-cta a:hover{border-color:#d7191f;color:#d7191f!important;background:#fff}
-html body .rk-rg-list a{color:#14171c}
-/* Spar Banner und Countdown */
-html body .rk-drop,html body .rk-deal2{background:#fff;border-color:#e4e6ea}
-html body .rk-deal2__tiers li{border-left-color:#e4e6ea}
-html body .rk-deal2__tiers span{color:#6b7280;text-transform:none!important}
-html body .rk-drop__clock i{color:#9ca3af}
-/* Karussell */
-html body .rk-car__item a{color:#14171c}
-html body .rk-car__img{background:#fff;border:1px solid #e4e6ea;border-radius:14px;transition:box-shadow .2s,border-color .2s,transform .2s}
-html body .rk-car__item a:hover .rk-car__img{border-color:#e4e6ea;box-shadow:0 14px 30px rgba(17,24,39,.10);transform:translateY(-3px)}
-html body .rk-car__price{color:#d7191f;font-weight:800}
-/* Wuehlkiste */
-html body .rk-wk::before{background:#ffffff!important;border-color:#e4e6ea!important}
-html body .rk-wk__badge{border-radius:6px}
-html body .rk-wk__stats{background:#e4e6ea!important;border-color:#e4e6ea!important;border-radius:14px;overflow:hidden}
-html body .rk-wk__stat{background:#f7f8fa!important}
-html body .rk-wk__stat b{color:#14171c!important}
-html body .rk-wk__stat span{color:#4b5563;opacity:1!important;text-transform:none!important}
-html body .rk-wk__chips>span{color:#6b7280;opacity:1!important}
-html body .rk-wk__chip{border:1px solid #d5d8de!important;color:#14171c!important;border-radius:999px;background:#fff;font-family:Manrope,Arial,sans-serif!important;font-size:14px!important;text-transform:none!important}
-html body .rk-wk__chip:hover{border-color:#d7191f!important;background:#fff5f5!important}
-html body .rk-wk__tag{border-radius:6px;box-shadow:0 4px 10px rgba(17,24,39,.18)!important}
-/* Bewertungsleiste, Fortschrittsbalken */
-html body .rk-eb{background:#fff!important;border-color:#e4e6ea!important}
-html body .rk-eb__in,html body .rk-eb__in a{color:#14171c!important}
-html body .rk-eb__it{opacity:1!important;color:#4b5563}
-html body .rk-ebp{border:1px solid #e4e6ea!important;border-radius:12px;background:#fff}
-html body .rk-cb{background:#fff!important;color:#14171c!important;border:1px solid #e4e6ea!important;border-radius:12px}
-html body .rk-cb__bar{background:#e9ebef!important;border-radius:99px;overflow:hidden}
-html body .rk-cb__tick{background:#9ca3af!important}
-html body .rk-nd__bar{background:#e4e6ea!important}
-/* Aehnliche Karten, Zuletzt verkauft, Bewertungen */
-html body .rk-rel__head{border-bottom-color:#e4e6ea!important}
-html body .rk-rel__head h2{font-family:Manrope,Arial,sans-serif!important;text-transform:none!important}
-html body .rk-rel__head a{color:#14171c!important;text-transform:none!important}
-html body .rk-rel__list a{background:#fff!important;border:1px solid #e4e6ea!important;border-radius:12px;color:#14171c!important}
-html body .rk-rel__list a:hover{box-shadow:0 12px 26px rgba(17,24,39,.10);border-color:#e4e6ea!important}
-html body .rk-rel__img,html body .rk-sold__img{background:#f7f8fa!important;border-radius:8px}
-html body .rk-sold,html body .rk-rv{background:#fff!important;color:#14171c!important;border-top:1px solid #e4e6ea!important}
-html body .rk-sold__h{font-family:Manrope,Arial,sans-serif!important;text-transform:none!important;letter-spacing:-.03em}
-html body .rk-sold__s{color:#4b5563;opacity:1!important}
-html body .rk-sold__g li{background:#fff!important;border:1px solid #e4e6ea!important;border-radius:12px}
-html body .rk-sold__img img{filter:grayscale(1) brightness(1.02) contrast(.9)!important;opacity:.55}
-html body .rk-sold__tag{border-radius:6px}
-html body .rk-sold__n{color:#4b5563;opacity:1!important}
-html body .rk-rv__c{background:#fff!important;border:1px solid #e4e6ea!important;border-radius:14px;color:#14171c}
-html body .rk-rv__m{border-top-color:#e4e6ea!important;color:#6b7280;opacity:1!important}
-html body .rk-rv__a{color:#14171c!important}
-/* Suche gross (rote Leiste) */
-html body .rk-bigsearch form>div{background:#fff!important;border-radius:999px!important;overflow:hidden}
-html body .rk-bigsearch input,html body .rk-bigsearch input:focus,html body .rk-bigsearch input:-webkit-autofill{background:#fff!important;color:#14171c!important;-webkit-text-fill-color:#14171c}
-html body .rk-bigsearch input::placeholder{color:#6b7280!important}
-html body .rk-bigsearch button{background:#14171c!important;color:#fff!important;font-family:Manrope,Arial,sans-serif!important;font-weight:700!important;text-transform:none!important;letter-spacing:0!important}
-html body .rk-bigsearch button:hover{background:#000!important}
-html body .rk-bigsearch .rk-kicker{text-transform:none}
-/* Suchauftrag Formular */
-html body .rk-sa{color:#14171c!important}
-html body .rk-sa label{color:#6b7280!important;font-family:Manrope,Arial,sans-serif!important}
-html body .rk-sa input[type=text],html body .rk-sa input[type=email],html body .rk-sa textarea{background:#fff!important;color:#14171c!important;border:1px solid #d5d8de!important;border-radius:10px!important}
-html body .rk-sa .rk-sa__c{color:#4b5563!important}
-html body .rk-sa button{border-radius:999px;font-family:Manrope,Arial,sans-serif!important;text-transform:none!important;letter-spacing:0!important}
-html body .rk-sa button:hover{background:#b3141a!important;color:#fff!important}
-/* Ratgeber */
-html body .rk-rg-card,html body .rk-rg-vs__seite,html body .rk-rg-karten,html body .rk-rg-cover{background:#fff!important;border:1px solid #e4e6ea!important;border-radius:14px;color:#14171c!important}
-html body .rk-rg-card__img{background:#f3f4f6!important}
-html body .rk-rg-karte{color:#14171c!important}
-html body .rk-rg-karte__img{background:#f7f8fa!important;border-radius:10px}
-html body .rk-rg-autor{border-bottom-color:#e4e6ea!important}
-html body .rk-rg-btn{background:#d7191f!important;border-radius:999px;font-family:Manrope,Arial,sans-serif!important;text-transform:none!important;letter-spacing:0!important}
-html body .rk-rg-tag{background:#fde8e8!important;color:#b3141a!important;border-radius:6px}
-html body #rk-ratgeber~*{color:inherit}
-/* Filter und Sortierung */
-html body .rk-filters select,html body .wc-block-catalog-sorting select,html body .woocommerce-ordering select,html body .rk-filters .rk-filters__txt{
-background-color:#fff!important;color:#14171c!important;border:1px solid #d5d8de!important;border-radius:10px!important;font-family:Manrope,Arial,sans-serif!important;font-size:14px!important}
-html body .rk-filters select.is-set,html body .rk-filters .rk-filters__txt.is-set{border-color:#d7191f!important}
-html body .rk-filters__want{color:#14171c!important}
-/* Produktkacheln */
-html body .woocommerce ul.products li.product a img,html body .wc-block-components-product-image img,html body .wc-block-grid__product-image img,html body .wc-block-product .wc-block-components-product-image img{
-background:#fff!important;border:1px solid #e4e6ea!important;border-radius:14px!important}
-html body .woocommerce ul.products li.product:hover a img,html body .wc-block-product:hover .wc-block-components-product-image img{border-color:#e4e6ea!important;box-shadow:0 14px 30px rgba(17,24,39,.10)}
-html body .woocommerce ul.products li.product .woocommerce-loop-product__title,html body .wc-block-components-product-name,html body .wp-block-post-title a{color:#14171c!important;font-family:Manrope,Arial,sans-serif!important}
-html body .woocommerce ul.products li.product .price,html body .wc-block-components-product-price{color:#14171c!important;font-family:Manrope,Arial,sans-serif!important;font-weight:800!important}
-html body .woocommerce span.onsale,html body .wc-block-components-product-sale-badge{border-radius:6px!important;font-family:Manrope,Arial,sans-serif!important;text-transform:none!important}
-html body .woocommerce-breadcrumb,html body .wc-block-breadcrumbs,html body .woocommerce-result-count,html body .wc-block-product-results-count{font-family:Manrope,Arial,sans-serif!important;text-transform:none!important;color:#6b7280!important}
-html body .woocommerce-breadcrumb a,html body .wc-block-breadcrumbs a{color:#6b7280!important}
-/* Produktseite */
-html body .woocommerce div.product .product_title,html body .wp-block-post-title{font-family:Manrope,Arial,sans-serif!important;text-transform:none!important;letter-spacing:-.02em;font-size:clamp(28px,3vw,42px)!important;line-height:1.15!important;color:#14171c}
-html body .woocommerce div.product div.images img{background:#fff;border:1px solid #e4e6ea;border-radius:16px}
-html body .single-product .wp-block-woocommerce-product-price,html body .single-product .wp-block-woocommerce-product-price .amount,html body .woocommerce div.product p.price,html body .woocommerce div.product span.price{font-family:Manrope,Arial,sans-serif!important;font-weight:800!important;color:#d7191f!important}
-html body .woocommerce div.product .woocommerce-tabs ul.tabs li a{font-family:Manrope,Arial,sans-serif;text-transform:none;color:#6b7280!important}
-html body .woocommerce div.product .woocommerce-tabs ul.tabs li.active a{color:#14171c!important}
-html body .product_meta a{color:#14171c}
-html body .rk-product-desc{border-top-color:#e4e6ea}
-html body.single-product form.cart button.single_add_to_cart_button.button.alt.wp-element-button,html body .single-product .single_add_to_cart_button{background:#d7191f!important;border-color:#d7191f!important;color:#fff!important}
-html body.single-product form.cart button.single_add_to_cart_button.button.alt.wp-element-button:hover,html body .single-product .single_add_to_cart_button:hover{background:#b3141a!important;border-color:#b3141a!important;color:#fff!important}
-/* Formulare, Warenkorb, Kasse */
-html body .woocommerce form .form-row input.input-text,html body .woocommerce form .form-row textarea,html body .woocommerce form .form-row select,html body .woocommerce .quantity .qty,html body select,html body input[type=text],html body input[type=email],html body input[type=tel],html body input[type=number],html body input[type=password],html body input[type=search],html body textarea,html body .wc-block-components-text-input input,html body .wc-block-components-combobox .wc-block-components-combobox-control input,html body .wc-blocks-components-select__select,html body .wc-block-components-quantity-selector,html body .wc-block-components-textarea{
-background:#fff!important;color:#14171c!important;border:1px solid #d5d8de!important;border-radius:10px!important}
-html body .rk-hsearch input,html body .rk-bigsearch input,html body .rk-nl .rk-nl__row input.rk-nl__email{border:0!important;border-radius:0!important}
-html body .wc-block-components-quantity-selector__button{color:#14171c!important}
-html body .wc-block-components-quantity-selector input{border:0!important}
-html body .wc-block-cart,html body .wc-block-checkout,html body .wc-block-components-sidebar,html body .wc-block-components-totals-wrapper,html body .wc-block-cart-items,html body .wc-block-cart-items td,html body .wc-block-cart-items th,html body .woocommerce table.shop_table,html body .woocommerce table.shop_table td,html body .woocommerce table.shop_table th{border-color:#e4e6ea!important;color:#14171c}
-html body .wc-block-cart-items__header,html body .wc-block-components-title,html body .wc-block-components-checkout-step__title{font-family:Manrope,Arial,sans-serif!important;text-transform:none!important;color:#14171c!important;font-weight:800!important}
-html body .wc-block-components-totals-footer-item .wc-block-components-totals-item__value,html body .wc-block-components-totals-footer-item .wc-block-components-totals-item__label{font-family:Manrope,Arial,sans-serif!important;text-transform:none!important}
-html body .wc-block-components-checkbox .wc-block-components-checkbox__input[type=checkbox],html body .wc-block-components-radio-control__input{background:#fff!important;border-color:#9ca3af!important}
-html body .wc-block-components-radio-control__option,html body .wc-block-components-radio-control-accordion-option{border-color:#e4e6ea!important}
-html body .woocommerce-message,html body .woocommerce-info,html body .woocommerce-error,html body .wc-block-components-notice-banner{background:#fff!important;color:#14171c!important;border:1px solid #e4e6ea!important;border-left:4px solid #d7191f!important;border-radius:10px!important}
-html body .wc-block-mini-cart__drawer .components-modal__content,html body .wc-block-mini-cart__drawer .wc-block-components-drawer__content{background:#fff!important;color:#14171c}
-html body .wc-block-mini-cart__title{font-family:Manrope,Arial,sans-serif!important;text-transform:none!important}
-html body .woocommerce nav.woocommerce-pagination ul li a,html body .woocommerce nav.woocommerce-pagination ul li span{color:#14171c;font-family:Manrope,Arial,sans-serif}
-html body .woocommerce nav.woocommerce-pagination ul li span.current,html body .woocommerce nav.woocommerce-pagination ul li a:hover{background:#d7191f!important;color:#fff!important}
-html body .wp-block-woocommerce-product-collection,html body .wp-block-woocommerce-store-notices{color:#14171c}
-html body .wc-block-pagination-page,html body .wp-block-query-pagination a,html body .wp-block-query-pagination-numbers .page-numbers{color:#14171c}
-html body .wp-block-query-pagination-numbers .page-numbers.current{background:#d7191f;color:#fff;border-radius:8px;padding:2px 8px}
-/* Footer */
-html body .rk-footer{background:#fff;border-top:1px solid #e4e6ea}
-html body .rk-footer__cols a{color:#14171c}
-html body .rk-footer__cols a:hover{color:#d7191f}
-html body .rk-footer__giant{color:#eceef1!important;font-family:"Barlow Condensed",Impact,sans-serif!important;text-transform:uppercase!important}
-html body .rk-footer__bottom{border-top-color:#e4e6ea;color:#6b7280;text-transform:none!important}
-html body .rk-footer__bottom a{color:#6b7280}
-html body .rk-bio__img{background:#f3f4f6}
-html body .rk-bio__img b{color:#14171c}
-html body .rk-pay{border-top-color:#e4e6ea}
-html body .rk-pay__list li{background:#f7f8fa;color:#14171c;border:1px solid #e4e6ea;border-radius:8px}
-html body .rk-eb__txt,html body .rk-eb__in a .rk-eb__txt{color:#14171c!important}
-html body .rk-eb__stars,html body .rk-rv__st{color:#f59e0b!important}
-html body .rk-wk__chip--leer{color:#9ca3af!important;background:#f7f8fa!important}
-html body .rk-rv__m b,html body .rk-rv__c b{color:#14171c!important}
-html body .rk-rv__a{border-bottom-color:#d7191f!important}
-html body .rk-footer__giant{color:#e9ebef!important}
-/* Produktkarten im Shop als weisse Karten */
-html body .wc-block-product-template li.wc-block-product{background:#fff;border:1px solid #e4e6ea;border-radius:16px;padding:12px 12px 14px;box-sizing:border-box;transition:box-shadow .2s,transform .2s}
-html body .wc-block-product-template li.wc-block-product:hover{box-shadow:0 16px 34px rgba(17,24,39,.10);transform:translateY(-3px)}
-html body .wc-block-product-template li.wc-block-product .wc-block-components-product-image img,html body .wc-block-product:hover .wc-block-components-product-image img{border:0!important;background:#f7f8fa!important;border-radius:10px!important;box-shadow:none!important;transform:none!important}
-html body .wc-block-product-template li.wc-block-product .wp-block-post-title{font-size:14px!important;line-height:1.35!important;min-height:calc(1.35em * 3)!important;text-align:left!important;margin:12px 2px 0!important}
-html body .wc-block-product-template li.wc-block-product .wp-block-post-title a{font-size:14px!important;font-weight:600!important}
-html body .wc-block-product-template li.wc-block-product .wp-block-woocommerce-product-price{text-align:left!important;margin:6px 2px 0!important}
-html body .wc-block-product-template li.wc-block-product .wc-block-components-product-price{font-size:18px!important;color:#14171c!important}
-html body .wc-block-product-template li.wc-block-product .wp-block-button__link,html body .wc-block-product-template li.wc-block-product .wc-block-components-product-button__button{padding:11px 16px!important;font-size:14px!important}
-/* Hinweis unten links (Mengenrabatt) */
-html body #rk-nd{background:#fff;color:#14171c;border:1px solid #e4e6ea;border-left:4px solid #d7191f;border-radius:12px;font-family:Manrope,Arial,sans-serif;text-transform:none;letter-spacing:0;font-size:14px;box-shadow:0 12px 30px rgba(17,24,39,.16)}
-html body #rk-nd a{color:#14171c!important;font-weight:700;opacity:1}
-html body #rk-nd button{color:#6b7280}
-html body #rk-nd .rk-nd__bar{border-radius:99px;overflow:hidden}
-/* Kategorie Kopf */
-html body .wp-block-query-title,html body .wp-block-term-description{color:#14171c}
-/* Produktseite Feinschliff */
-html body .rk-more{border-top-color:#e4e6ea!important}
-html body .rk-more a{border:1px solid #d5d8de!important;border-radius:999px!important;background:#fff!important;color:#14171c!important}
-html body .rk-more a:hover{border-color:#d7191f!important;color:#d7191f!important}
-html body.single-product form.cart button.single_add_to_cart_button.button.alt.wp-element-button,html body.single-product .single_add_to_cart_button{font-size:16px!important;padding:15px 34px!important}
-html body .woocommerce div.product div.images img,html body .woocommerce-product-gallery__image img{border-radius:14px}
-html body .woocommerce-product-gallery__wrapper{border-radius:16px;overflow:hidden}
-html body .rk-eb__in{font-family:Manrope,Arial,sans-serif!important;text-transform:none!important;letter-spacing:0!important;font-size:15px!important}
-html body .rk-eb__in .rk-eb__big{font-size:inherit!important;font-weight:700!important;line-height:inherit!important;color:var(--rk-red,#ff3b30)!important}html body .rk-eb__in a{gap:5px!important}
-/* Warenkorb und Kasse */
-html body .rk-dl{background:#fff!important;color:#14171c!important;border:1px solid #e4e6ea!important;border-left:4px solid #d7191f!important;border-radius:12px!important}
-html body .rk-dl *{color:#14171c}
-html body .rk-dl b,html body .rk-dl strong,html body .rk-dl span:first-child{color:#d7191f}
-html body .rk-cb{font-family:Manrope,Arial,sans-serif!important}
-html body .rk-cb__t{text-transform:none!important;letter-spacing:0!important;font-weight:700}
-html body .rk-cb__lab{color:#6b7280;opacity:1!important}
-/* Konto Link im Header */
-html body .rk-acc{display:inline-flex;align-items:center;gap:6px;color:#14171c;text-decoration:none;font-weight:600;font-size:15px;margin-right:6px}
-html body .rk-acc:hover{color:#d7191f}
-@media(max-width:900px){html body .rk-acc__t{display:none}}
-/* Karten verkaufen */
-html body .rk-sell{max-width:1180px;margin:0 auto;padding:0 var(--rk-pad) 60px;box-sizing:border-box}
-html body .rk-sell__hero{padding:70px 0 40px;text-align:center}
-html body .rk-sell__h1{font-family:Manrope,Arial,sans-serif!important;font-weight:800;font-size:clamp(36px,5.4vw,72px)!important;line-height:1.05!important;letter-spacing:-.03em!important;margin:16px auto 18px;max-width:16ch;color:#14171c}
-html body .rk-sell__lead{font-size:clamp(17px,1.5vw,20px);color:#4b5563;max-width:62ch;margin:0 auto 28px;line-height:1.6}
-html body .rk-sell__ctas{display:flex;gap:24px;justify-content:center;align-items:center;flex-wrap:wrap}
-html body .rk-sell__trust{list-style:none;padding:0;margin:44px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-html body .rk-sell__trust li{background:#fff;border:1px solid #e4e6ea;border-radius:16px;padding:18px 16px;text-align:left}
-html body .rk-sell__trust b{display:block;font-size:22px;font-weight:800;color:#d7191f;letter-spacing:-.02em}
-html body .rk-sell__trust span{display:block;margin-top:4px;color:#4b5563;font-size:14px;line-height:1.45}
-html body .rk-sell__sec{background:#fff;border:1px solid #e4e6ea;border-radius:22px;padding:clamp(26px,4vw,48px);margin:22px 0}
-html body .rk-sell__p{color:#4b5563;font-size:16px;line-height:1.7;max-width:70ch}
-html body .rk-sell__steps{list-style:none;padding:0;margin:30px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:none}
-html body .rk-sell__steps li{background:#f7f8fa;border-radius:16px;padding:22px 20px}
-html body .rk-sell__steps b{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#d7191f;color:#fff;font-weight:800}
-html body .rk-sell__steps h3{font-family:Manrope,Arial,sans-serif!important;font-size:18px!important;line-height:1.25!important;margin:14px 0 6px;letter-spacing:-.01em!important}
-html body .rk-sell__steps p{color:#4b5563;font-size:14.5px;line-height:1.6;margin:0}
-html body .rk-sell__two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-html body .rk-sell__chips{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-wrap:wrap;gap:8px}
-html body .rk-sell__chips li{border:1px solid #d5d8de;border-radius:999px;padding:8px 14px;font-size:14px;font-weight:600;background:#fff}
-html body .rk-sell__promise{list-style:none;padding:0;margin:16px 0 0}
-html body .rk-sell__promise li{padding:14px 0 14px 30px;border-bottom:1px solid #e4e6ea;color:#4b5563;line-height:1.6;position:relative}
-html body .rk-sell__promise li::before{content:"✓";position:absolute;left:0;top:13px;color:#d7191f;font-weight:800}
-html body .rk-sell__promise b{color:#14171c}
-html body .rk-sell__who{display:flex;gap:32px;align-items:center}
-html body .rk-sell__img{flex:0 0 140px;width:140px;height:140px}
-html body .rk-sell__faq{margin-top:20px}
-html body .rk-sell .rk-rv{border-radius:22px;border:1px solid #e4e6ea!important;margin:22px 0}
-html body .rk-ak{margin-top:22px}
-html body .rk-ak__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px 18px}
-html body .rk-ak label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:14px;color:#14171c;margin-bottom:14px}
-html body .rk-ak small{font-weight:400;color:#6b7280}
-html body .rk-ak input[type=text],html body .rk-ak input[type=email],html body .rk-ak select,html body .rk-ak textarea{padding:12px 14px!important;font:15px Manrope,Arial,sans-serif!important}
-html body .rk-ak__file input{padding:12px!important;background:#f7f8fa!important;border:1px dashed #c4c8cf!important;border-radius:10px}
-html body .rk-ak .rk-ak__c{flex-direction:row;align-items:flex-start;gap:10px;font-weight:400;color:#4b5563;line-height:1.5}
-html body .rk-ak .rk-ak__c input{margin-top:3px;width:18px;height:18px;flex:none}
-html body .rk-ak button{background:#d7191f;color:#fff;border:0;border-radius:999px;padding:16px 30px;font:700 16px Manrope,Arial,sans-serif;cursor:pointer}
-html body .rk-ak button:hover{background:#b3141a}
-html body .rk-ak__hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0}
-html body .rk-ak__ok,html body .rk-ak__err{padding:16px 18px;border-radius:12px;margin:0 0 20px;font-size:15px;line-height:1.5}
-html body .rk-ak__ok{background:#ecfdf3;border:1px solid #a6e9c1}
-html body .rk-ak__err{background:#fff5f5;border:1px solid #f3b4b6}
-@media(max-width:900px){html body .rk-sell__trust,html body .rk-sell__steps{grid-template-columns:1fr 1fr}html body .rk-sell__two{grid-template-columns:1fr}html body .rk-ak__grid{grid-template-columns:1fr}html body .rk-sell__who{flex-direction:column;align-items:flex-start}}
-@media(max-width:560px){html body .rk-sell__trust,html body .rk-sell__steps{grid-template-columns:1fr}}
-html body .rk-page .wp-block-post-content > .rk-sell,html body .rk-sell{max-width:1180px!important;width:100%!important;margin-left:auto!important;margin-right:auto!important;padding-left:0;padding-right:0}
-html body .rk-sell h2,html body .rk-sell .rk-h2{margin-top:10px!important;margin-bottom:0!important}
-html body .rk-sell h3{margin-top:14px!important}
-html body .rk-sell p{max-width:none}
-html body .rk-sell .rk-sell__lead,html body .rk-sell .rk-sell__p{max-width:70ch}
-html body .rk-sell .rk-sell__lead{margin-left:auto;margin-right:auto}
-
-RK_HELL
+	echo '<style id="rk-dunkel">' . <<<'RK_DARK'
+/* v2.2 Dunkel (26.11.2026): Konto Link, Karten verkaufen, Ankauf Formular im dunklen Look */
+.rk-acc{display:inline-flex;align-items:center;gap:8px;color:var(--rk-paper,#fff)!important;text-decoration:none;font-family:var(--rk-mono);font-size:var(--rk-small,13px);letter-spacing:.08em;text-transform:uppercase}
+.rk-acc svg{width:18px;height:18px}
+.rk-acc:hover{color:var(--rk-red)!important}
+@media(max-width:900px){.rk-acc__t{display:none}}
+.rk-sell{max-width:1180px;margin:0 auto!important;padding:0 0 60px;box-sizing:border-box;color:var(--rk-paper)}
+.rk-page .wp-block-post-content>.rk-sell{max-width:1180px!important;width:100%!important}
+.rk-sell p{max-width:none}
+.rk-sell__hero{padding:60px 0 34px;text-align:center}
+.rk-sell__hero .rk-kicker{justify-content:center}
+.rk-sell__h1{font-family:var(--rk-display)!important;font-weight:800;text-transform:uppercase;font-size:clamp(44px,7vw,96px)!important;line-height:.92!important;letter-spacing:0!important;margin:16px auto 20px;max-width:14ch}
+.rk-sell__lead{font-size:clamp(16px,1.4vw,19px);color:#b5b5b5;max-width:62ch;margin:0 auto 28px!important;line-height:1.6}
+.rk-sell__ctas{display:flex;gap:26px;justify-content:center;align-items:center;flex-wrap:wrap}
+.rk-sell__trust{list-style:none;padding:0;margin:44px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid var(--rk-line)}
+.rk-sell__trust li{padding:20px 18px;text-align:left;background:var(--rk-panel)}
+.rk-sell__trust li+li{border-left:1px solid var(--rk-line)}
+.rk-sell__trust b{display:block;font-family:var(--rk-display);font-size:30px;font-weight:800;text-transform:uppercase;color:var(--rk-red);line-height:1}
+.rk-sell__trust span{display:block;margin-top:6px;color:#b5b5b5;font-size:14px;line-height:1.45}
+.rk-sell__sec{background:var(--rk-panel);border:1px solid var(--rk-line);padding:clamp(24px,4vw,46px);margin:22px 0}
+.rk-sell h2,.rk-sell .rk-h2{margin-top:10px!important;margin-bottom:0!important}
+.rk-sell h3{margin-top:14px!important}
+.rk-sell__p{color:#b5b5b5;font-size:16px;line-height:1.7;max-width:70ch!important}
+.rk-sell__steps{list-style:none;padding:0;margin:30px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.rk-sell__steps li{background:var(--rk-ink);border:1px solid var(--rk-line);border-top:3px solid var(--rk-red);padding:22px 20px}
+.rk-sell__steps b{display:block;font-family:var(--rk-display);font-weight:800;font-size:44px;line-height:1;color:var(--rk-red)}
+.rk-sell__steps h3{font-family:var(--rk-display)!important;font-weight:800;text-transform:uppercase;font-size:22px!important;line-height:1.1!important;margin:12px 0 8px}
+.rk-sell__steps p{color:#b5b5b5;font-size:14.5px;line-height:1.6;margin:0}
+.rk-sell__two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.rk-sell__chips{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.rk-sell__chips li{border:1px solid var(--rk-line);padding:8px 14px;font-family:var(--rk-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;background:var(--rk-ink)}
+.rk-sell__promise{list-style:none;padding:0;margin:16px 0 0}
+.rk-sell__promise li{padding:14px 0 14px 30px;border-bottom:1px solid var(--rk-line);color:#b5b5b5;line-height:1.6;position:relative}
+.rk-sell__promise li::before{content:"✓";position:absolute;left:0;top:13px;color:var(--rk-red);font-weight:800}
+.rk-sell__promise b{color:var(--rk-paper)}
+.rk-sell__who{display:flex;gap:32px;align-items:center}
+.rk-sell__img{flex:0 0 140px!important;width:140px!important;height:140px!important}
+.rk-sell__faq{margin-top:20px}
+.rk-sell .rk-rv{border:1px solid var(--rk-line)!important;margin:22px 0}
+.rk-ak{margin-top:22px}
+.rk-ak__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px 18px}
+.rk-ak label{display:flex;flex-direction:column;gap:7px;font-family:var(--rk-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#b5b5b5;margin-bottom:14px}
+.rk-ak small{text-transform:none;letter-spacing:0;font-family:var(--rk-body);color:var(--rk-muted)}
+.rk-ak input[type=text],.rk-ak input[type=email],.rk-ak input[type=number],.rk-ak select,.rk-ak textarea{width:100%;box-sizing:border-box;background:var(--rk-ink)!important;color:var(--rk-paper)!important;border:1px solid #3a3a3a!important;border-radius:0!important;padding:13px 14px!important;font:15px var(--rk-body)!important;text-transform:none;letter-spacing:0}
+.rk-ak textarea{min-height:130px}
+.rk-ak input:focus,.rk-ak select:focus,.rk-ak textarea:focus{outline:none;border-color:var(--rk-red)!important}
+.rk-ak__file input{padding:14px!important;background:var(--rk-ink)!important;border:1px dashed #4a4a4a!important;color:#b5b5b5;font:14px var(--rk-body);text-transform:none;letter-spacing:0}
+.rk-ak .rk-ak__c{flex-direction:row;align-items:flex-start;gap:10px;font-family:var(--rk-body);font-size:14px;text-transform:none;letter-spacing:0;color:#b5b5b5;line-height:1.5}
+.rk-ak .rk-ak__c input{margin-top:3px;width:18px;height:18px;flex:none;accent-color:var(--rk-red)}
+.rk-ak button{margin-top:8px;background:var(--rk-red);color:#fff;border:0;border-radius:0;padding:17px 36px;font:500 var(--rk-small,14px) var(--rk-mono);letter-spacing:.08em;text-transform:uppercase;cursor:pointer}
+.rk-ak button:hover{background:var(--rk-paper);color:var(--rk-ink)}
+.rk-ak__hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0}
+.rk-ak__ok,.rk-ak__err{padding:16px 18px;margin:0 0 20px;font-size:15px;line-height:1.5;border:1px solid}
+.rk-ak__ok{border-color:#2ecc71;background:rgba(46,204,113,.08)}
+.rk-ak__err{border-color:var(--rk-red);background:rgba(255,59,48,.08)}
+@media(max-width:900px){.rk-sell__trust,.rk-sell__steps{grid-template-columns:1fr 1fr}.rk-sell__trust li:nth-child(3){border-left:0}.rk-sell__trust li:nth-child(n+3){border-top:1px solid var(--rk-line)}.rk-sell__two{grid-template-columns:1fr}.rk-ak__grid{grid-template-columns:1fr}.rk-sell__who{flex-direction:column;align-items:flex-start}}
+@media(max-width:560px){.rk-sell__trust,.rk-sell__steps{grid-template-columns:1fr}.rk-sell__trust li+li{border-left:0;border-top:1px solid var(--rk-line)}}
+RK_DARK
 	. '</style>'; // phpcs:ignore
 }, 999 );
