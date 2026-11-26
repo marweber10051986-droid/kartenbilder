@@ -245,3 +245,51 @@ html body .rk-dl b,html body .rk-dl strong,html body .rk-dl span:first-child{col
 html body .rk-cb{font-family:Manrope,Arial,sans-serif!important}
 html body .rk-cb__t{text-transform:none!important;letter-spacing:0!important;font-weight:700}
 html body .rk-cb__lab{color:#6b7280;opacity:1!important}
+/* Konto Link im Header */
+html body .rk-acc{display:inline-flex;align-items:center;gap:6px;color:#14171c;text-decoration:none;font-weight:600;font-size:15px;margin-right:6px}
+html body .rk-acc:hover{color:#d7191f}
+@media(max-width:900px){html body .rk-acc__t{display:none}}
+/* Karten verkaufen */
+html body .rk-sell{max-width:1180px;margin:0 auto;padding:0 var(--rk-pad) 60px;box-sizing:border-box}
+html body .rk-sell__hero{padding:70px 0 40px;text-align:center}
+html body .rk-sell__h1{font-family:Manrope,Arial,sans-serif!important;font-weight:800;font-size:clamp(36px,5.4vw,72px)!important;line-height:1.05!important;letter-spacing:-.03em!important;margin:16px auto 18px;max-width:16ch;color:#14171c}
+html body .rk-sell__lead{font-size:clamp(17px,1.5vw,20px);color:#4b5563;max-width:62ch;margin:0 auto 28px;line-height:1.6}
+html body .rk-sell__ctas{display:flex;gap:24px;justify-content:center;align-items:center;flex-wrap:wrap}
+html body .rk-sell__trust{list-style:none;padding:0;margin:44px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+html body .rk-sell__trust li{background:#fff;border:1px solid #e4e6ea;border-radius:16px;padding:18px 16px;text-align:left}
+html body .rk-sell__trust b{display:block;font-size:22px;font-weight:800;color:#d7191f;letter-spacing:-.02em}
+html body .rk-sell__trust span{display:block;margin-top:4px;color:#4b5563;font-size:14px;line-height:1.45}
+html body .rk-sell__sec{background:#fff;border:1px solid #e4e6ea;border-radius:22px;padding:clamp(26px,4vw,48px);margin:22px 0}
+html body .rk-sell__p{color:#4b5563;font-size:16px;line-height:1.7;max-width:70ch}
+html body .rk-sell__steps{list-style:none;padding:0;margin:30px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:none}
+html body .rk-sell__steps li{background:#f7f8fa;border-radius:16px;padding:22px 20px}
+html body .rk-sell__steps b{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#d7191f;color:#fff;font-weight:800}
+html body .rk-sell__steps h3{font-family:Manrope,Arial,sans-serif!important;font-size:18px!important;line-height:1.25!important;margin:14px 0 6px;letter-spacing:-.01em!important}
+html body .rk-sell__steps p{color:#4b5563;font-size:14.5px;line-height:1.6;margin:0}
+html body .rk-sell__two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+html body .rk-sell__chips{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+html body .rk-sell__chips li{border:1px solid #d5d8de;border-radius:999px;padding:8px 14px;font-size:14px;font-weight:600;background:#fff}
+html body .rk-sell__promise{list-style:none;padding:0;margin:16px 0 0}
+html body .rk-sell__promise li{padding:14px 0 14px 30px;border-bottom:1px solid #e4e6ea;color:#4b5563;line-height:1.6;position:relative}
+html body .rk-sell__promise li::before{content:"✓";position:absolute;left:0;top:13px;color:#d7191f;font-weight:800}
+html body .rk-sell__promise b{color:#14171c}
+html body .rk-sell__who{display:flex;gap:32px;align-items:center}
+html body .rk-sell__img{flex:0 0 140px;width:140px;height:140px}
+html body .rk-sell__faq{margin-top:20px}
+html body .rk-sell .rk-rv{border-radius:22px;border:1px solid #e4e6ea!important;margin:22px 0}
+html body .rk-ak{margin-top:22px}
+html body .rk-ak__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px 18px}
+html body .rk-ak label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:14px;color:#14171c;margin-bottom:14px}
+html body .rk-ak small{font-weight:400;color:#6b7280}
+html body .rk-ak input[type=text],html body .rk-ak input[type=email],html body .rk-ak select,html body .rk-ak textarea{padding:12px 14px!important;font:15px Manrope,Arial,sans-serif!important}
+html body .rk-ak__file input{padding:12px!important;background:#f7f8fa!important;border:1px dashed #c4c8cf!important;border-radius:10px}
+html body .rk-ak .rk-ak__c{flex-direction:row;align-items:flex-start;gap:10px;font-weight:400;color:#4b5563;line-height:1.5}
+html body .rk-ak .rk-ak__c input{margin-top:3px;width:18px;height:18px;flex:none}
+html body .rk-ak button{background:#d7191f;color:#fff;border:0;border-radius:999px;padding:16px 30px;font:700 16px Manrope,Arial,sans-serif;cursor:pointer}
+html body .rk-ak button:hover{background:#b3141a}
+html body .rk-ak__hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0}
+html body .rk-ak__ok,html body .rk-ak__err{padding:16px 18px;border-radius:12px;margin:0 0 20px;font-size:15px;line-height:1.5}
+html body .rk-ak__ok{background:#ecfdf3;border:1px solid #a6e9c1}
+html body .rk-ak__err{background:#fff5f5;border:1px solid #f3b4b6}
+@media(max-width:900px){html body .rk-sell__trust,html body .rk-sell__steps{grid-template-columns:1fr 1fr}html body .rk-sell__two{grid-template-columns:1fr}html body .rk-ak__grid{grid-template-columns:1fr}html body .rk-sell__who{flex-direction:column;align-items:flex-start}}
+@media(max-width:560px){html body .rk-sell__trust,html body .rk-sell__steps{grid-template-columns:1fr}}

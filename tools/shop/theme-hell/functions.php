@@ -465,7 +465,7 @@ function rk_wuehlkiste_section() {
 		. '</div><a class="rk-link-arrow" href="' . esc_url( $link ) . '">Ab in die Kiste <span aria-hidden="true">↗</span></a></div>'
 		. '<div class="rk-wk__stats">'
 		. '<div class="rk-wk__stat"><b>0,80<i>€</i></b><span>pro Karte, egal ob Star oder Rollenspieler</span></div>'
-		. '<div class="rk-wk__stat"><b>10 = 6,80<i>€</i></b><span>zehn Karten mit 15 % Mengenrabatt</span></div>'
+		. '<div class="rk-wk__stat"><b>10 = 7,20<i>€</i></b><span>zehn Karten mit 10 % Mengenrabatt</span></div>'
 		. '<div class="rk-wk__stat"><b>' . $total . '</b><span>Karten zum Durchwühlen, täglich neu gemischt</span></div>'
 		. '</div>'
 		. '<div class="rk-car" style="--rk-car-dur:' . (int) $secs . 's"><ul class="rk-car__track">' . $track . '</ul></div>'
@@ -567,10 +567,10 @@ add_filter( 'render_block', function ( $content, $block ) {
 
 add_action( 'woocommerce_single_product_summary', function () {
 	$s = rk_ebay_stats();
-	echo rk_ebay_css() . '<div class="rk-ebp"><span class="rk-eb__stars" aria-hidden="true">★★★★★</span><span>' . (int) $s['quote'] . ' % positive Bewertungen auf <a href="' . esc_url( $s['profil'] ) . '" target="_blank" rel="noopener">eBay</a>, Versand nur 1,10 € pro Bestellung</span></div>'; // phpcs:ignore
+	echo rk_ebay_css() . '<div class="rk-ebp"><span class="rk-eb__stars" aria-hidden="true">★★★★★</span><span>' . (int) $s['quote'] . ' % positive Bewertungen auf <a href="' . esc_url( $s['profil'] ) . '" target="_blank" rel="noopener">eBay</a>, Versand 1,10 €, ab 50 € kostenlos</span></div>'; // phpcs:ignore
 }, 35 );
 
-/* Mengenrabatt Fortschritt im Warenkorb (Stufen: 3 = 5 %, 5 = 10 %, 10 = 15 %) */
+/* Mengenrabatt Fortschritt im Warenkorb (Stufen: 10 = 10 %, 20 = 20 %, 30 = 25 %) */
 add_filter( 'render_block', function ( $content, $block ) {
 	if ( empty( $block['blockName'] ) || 'woocommerce/cart' !== $block['blockName'] ) {
 		return $content;
@@ -578,11 +578,11 @@ add_filter( 'render_block', function ( $content, $block ) {
 	$n   = ( function_exists( 'WC' ) && WC()->cart ) ? (int) WC()->cart->get_cart_contents_count() : 0;
 	$bar = rk_ebay_css() . '<div class="rk-cb" id="rk-cb" data-n="' . $n . '"><div class="rk-cb__t" id="rk-cb-t"></div>'
 		. '<div class="rk-cb__bar"><div class="rk-cb__fill" id="rk-cb-f"></div>'
-		. '<i class="rk-cb__tick" style="left:30%"></i><i class="rk-cb__tick" style="left:50%"></i><i class="rk-cb__tick" style="left:calc(100% - 2px)"></i></div>'
-		. '<div class="rk-cb__lab"><span style="left:0">1</span><span style="left:30%">3 Karten: 5 %</span><span style="left:50%">5 Karten: 10 %</span><span style="left:100%;transform:translateX(-100%)">10 Karten: 15 %</span></div></div>'
-		. '<script>(function(){var T=[[3,5],[5,10],[10,15]];function render(n){var t=document.getElementById("rk-cb-t"),f=document.getElementById("rk-cb-f");if(!t)return;var nx=null,cur=0;for(var i=0;i<T.length;i++){if(n>=T[i][0])cur=T[i][1];else if(!nx)nx=T[i];}'
+		. '<i class="rk-cb__tick" style="left:33.33%"></i><i class="rk-cb__tick" style="left:66.66%"></i><i class="rk-cb__tick" style="left:calc(100% - 2px)"></i></div>'
+		. '<div class="rk-cb__lab"><span style="left:0">1</span><span style="left:33.33%">10 Karten: 10 %</span><span style="left:66.66%">20 Karten: 20 %</span><span style="left:100%;transform:translateX(-100%)">30 Karten: 25 %</span></div></div>'
+		. '<script>(function(){var T=[[10,10],[20,20],[30,25]];function render(n){var t=document.getElementById("rk-cb-t"),f=document.getElementById("rk-cb-f");if(!t)return;var nx=null,cur=0;for(var i=0;i<T.length;i++){if(n>=T[i][0])cur=T[i][1];else if(!nx)nx=T[i];}'
 		. 'if(!nx){t.innerHTML="<b>"+cur+" % Mengenrabatt aktiv.</b> Mehr geht nicht, danke fürs Wühlen."}else{var d=nx[0]-n;t.innerHTML=(cur?"<b>"+cur+" % Rabatt aktiv.</b> ":"")+"Noch <b>"+d+" "+(d===1?"Karte":"Karten")+"</b> bis <b>"+nx[1]+" % Rabatt</b>"}'
-		. 'f.style.width=Math.min(100,n/10*100)+"%"}'
+		. 'f.style.width=Math.min(100,n/30*100)+"%"}'
 		. 'var el=document.getElementById("rk-cb");render(parseInt(el.getAttribute("data-n"),10)||0);'
 		. 'function sub(){if(!window.wp||!wp.data||!wp.data.select("wc/store/cart")){return setTimeout(sub,500)}var last=-1;wp.data.subscribe(function(){try{var c=wp.data.select("wc/store/cart").getCartData();var q=0;(c.items||[]).forEach(function(i){q+=i.quantity});if(q!==last){last=q;render(q)}}catch(e){}})}sub();})();</script>';
 	return $bar . $content;
@@ -612,13 +612,13 @@ add_action( 'wp_footer', function () {
 <div id="rk-nd" role="status" aria-live="polite"><button type="button" aria-label="Schließen">×</button><span id="rk-nd-t"></span><div class="rk-nd__bar"><i id="rk-nd-f"></i></div><a href="<?php echo esc_url( $cart ); ?>">Zum Warenkorb</a></div>
 <script>
 (function(){
-var T=[[3,5],[5,10],[10,15]],el=document.getElementById('rk-nd'),tx=document.getElementById('rk-nd-t'),fl=document.getElementById('rk-nd-f'),last=-1,closed=-1,busy=false;
+var T=[[10,10],[20,20],[30,25]],el=document.getElementById('rk-nd'),tx=document.getElementById('rk-nd-t'),fl=document.getElementById('rk-nd-f'),last=-1,closed=-1,busy=false;
 function show(n){
  if(n<1){el.classList.remove('on');last=n;return}
  var nx=null,cur=0;for(var i=0;i<T.length;i++){if(n>=T[i][0])cur=T[i][1];else if(!nx)nx=T[i]}
  if(!nx){tx.innerHTML='<b>'+cur+' % Mengenrabatt</b> aktiv. Mehr geht nicht.'}
  else{var d=nx[0]-n;tx.innerHTML=(cur?'<b>'+cur+' %</b> aktiv. ':'')+'Noch <b>'+d+(d===1?' Karte':' Karten')+'</b> bis <b>'+nx[1]+' % Rabatt</b>'}
- fl.style.width=Math.min(100,n/10*100)+'%';
+ fl.style.width=Math.min(100,n/30*100)+'%';
  if(n!==last){closed=-1}
  last=n;
  if(closed!==n)el.classList.add('on');
@@ -898,7 +898,7 @@ add_filter( 'render_block', function ( $content, $block ) {
 	if ( empty( $block['blockName'] ) || ! in_array( $block['blockName'], array( 'woocommerce/cart', 'woocommerce/checkout' ), true ) ) {
 		return $content;
 	}
-	$note = '<div class="rk-dl" style="margin:0 0 22px;padding:14px 18px;border:1px solid rgba(255,255,255,.2);background:#0b0b0b;color:#fff;font-size:15px;line-height:1.5"><b style="color:var(--rk-red,#ff3b30);font-family:var(--rk-mono,monospace);font-size:12px;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:4px">Lieferung</b>Wir verschicken innerhalb von 1 Werktag. Die Sendungsnummer bekommst du per E Mail. Zustellung in Deutschland meist in 1 bis 3 Werktagen, Versand 1,10 € pro Bestellung.</div>';
+	$note = '<div class="rk-dl" style="margin:0 0 22px;padding:14px 18px;border:1px solid rgba(255,255,255,.2);background:#0b0b0b;color:#fff;font-size:15px;line-height:1.5"><b style="color:var(--rk-red,#ff3b30);font-family:var(--rk-mono,monospace);font-size:12px;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:4px">Lieferung</b>Wir verschicken innerhalb von 1 Werktag. Die Sendungsnummer bekommst du per E Mail. Zustellung in Deutschland meist in 1 bis 3 Werktagen, Versand 1,10 € pro Bestellung, ab 50 € Warenwert kostenlos.</div>';
 	return $note . $content;
 }, 20, 2 ); /* nach WooCommerce, sonst klaut der Hinweis das data-block-name der Kasse */
 
@@ -1602,9 +1602,11 @@ function rk_vh_info( $order ) {
 	}
 	$inst = 0;
 	$name = '';
+	$mid  = '';
 	foreach ( $order->get_shipping_methods() as $m ) {
 		$inst = (int) $m->get_instance_id();
 		$name = $m->get_name();
+		$mid  = $m->get_method_id();
 		break;
 	}
 	$land  = $order->get_shipping_country() ? $order->get_shipping_country() : $order->get_billing_country();
@@ -1612,7 +1614,7 @@ function rk_vh_info( $order ) {
 	$porto = 'https://internetmarke.deutschepost.de/';
 	$dhl   = 'https://www.dhl.de/de/privatkunden/pakete-versenden/online-frankieren.html';
 	$hint  = '';
-	if ( 1 === $inst ) {
+	if ( 1 === $inst || 'free_shipping' === $mid ) {
 		$gb = $g + 10;
 		if ( $gb <= 50 ) {
 			$prod = 'Kompaktbrief';
@@ -1726,6 +1728,207 @@ add_action( 'woocommerce_email_order_details', function ( $order, $sent_to_admin
 add_action( 'admin_head', function () {
 	echo '<style>.rk-vh{font-size:13px;line-height:1.5}.rk-vh a{font-weight:600}</style>';
 } );
+
+// v2.1 (26.11.2026): Gratisversand ab 50 €, Kundenkonto Link, Karten verkaufen Formular.
+
+/* Ab 50 € Warenwert: kostenloser Brief, der 1,10 € Brief wird dann ausgeblendet. */
+add_filter( 'woocommerce_package_rates', function ( $rates ) {
+	$free = false;
+	foreach ( $rates as $r ) {
+		if ( 'free_shipping' === $r->get_method_id() ) {
+			$free = true;
+			break;
+		}
+	}
+	if ( $free ) {
+		foreach ( $rates as $id => $r ) {
+			if ( 'flat_rate' === $r->get_method_id() && 1 === (int) $r->get_instance_id() ) {
+				unset( $rates[ $id ] );
+			}
+		}
+	}
+	return $rates;
+}, 50 );
+
+/* Bewertungen als Platzhalter {{bewertungen}} auf normalen Seiten. */
+add_filter( 'render_block', function ( $content ) {
+	if ( false !== strpos( $content, '{{bewertungen}}' ) ) {
+		$content = str_replace( '{{bewertungen}}', function_exists( 'rk_ebay_reviews_html' ) ? rk_ebay_reviews_html() : '', $content );
+	}
+	if ( false !== strpos( $content, '{{ankauf_form}}' ) ) {
+		$content = str_replace( '{{ankauf_form}}', rk_ankauf_form(), $content );
+	}
+	return $content;
+}, 5 );
+
+/* ===== Karten verkaufen: Formular mit Fotos, Mail an den Shop ===== */
+function rk_ankauf_form() {
+	$msg = '';
+	if ( isset( $_GET['ankauf'] ) ) {
+		$msg = 'ok' === $_GET['ankauf']
+			? '<div class="rk-ak__ok" role="status"><b>Danke, deine Anfrage ist angekommen.</b> Wir schauen uns deine Karten an und melden uns per E-Mail mit einem unverbindlichen Angebot.</div>'
+			: '<div class="rk-ak__err" role="alert">' . esc_html( rk_ankauf_error_text( sanitize_key( wp_unslash( $_GET['ankauf'] ) ) ) ) . '</div>';
+	}
+	$action = esc_url( admin_url( 'admin-post.php' ) );
+	$priv   = esc_url( get_privacy_policy_url() );
+	ob_start();
+	?>
+<div class="rk-ak" id="formular">
+<?php echo $msg; // phpcs:ignore ?>
+<form class="rk-ak__form" method="post" action="<?php echo $action; // phpcs:ignore ?>" enctype="multipart/form-data">
+	<input type="hidden" name="action" value="rk_ankauf">
+	<?php wp_nonce_field( 'rk_ankauf', 'rk_ak_nonce' ); ?>
+	<div class="rk-ak__grid">
+		<label>Name *<input type="text" name="ak_name" required maxlength="80" autocomplete="name"></label>
+		<label>E-Mail *<input type="email" name="ak_email" required maxlength="120" autocomplete="email"></label>
+		<label>Instagram (optional)<input type="text" name="ak_insta" maxlength="60" placeholder="@deinname"></label>
+		<label>Was möchtest du verkaufen?
+			<select name="ak_art">
+				<option>Einzelne Karten</option>
+				<option>Eine ganze Sammlung</option>
+				<option>Graded Karten (PSA, BGS, SGC)</option>
+				<option>Pokémon oder andere TCG</option>
+			</select>
+		</label>
+		<label>Ungefähre Anzahl Karten<input type="text" name="ak_anzahl" maxlength="40" placeholder="z. B. 15"></label>
+		<label>Bevorzugte Auszahlung
+			<select name="ak_zahlung">
+				<option>PayPal</option>
+				<option>Überweisung</option>
+			</select>
+		</label>
+	</div>
+	<label>Deine Preisvorstellung und Infos zu den Karten
+		<textarea name="ak_text" rows="5" maxlength="3000" placeholder="Spieler, Set, Nummer, Zustand und was du dir pro Karte oder insgesamt vorstellst."></textarea>
+	</label>
+	<label class="rk-ak__file">Fotos von Vorder und Rückseite * <small>JPG, PNG oder WEBP, bis zu 20 Bilder, je max. 8 MB</small>
+		<input type="file" name="ak_fotos[]" accept="image/jpeg,image/png,image/webp" multiple required>
+	</label>
+	<label class="rk-ak__file">Preisliste (optional) <small>PDF, CSV, XLSX oder Bild, max. 8 MB</small>
+		<input type="file" name="ak_liste" accept=".pdf,.csv,.xlsx,image/jpeg,image/png,image/webp">
+	</label>
+	<input type="text" name="ak_web" class="rk-ak__hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+	<label class="rk-ak__c"><input type="checkbox" name="ak_ok" value="1" required><span>Ich bin einverstanden, dass Rookie Business meine Angaben und Fotos nutzt, um mir ein Angebot zu machen. Die Fotos werden nur per E-Mail an uns übermittelt und nicht auf der Website gespeichert. Mehr in der <a href="<?php echo $priv; // phpcs:ignore ?>">Datenschutzerklärung</a>.</span></label>
+	<button type="submit">Unverbindliches Angebot anfragen</button>
+</form>
+</div>
+	<?php
+	return ob_get_clean();
+}
+
+function rk_ankauf_error_text( $code ) {
+	$t = array(
+		'fehlt'   => 'Bitte gib Name, E-Mail und mindestens ein Foto an und bestätige die Einwilligung.',
+		'mail'    => 'Bitte gib eine gültige E-Mail Adresse an.',
+		'fotos'   => 'Bitte lade nur JPG, PNG oder WEBP Bilder hoch, höchstens 20 Stück und je bis 8 MB.',
+		'liste'   => 'Die Preisliste muss PDF, CSV, XLSX oder ein Bild sein und darf höchstens 8 MB groß sein.',
+		'zuviel'  => 'Zu viele Anfragen in kurzer Zeit. Bitte versuch es später noch einmal.',
+		'senden'  => 'Die Anfrage konnte nicht verschickt werden. Bitte schreib uns direkt an shop@rookie-business.de.',
+	);
+	return isset( $t[ $code ] ) ? $t[ $code ] : 'Etwas ist schiefgelaufen. Bitte versuch es noch einmal.';
+}
+
+add_action( 'admin_post_nopriv_rk_ankauf', 'rk_ankauf_handle' );
+add_action( 'admin_post_rk_ankauf', 'rk_ankauf_handle' );
+function rk_ankauf_handle() {
+	$back = wp_get_referer() ? wp_get_referer() : home_url( '/karten-verkaufen/' );
+	$back = remove_query_arg( 'ankauf', $back );
+	$go   = function ( $code ) use ( $back ) {
+		wp_safe_redirect( add_query_arg( 'ankauf', $code, $back ) . '#formular' );
+		exit;
+	};
+	if ( ! isset( $_POST['rk_ak_nonce'] ) || ! wp_verify_nonce( sanitize_text_field( wp_unslash( $_POST['rk_ak_nonce'] ) ), 'rk_ankauf' ) ) {
+		$go( 'fehler' );
+	}
+	if ( ! empty( $_POST['ak_web'] ) ) {
+		$go( 'ok' ); // Honeypot: Bots bekommen ein Ok, es passiert nichts.
+	}
+	$ip_key = 'rk_ak_' . md5( isset( $_SERVER['REMOTE_ADDR'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REMOTE_ADDR'] ) ) : '' );
+	$count  = (int) get_transient( $ip_key );
+	if ( $count >= 5 ) {
+		$go( 'zuviel' );
+	}
+	$name  = sanitize_text_field( wp_unslash( $_POST['ak_name'] ?? '' ) );
+	$email = sanitize_email( wp_unslash( $_POST['ak_email'] ?? '' ) );
+	if ( '' === $name || empty( $_POST['ak_ok'] ) || empty( $_FILES['ak_fotos']['name'][0] ) ) {
+		$go( 'fehlt' );
+	}
+	if ( ! is_email( $email ) ) {
+		$go( 'mail' );
+	}
+	$insta  = sanitize_text_field( wp_unslash( $_POST['ak_insta'] ?? '' ) );
+	$art    = sanitize_text_field( wp_unslash( $_POST['ak_art'] ?? '' ) );
+	$anzahl = sanitize_text_field( wp_unslash( $_POST['ak_anzahl'] ?? '' ) );
+	$zahl   = sanitize_text_field( wp_unslash( $_POST['ak_zahlung'] ?? '' ) );
+	$text   = sanitize_textarea_field( wp_unslash( $_POST['ak_text'] ?? '' ) );
+
+	$max   = 8 * 1024 * 1024;
+	$img   = array( 'jpg|jpeg|jpe' => 'image/jpeg', 'png' => 'image/png', 'webp' => 'image/webp' );
+	$tmp   = trailingslashit( get_temp_dir() ) . 'rk-ankauf-' . wp_generate_password( 12, false );
+	wp_mkdir_p( $tmp );
+	$files = array();
+	$f     = $_FILES['ak_fotos']; // phpcs:ignore
+	$n     = count( (array) $f['name'] );
+	if ( $n > 20 ) {
+		$go( 'fotos' );
+	}
+	for ( $i = 0; $i < $n; $i++ ) {
+		if ( UPLOAD_ERR_OK !== (int) $f['error'][ $i ] || (int) $f['size'][ $i ] > $max ) {
+			$go( 'fotos' );
+		}
+		$chk = wp_check_filetype_and_ext( $f['tmp_name'][ $i ], $f['name'][ $i ], $img );
+		if ( empty( $chk['ext'] ) || ! @getimagesize( $f['tmp_name'][ $i ] ) ) { // phpcs:ignore
+			$go( 'fotos' );
+		}
+		$dest = $tmp . '/foto-' . ( $i + 1 ) . '.' . $chk['ext'];
+		if ( ! move_uploaded_file( $f['tmp_name'][ $i ], $dest ) ) {
+			$go( 'fotos' );
+		}
+		$files[] = $dest;
+	}
+	if ( ! empty( $_FILES['ak_liste']['name'] ) ) {
+		$l     = $_FILES['ak_liste']; // phpcs:ignore
+		$types = $img + array( 'pdf' => 'application/pdf', 'csv' => 'text/csv', 'xlsx' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' );
+		$chk   = wp_check_filetype_and_ext( $l['tmp_name'], $l['name'], $types );
+		if ( UPLOAD_ERR_OK !== (int) $l['error'] || (int) $l['size'] > $max || empty( $chk['ext'] ) ) {
+			$go( 'liste' );
+		}
+		$dest = $tmp . '/preisliste.' . $chk['ext'];
+		if ( move_uploaded_file( $l['tmp_name'], $dest ) ) {
+			$files[] = $dest;
+		}
+	}
+	$body  = "Neue Ankauf Anfrage über rookie-business.de\n\n";
+	$body .= "Name: $name\nE-Mail: $email\nInstagram: " . ( $insta ? $insta : '-' ) . "\nArt: $art\nAnzahl: " . ( $anzahl ? $anzahl : '-' ) . "\nAuszahlung: $zahl\n\n";
+	$body .= "Nachricht und Preisvorstellung:\n" . ( $text ? $text : '-' ) . "\n\nAnhänge: " . count( $files ) . " Dateien\n";
+	$ok = wp_mail( 'shop@rookie-business.de', 'Ankauf Anfrage von ' . $name, $body, array( 'Reply-To: ' . $name . ' <' . $email . '>' ), $files );
+	foreach ( $files as $p ) {
+		@unlink( $p ); // phpcs:ignore
+	}
+	@rmdir( $tmp ); // phpcs:ignore
+	if ( ! $ok ) {
+		$go( 'senden' );
+	}
+	set_transient( $ip_key, $count + 1, HOUR_IN_SECONDS );
+	wp_mail(
+		$email,
+		'Deine Ankauf Anfrage bei Rookie Business',
+		"Hallo $name,\n\ndanke für deine Anfrage. Wir haben deine Fotos bekommen und schauen uns die Karten an. Du bekommst von uns per E-Mail ein unverbindliches Angebot. Ob du es annimmst, entscheidest du.\n\nViele Grüße\nMarcel von Rookie Business\nshop@rookie-business.de",
+		array( 'Reply-To: Rookie Business <shop@rookie-business.de>' )
+	);
+	$go( 'ok' );
+}
+
+/* Kundenkonto: Link im Header neben dem Warenkorb. */
+add_filter( 'render_block', function ( $content, $block ) {
+	if ( empty( $block['blockName'] ) || 'woocommerce/mini-cart' !== $block['blockName'] || ! function_exists( 'wc_get_page_permalink' ) ) {
+		return $content;
+	}
+	$label = is_user_logged_in() ? 'Mein Konto' : 'Anmelden';
+	$icon  = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg>';
+	return '<a class="rk-acc" href="' . esc_url( wc_get_page_permalink( 'myaccount' ) ) . '" aria-label="' . esc_attr( $label ) . '">' . $icon . '<span class="rk-acc__t">' . esc_html( $label ) . '</span></a>' . $content;
+}, 10, 2 );
+
 
 // v2.0 Hell: helles Design mit roten Akzenten (26.11.2026). Zurück zum dunklen Look: diesen Block löschen.
 add_action( 'wp_head', function () {
@@ -1977,6 +2180,54 @@ html body .rk-dl b,html body .rk-dl strong,html body .rk-dl span:first-child{col
 html body .rk-cb{font-family:Manrope,Arial,sans-serif!important}
 html body .rk-cb__t{text-transform:none!important;letter-spacing:0!important;font-weight:700}
 html body .rk-cb__lab{color:#6b7280;opacity:1!important}
+/* Konto Link im Header */
+html body .rk-acc{display:inline-flex;align-items:center;gap:6px;color:#14171c;text-decoration:none;font-weight:600;font-size:15px;margin-right:6px}
+html body .rk-acc:hover{color:#d7191f}
+@media(max-width:900px){html body .rk-acc__t{display:none}}
+/* Karten verkaufen */
+html body .rk-sell{max-width:1180px;margin:0 auto;padding:0 var(--rk-pad) 60px;box-sizing:border-box}
+html body .rk-sell__hero{padding:70px 0 40px;text-align:center}
+html body .rk-sell__h1{font-family:Manrope,Arial,sans-serif!important;font-weight:800;font-size:clamp(36px,5.4vw,72px)!important;line-height:1.05!important;letter-spacing:-.03em!important;margin:16px auto 18px;max-width:16ch;color:#14171c}
+html body .rk-sell__lead{font-size:clamp(17px,1.5vw,20px);color:#4b5563;max-width:62ch;margin:0 auto 28px;line-height:1.6}
+html body .rk-sell__ctas{display:flex;gap:24px;justify-content:center;align-items:center;flex-wrap:wrap}
+html body .rk-sell__trust{list-style:none;padding:0;margin:44px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+html body .rk-sell__trust li{background:#fff;border:1px solid #e4e6ea;border-radius:16px;padding:18px 16px;text-align:left}
+html body .rk-sell__trust b{display:block;font-size:22px;font-weight:800;color:#d7191f;letter-spacing:-.02em}
+html body .rk-sell__trust span{display:block;margin-top:4px;color:#4b5563;font-size:14px;line-height:1.45}
+html body .rk-sell__sec{background:#fff;border:1px solid #e4e6ea;border-radius:22px;padding:clamp(26px,4vw,48px);margin:22px 0}
+html body .rk-sell__p{color:#4b5563;font-size:16px;line-height:1.7;max-width:70ch}
+html body .rk-sell__steps{list-style:none;padding:0;margin:30px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;counter-reset:none}
+html body .rk-sell__steps li{background:#f7f8fa;border-radius:16px;padding:22px 20px}
+html body .rk-sell__steps b{display:inline-grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#d7191f;color:#fff;font-weight:800}
+html body .rk-sell__steps h3{font-family:Manrope,Arial,sans-serif!important;font-size:18px!important;line-height:1.25!important;margin:14px 0 6px;letter-spacing:-.01em!important}
+html body .rk-sell__steps p{color:#4b5563;font-size:14.5px;line-height:1.6;margin:0}
+html body .rk-sell__two{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+html body .rk-sell__chips{list-style:none;padding:0;margin:20px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+html body .rk-sell__chips li{border:1px solid #d5d8de;border-radius:999px;padding:8px 14px;font-size:14px;font-weight:600;background:#fff}
+html body .rk-sell__promise{list-style:none;padding:0;margin:16px 0 0}
+html body .rk-sell__promise li{padding:14px 0 14px 30px;border-bottom:1px solid #e4e6ea;color:#4b5563;line-height:1.6;position:relative}
+html body .rk-sell__promise li::before{content:"✓";position:absolute;left:0;top:13px;color:#d7191f;font-weight:800}
+html body .rk-sell__promise b{color:#14171c}
+html body .rk-sell__who{display:flex;gap:32px;align-items:center}
+html body .rk-sell__img{flex:0 0 140px;width:140px;height:140px}
+html body .rk-sell__faq{margin-top:20px}
+html body .rk-sell .rk-rv{border-radius:22px;border:1px solid #e4e6ea!important;margin:22px 0}
+html body .rk-ak{margin-top:22px}
+html body .rk-ak__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px 18px}
+html body .rk-ak label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:14px;color:#14171c;margin-bottom:14px}
+html body .rk-ak small{font-weight:400;color:#6b7280}
+html body .rk-ak input[type=text],html body .rk-ak input[type=email],html body .rk-ak select,html body .rk-ak textarea{padding:12px 14px!important;font:15px Manrope,Arial,sans-serif!important}
+html body .rk-ak__file input{padding:12px!important;background:#f7f8fa!important;border:1px dashed #c4c8cf!important;border-radius:10px}
+html body .rk-ak .rk-ak__c{flex-direction:row;align-items:flex-start;gap:10px;font-weight:400;color:#4b5563;line-height:1.5}
+html body .rk-ak .rk-ak__c input{margin-top:3px;width:18px;height:18px;flex:none}
+html body .rk-ak button{background:#d7191f;color:#fff;border:0;border-radius:999px;padding:16px 30px;font:700 16px Manrope,Arial,sans-serif;cursor:pointer}
+html body .rk-ak button:hover{background:#b3141a}
+html body .rk-ak__hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0}
+html body .rk-ak__ok,html body .rk-ak__err{padding:16px 18px;border-radius:12px;margin:0 0 20px;font-size:15px;line-height:1.5}
+html body .rk-ak__ok{background:#ecfdf3;border:1px solid #a6e9c1}
+html body .rk-ak__err{background:#fff5f5;border:1px solid #f3b4b6}
+@media(max-width:900px){html body .rk-sell__trust,html body .rk-sell__steps{grid-template-columns:1fr 1fr}html body .rk-sell__two{grid-template-columns:1fr}html body .rk-ak__grid{grid-template-columns:1fr}html body .rk-sell__who{flex-direction:column;align-items:flex-start}}
+@media(max-width:560px){html body .rk-sell__trust,html body .rk-sell__steps{grid-template-columns:1fr}}
 
 RK_HELL
 	. '</style>'; // phpcs:ignore
