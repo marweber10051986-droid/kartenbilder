@@ -2183,7 +2183,7 @@ html body.single-product form.cart button.single_add_to_cart_button.button.alt.w
 html body .woocommerce div.product div.images img,html body .woocommerce-product-gallery__image img{border-radius:14px}
 html body .woocommerce-product-gallery__wrapper{border-radius:16px;overflow:hidden}
 html body .rk-eb__in{font-family:Manrope,Arial,sans-serif!important;text-transform:none!important;letter-spacing:0!important;font-size:15px!important}
-html body .rk-eb__in .rk-eb__big{font-size:inherit!important;font-weight:700!important;line-height:inherit!important;color:var(--rk-red,#ff3b30)!important}
+html body .rk-eb__in .rk-eb__big{font-size:inherit!important;font-weight:700!important;line-height:inherit!important;color:var(--rk-red,#ff3b30)!important}html body .rk-eb__in a{gap:5px!important}
 /* Warenkorb und Kasse */
 html body .rk-dl{background:#fff!important;color:#14171c!important;border:1px solid #e4e6ea!important;border-left:4px solid #d7191f!important;border-radius:12px!important}
 html body .rk-dl *{color:#14171c}
