@@ -1961,6 +1961,15 @@ html body #rk-nd button{color:#6b7280}
 html body #rk-nd .rk-nd__bar{border-radius:99px;overflow:hidden}
 /* Kategorie Kopf */
 html body .wp-block-query-title,html body .wp-block-term-description{color:#14171c}
+/* Produktseite Feinschliff */
+html body .rk-more{border-top-color:#e4e6ea!important}
+html body .rk-more a{border:1px solid #d5d8de!important;border-radius:999px!important;background:#fff!important;color:#14171c!important}
+html body .rk-more a:hover{border-color:#d7191f!important;color:#d7191f!important}
+html body.single-product form.cart button.single_add_to_cart_button.button.alt.wp-element-button,html body.single-product .single_add_to_cart_button{font-size:16px!important;padding:15px 34px!important}
+html body .woocommerce div.product div.images img,html body .woocommerce-product-gallery__image img{border-radius:14px}
+html body .woocommerce-product-gallery__wrapper{border-radius:16px;overflow:hidden}
+html body .rk-eb__in{font-family:Manrope,Arial,sans-serif!important;text-transform:none!important;letter-spacing:0!important;font-size:15px!important}
+html body .rk-eb__big{font-size:20px!important}
 
 RK_HELL
 	. '</style>'; // phpcs:ignore
