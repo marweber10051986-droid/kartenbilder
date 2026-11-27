@@ -61,11 +61,18 @@ add_action( 'admin_post_rk_lieferschein', function () {
 		$rows = '';
 		$pos  = 0;
 		$sum  = 0;
+		$wk   = 0;
+		$tl   = 0;
 		foreach ( $o->get_items() as $it ) {
 			$p   = $it->get_product();
 			$qty = (int) $it->get_quantity();
 			$sum += $qty;
 			$pos++;
+			if ( $p && has_term( 292, 'product_tag', $p->get_parent_id() ? $p->get_parent_id() : $p->get_id() ) ) {
+				$wk += $qty;
+			} else {
+				$tl += $qty;
+			}
 			$sku   = $p ? $p->get_sku() : '';
 			$slots = $p ? (string) $p->get_meta( '_rk_slots' ) : '';
 			$fach  = $slots ? $slots : $sku;
@@ -77,6 +84,7 @@ add_action( 'admin_post_rk_lieferschein', function () {
 				. '<td class="c q">' . $qty . '</td>'
 				. '<td class="c"><span class="box"></span></td></tr>';
 		}
+		$pack   = $wk && $tl ? 'in Penny Sleeve und Toploader verpackt, die 0,80 € Wühlkisten Karten in Penny Sleeve und Team Bag' : ( $wk ? 'in Penny Sleeve und Team Bag verpackt' : 'in Penny Sleeve und Toploader verpackt' );
 		$note   = trim( (string) $o->get_customer_note() );
 		$date   = $o->get_date_created() ? $o->get_date_created()->date_i18n( 'd.m.Y' ) : '';
 		$pages .= '<section class="p">'
@@ -95,7 +103,7 @@ add_action( 'admin_post_rk_lieferschein', function () {
 			. '<table class="it"><thead><tr><th class="c">Pos.</th><th></th><th>Karte</th><th>Fach</th><th class="c">Menge</th><th class="c">Gepackt</th></tr></thead><tbody>' . $rows . '</tbody>'
 			. '<tfoot><tr><td colspan="4">Karten gesamt</td><td class="c q">' . (int) $sum . '</td><td></td></tr></tfoot></table>'
 			. ( $note ? '<div class="note"><b>Hinweis von dir:</b> ' . esc_html( $note ) . '</div>' : '' )
-			. '<div class="thx"><b>Danke, dass du bei Rookie Business kaufst.</b> Jede Karte ist in Penny Sleeve und Toploader verpackt. Passt was nicht? Schreib uns einfach' . ( $mail ? ' an ' . esc_html( $mail ) : '' ) . ', wir kümmern uns. Über eine Bewertung freuen wir uns riesig.</div>'
+			. '<div class="thx"><b>Danke, dass du bei Rookie Business kaufst.</b> Jede Karte ist ' . esc_html( $pack ) . '. Passt was nicht? Schreib uns einfach' . ( $mail ? ' an ' . esc_html( $mail ) : '' ) . ', wir kümmern uns. Über eine Bewertung freuen wir uns riesig.</div>'
 			. '<footer>Rookie Business · Zur Weißen Frau 35 · 59929 Brilon · rookie-business.de' . ( $mail ? ' · ' . esc_html( $mail ) : '' ) . '</footer>'
 			. '</section>';
 	}
