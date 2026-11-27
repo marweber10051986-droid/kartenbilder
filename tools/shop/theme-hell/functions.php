@@ -48,7 +48,7 @@ add_filter( 'render_block', function ( $content ) {
 		$content = str_replace( '{{bioimg}}', file_exists( $bio ) ? '<img src="' . esc_url( get_stylesheet_directory_uri() . '/assets/img/marcel.webp?v=' . filemtime( $bio ) ) . '" alt="Marcel von Rookie Business" width="88" height="88" loading="lazy">' : '<b>MW</b>', $content );
 	}
 	if ( false !== strpos( $content, '{{latest}}' ) ) {
-		$content = str_replace( '{{latest}}', rk_latest_carousel( 15 ), $content );
+		$content = str_replace( '{{latest}}', rk_latest_grid( 20 ), $content );
 	}
 
 	// Newsletter form from the Rookie Business Newsletter plugin.
@@ -114,6 +114,59 @@ add_filter( 'woocommerce_product_tabs', function ( $tabs ) {
 }, 98 );
 
 /** Auto scrolling carousel with the newest products. */
+/* Frisch gezogen als Raster wie "Recently Added": Set Zeile, Spieler, Preis (27.11.2026) */
+function rk_latest_grid( $limit = 20 ) {
+	if ( ! function_exists( 'wc_get_products' ) ) {
+		return '';
+	}
+	$products = array_values( array_filter( array_map( 'wc_get_product', rk_frisch_ids( $limit ) ) ) );
+	if ( ! $products ) {
+		return '<p class="rk-section__lead">Neue Karten sind gleich da.</p>';
+	}
+	$chips = '';
+	foreach ( array( 'nfl' => 'NFL', 'nba' => 'NBA', 'mlb' => 'MLB', 'fussball' => 'Fußball', 'tcg' => 'TCG' ) as $slug => $label ) {
+		$t = get_term_by( 'slug', $slug, 'product_cat' );
+		if ( $t && ! is_wp_error( $t ) ) {
+			$link = get_term_link( $t );
+			if ( ! is_wp_error( $link ) ) {
+				$chips .= '<a class="rk-ng__chip" href="' . esc_url( add_query_arg( 'orderby', 'date', $link ) ) . '">' . esc_html( $label ) . '</a>';
+			}
+		}
+	}
+	$items = '';
+	foreach ( $products as $p ) {
+		$set    = trim( (string) $p->get_attribute( 'Set' ) );
+		$nr     = trim( (string) $p->get_attribute( 'Kartennummer' ) );
+		$var    = trim( (string) $p->get_attribute( 'Variante' ) );
+		$player = trim( (string) $p->get_attribute( 'Spieler' ) );
+		$team   = trim( (string) $p->get_attribute( 'Team' ) );
+		$name   = $p->get_name();
+		if ( '' === $player ) {
+			$player = trim( preg_replace( '/\s+#.*$/', '', $name ) );
+		}
+		$line = $set;
+		if ( '' !== $var && 'base' !== strtolower( $var ) ) {
+			$line .= ( $line ? ' · ' : '' ) . $var;
+		}
+		if ( '' !== $nr ) {
+			$line .= ( $line ? ' ' : '' ) . '#' . ltrim( $nr, '#' );
+		}
+		if ( '' === $line ) {
+			$line = $name;
+		}
+		$rc     = ( false !== stripos( $name, 'Rookie' ) ) ? '<i class="rk-ng__rc">RC</i>' : '';
+		$img_id = $p->get_image_id();
+		$img    = $img_id ? wp_get_attachment_image( $img_id, 'woocommerce_thumbnail', false, array( 'loading' => 'lazy', 'alt' => $name, 'sizes' => '(max-width: 640px) 45vw, 220px' ) ) : wc_placeholder_img( 'woocommerce_thumbnail' );
+		$items .= '<li class="rk-ng__item"><a href="' . esc_url( $p->get_permalink() ) . '" title="' . esc_attr( $name ) . '">'
+			. '<span class="rk-ng__img">' . $img . '</span>'
+			. '<span class="rk-ng__set">' . esc_html( $line ) . '</span>'
+			. '<span class="rk-ng__name">' . esc_html( $player ) . $rc . ( $team ? '<small>' . esc_html( $team ) . '</small>' : '' ) . '</span>'
+			. '<span class="rk-ng__price">' . wp_kses_post( $p->get_price_html() ) . '</span>'
+			. '</a></li>';
+	}
+	return '<div class="rk-ng">' . ( $chips ? '<nav class="rk-ng__chips" aria-label="Neu nach Kategorie">' . $chips . '</nav>' : '' ) . '<ul class="rk-ng__grid">' . $items . '</ul></div>';
+}
+
 function rk_latest_carousel( $limit = 10 ) {
 	if ( ! function_exists( 'wc_get_products' ) ) {
 		return '';
@@ -2099,6 +2152,25 @@ add_action( 'wp_head', function () {
 .rk-acd__item summary:hover{color:var(--rk-red)}
 .rk-acd__in{padding:0 20px 20px}
 .rk-acd__in > h2:first-child,.rk-acd__in .woocommerce-Reviews-title{display:none}
+/* Frisch gezogen Raster */
+.rk-ng__chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 22px}
+.rk-ng__chip{border:1px solid var(--rk-line);padding:7px 14px;font-family:var(--rk-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--rk-paper)!important;text-decoration:none;background:var(--rk-ink)}
+.rk-ng__chip:hover{border-color:var(--rk-red);color:var(--rk-red)!important}
+.rk-ng__grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.rk-ng__item a{display:flex;flex-direction:column;height:100%;box-sizing:border-box;padding:14px 14px 16px;background:var(--rk-panel);border:1px solid var(--rk-line);color:var(--rk-paper)!important;text-decoration:none;transition:border-color .15s,transform .15s}
+.rk-ng__item a:hover{border-color:var(--rk-red);transform:translateY(-2px)}
+.rk-ng__img{display:flex;align-items:center;justify-content:center;height:200px;margin:0 0 14px}
+.rk-ng__img img{max-height:200px!important;width:auto!important;max-width:100%!important;height:auto!important;object-fit:contain;display:block;margin:0!important;aspect-ratio:auto!important}
+.rk-ng__set{font-size:12px;line-height:1.4;color:var(--rk-muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.8em}
+.rk-ng__name{margin-top:6px;font-size:14px;font-weight:600;line-height:1.3}
+.rk-ng__name small{display:block;font-weight:400;font-size:12px;color:var(--rk-muted);margin-top:2px}
+.rk-ng__rc{font-style:normal;font:700 10px var(--rk-mono);background:var(--rk-red);color:#fff;padding:1px 5px;margin-left:6px;vertical-align:2px}
+.rk-ng__price{margin-top:auto;padding-top:10px;font-family:var(--rk-display);font-weight:800;font-size:20px;color:var(--rk-paper)}
+.rk-ng__price del{opacity:.5;font-size:15px;margin-right:6px}
+.rk-ng__price ins{text-decoration:none;color:var(--rk-red)}
+@media(max-width:1150px){.rk-ng__grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:900px){.rk-ng__grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:640px){.rk-ng__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.rk-ng__img{height:150px}.rk-ng__img img{max-height:150px!important}.rk-ng__item a{padding:10px 10px 12px}}
 RK_DARK
 	. '</style>'; // phpcs:ignore
 }, 999 );
