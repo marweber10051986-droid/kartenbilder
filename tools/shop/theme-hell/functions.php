@@ -298,6 +298,27 @@ add_filter( 'render_block_woocommerce/product-collection', function ( $content, 
  * Frisch gezogen: neue Karten der letzten 24 Stunden zuerst, der Rest kommt aus der
  * täglichen Rotation (3 Karten pro Kategorie, läuft Tag für Tag durch das ganze Inventar).
  */
+/* Neue Karten sofort in "Frisch gezogen": Tages Cache bei neuen Produkten leeren (27.11.2026) */
+function rk_frisch_flush() {
+	$day = (int) floor( current_time( 'timestamp' ) / DAY_IN_SECONDS );
+	foreach ( array( 10, 15, 20, 24, 30 ) as $l ) {
+		delete_transient( 'rk_frisch_' . $day . '_' . $l );
+	}
+}
+add_action( 'woocommerce_new_product', 'rk_frisch_flush' );
+add_action( 'rest_api_init', function () {
+	register_rest_route( 'rookie/v1', '/frisch-flush', array(
+		'methods'             => 'POST',
+		'permission_callback' => function () {
+			return current_user_can( 'manage_woocommerce' );
+		},
+		'callback'            => function () {
+			rk_frisch_flush();
+			return array( 'ok' => true );
+		},
+	) );
+} );
+
 function rk_frisch_ids( $limit = 15 ) {
 	$day = (int) floor( current_time( 'timestamp' ) / DAY_IN_SECONDS );
 	$key = 'rk_frisch_' . $day . '_' . $limit;
