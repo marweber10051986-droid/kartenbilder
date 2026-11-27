@@ -2171,6 +2171,19 @@ add_action( 'wp_head', function () {
 @media(max-width:1150px){.rk-ng__grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:900px){.rk-ng__grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:640px){.rk-ng__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.rk-ng__img{height:150px}.rk-ng__img img{max-height:150px!important}.rk-ng__item a{padding:10px 10px 12px}}
+/* Ligen: 5 dezente Kacheln (27.11.2026) */
+.rk-lg__head{margin:0 0 20px}
+.rk-lg__h{font-family:var(--rk-display)!important;font-weight:800;text-transform:uppercase;font-size:clamp(26px,3vw,36px)!important;line-height:1!important;margin:8px 0 0!important}
+.rk-lg__grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+.rk-lg__tile{position:relative;overflow:hidden;aspect-ratio:63/88;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;background:var(--rk-panel);border:1px solid var(--rk-line);color:var(--rk-paper)!important;text-decoration:none;transition:border-color .2s}
+.rk-lg__bg{position:absolute;inset:0;width:100%!important;height:100%!important;object-fit:cover;opacity:.1;transition:opacity .25s,transform .4s;pointer-events:none;margin:0!important;max-width:none!important}
+.rk-lg__name{position:relative;font-family:var(--rk-display);font-weight:800;text-transform:uppercase;font-size:clamp(24px,2.6vw,36px);line-height:1;letter-spacing:.01em}
+.rk-lg__sub{position:relative;font-family:var(--rk-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--rk-muted)}
+.rk-lg__tile:hover{border-color:var(--rk-red)}
+.rk-lg__tile:hover .rk-lg__bg{opacity:.22;transform:scale(1.03)}
+.rk-lg__tile:hover .rk-lg__name{color:var(--rk-red)}
+.rk-lg__more{margin-top:16px;text-align:right}
+@media(max-width:760px){.rk-lg__grid{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:38vw;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:6px}.rk-lg__tile{scroll-snap-align:start}}
 RK_DARK
 	. '</style>'; // phpcs:ignore
 }, 999 );
