@@ -1322,6 +1322,10 @@ function rk_cl_map( $serie, $kat, $jahr ) {
 		$l = preg_replace( '/(?<![\pL\d])(' . $teams . ')(?![\pL\d])/u', '', $l );
 		$l = preg_replace( '/\b(AFC|NFC)\b.*\bLeaders\b/', '', $l );
 		$l = trim( preg_replace( '/\s+/', ' ', $l ) );
+		$v = trim( (string) $p->get_attribute( 'Variante' ) );
+		if ( '' === $l && '' !== $v && 'Base' !== $v ) {
+			$l = $v;
+		}
 		$map[ (int) $m[1] ][] = array(
 			'k' => preg_replace( '/[^a-z]/', '', strtolower( remove_accents( $t ) ) ),
 			'u' => get_permalink( $id ),
