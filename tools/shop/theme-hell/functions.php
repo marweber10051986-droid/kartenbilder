@@ -332,13 +332,19 @@ function rk_frisch_ids( $limit = 15 ) {
 		'stock_status' => 'instock',
 		'return'       => 'ids',
 	);
+	// Pokémon Mega Sale Karten bleiben draußen, die haben ihren eigenen Banner (27.11.2026).
+	$no_sale = function ( $list ) {
+		return array_values( array_filter( array_map( 'intval', (array) $list ), function ( $id ) {
+			return ! has_term( 'pokemon-mega-sale', 'product_cat', $id );
+		} ) );
+	};
 	// 1. Neu in den letzten 24 Stunden.
-	$ids = wc_get_products( $base + array(
-		'limit'        => $limit,
+	$ids = array_slice( $no_sale( wc_get_products( $base + array(
+		'limit'        => $limit + 300,
 		'orderby'      => 'date',
 		'order'        => 'DESC',
 		'date_created' => '>' . ( time() - DAY_IN_SECONDS ),
-	) );
+	) ) ), 0, $limit );
 	// 2. Rotation: pro Kategorie 3 Karten, jeden Tag die nächsten 3.
 	$rot = array();
 	foreach ( array( 'nfl', 'nba', 'mlb', 'fussball', 'tcg' ) as $cat ) {
@@ -348,7 +354,8 @@ function rk_frisch_ids( $limit = 15 ) {
 			'orderby'  => 'ID',
 			'order'    => 'ASC',
 		) );
-		$n = count( $all );
+		$all = $no_sale( $all );
+		$n   = count( $all );
 		if ( ! $n ) {
 			continue;
 		}
@@ -566,10 +573,19 @@ add_action( 'pre_get_posts', function ( $q ) {
 	if ( is_admin() || ! $q->is_main_query() ) return;
 	if ( ! ( function_exists( 'is_shop' ) && ( is_shop() || is_product_taxonomy() ) ) ) return;
 	if ( empty( $_GET['neu'] ) ) return;
-	$newest = wc_get_products( array( 'status' => 'publish', 'visibility' => 'catalog', 'stock_status' => 'instock', 'limit' => 1, 'orderby' => 'date', 'order' => 'DESC' ) );
-	if ( empty( $newest ) || ! $newest[0]->get_date_created() ) return;
-	$cut = $newest[0]->get_date_created()->getTimestamp() - DAY_IN_SECONDS;
+	$newest = null;
+	foreach ( wc_get_products( array( 'status' => 'publish', 'visibility' => 'catalog', 'stock_status' => 'instock', 'limit' => 400, 'orderby' => 'date', 'order' => 'DESC' ) ) as $np ) {
+		if ( ! has_term( 'pokemon-mega-sale', 'product_cat', $np->get_id() ) ) {
+			$newest = $np;
+			break;
+		}
+	}
+	if ( ! $newest || ! $newest->get_date_created() ) return;
+	$cut = $newest->get_date_created()->getTimestamp() - DAY_IN_SECONDS;
 	$q->set( 'date_query', array( array( 'column' => 'post_date_gmt', 'after' => gmdate( 'Y-m-d H:i:s', $cut ), 'inclusive' => true ) ) );
+	$tq   = (array) $q->get( 'tax_query' );
+	$tq[] = array( 'taxonomy' => 'product_cat', 'field' => 'slug', 'terms' => array( 'pokemon-mega-sale' ), 'operator' => 'NOT IN' );
+	$q->set( 'tax_query', $tq );
 	$q->set( 'orderby', 'date' );
 	$q->set( 'order', 'DESC' );
 } );
