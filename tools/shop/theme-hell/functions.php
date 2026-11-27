@@ -156,7 +156,7 @@ function rk_latest_grid( $limit = 20 ) {
 		}
 		$rc     = ( false !== stripos( $name, 'Rookie' ) ) ? '<i class="rk-ng__rc">RC</i>' : '';
 		$img_id = $p->get_image_id();
-		$img    = $img_id ? wp_get_attachment_image( $img_id, 'woocommerce_thumbnail', false, array( 'loading' => 'lazy', 'alt' => $name, 'sizes' => '(max-width: 640px) 45vw, 220px' ) ) : wc_placeholder_img( 'woocommerce_thumbnail' );
+		$img    = $img_id ? wp_get_attachment_image( $img_id, 'woocommerce_single', false, array( 'loading' => 'lazy', 'alt' => $name, 'sizes' => '(max-width: 640px) 45vw, 220px' ) ) : wc_placeholder_img( 'woocommerce_single' );
 		$items .= '<li class="rk-ng__item"><a href="' . esc_url( $p->get_permalink() ) . '" title="' . esc_attr( $name ) . '">'
 			. '<span class="rk-ng__img">' . $img . '</span>'
 			. '<span class="rk-ng__set">' . esc_html( $line ) . '</span>'
