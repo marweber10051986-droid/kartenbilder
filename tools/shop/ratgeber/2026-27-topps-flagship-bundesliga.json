@@ -1,0 +1,1002 @@
+{
+"1": [
+"Chrislain Matsima",
+"FC Augsburg",
+false
+],
+"2": [
+"Mert Kömür",
+"FC Augsburg",
+false
+],
+"3": [
+"Alexis Claude-Maurice",
+"FC Augsburg",
+false
+],
+"4": [
+"Marius Wolf",
+"FC Augsburg",
+false
+],
+"5": [
+"Fabian Rieder",
+"FC Augsburg",
+false
+],
+"6": [
+"Noahkai Banks",
+"FC Augsburg",
+false
+],
+"7": [
+"Anton Kade",
+"FC Augsburg",
+true
+],
+"8": [
+"Leopold Querfeld",
+"1. FC Union Berlin",
+false
+],
+"9": [
+"Tom Rothe",
+"1. FC Union Berlin",
+false
+],
+"10": [
+"Ilyas Ansah",
+"1. FC Union Berlin",
+false
+],
+"11": [
+"Oliver Burke",
+"1. FC Union Berlin",
+false
+],
+"12": [
+"Andrej Ilić",
+"1. FC Union Berlin",
+false
+],
+"13": [
+"Josip Juranović",
+"1. FC Union Berlin",
+false
+],
+"14": [
+"Woo-yeong Jeong",
+"1. FC Union Berlin",
+false
+],
+"15": [
+"Romano Schmid",
+"SV Werder Bremen",
+false
+],
+"16": [
+"Mitchell Weiser",
+"SV Werder Bremen",
+false
+],
+"17": [
+"Salim Musah",
+"SV Werder Bremen",
+true
+],
+"18": [
+"Keke Topp",
+"SV Werder Bremen",
+false
+],
+"19": [
+"Karim Coulibaly",
+"SV Werder Bremen",
+false
+],
+"20": [
+"Samuel Mbangula",
+"SV Werder Bremen",
+false
+],
+"21": [
+"Mick Schmetgens",
+"SV Werder Bremen",
+true
+],
+"22": [
+"Jens Stage",
+"SV Werder Bremen",
+false
+],
+"23": [
+"Mathis Albert",
+"Borussia Dortmund",
+true
+],
+"24": [
+"Nico Schlotterbeck",
+"Borussia Dortmund",
+false
+],
+"25": [
+"Jobe Bellingham",
+"Borussia Dortmund",
+false
+],
+"26": [
+"Kauã Prates",
+"Borussia Dortmund",
+true
+],
+"27": [
+"Serhou Guirassy",
+"Borussia Dortmund",
+false
+],
+"28": [
+"Justin Lerma",
+"Borussia Dortmund",
+true
+],
+"29": [
+"Luca Reggiani",
+"Borussia Dortmund",
+true
+],
+"30": [
+"Samuele Inácio",
+"Borussia Dortmund",
+true
+],
+"31": [
+"Felix Nmecha",
+"Borussia Dortmund",
+false
+],
+"32": [
+"Maximilian Beier",
+"Borussia Dortmund",
+false
+],
+"33": [
+"Lasse Günther",
+"SV Elversberg",
+false
+],
+"34": [
+"Lukas Pinckert",
+"SV Elversberg",
+true
+],
+"35": [
+"Lukas Petkov",
+"SV Elversberg",
+true
+],
+"36": [
+"David Mokwa",
+"SV Elversberg",
+true
+],
+"37": [
+"Francis Onyeka",
+"SV Elversberg",
+true
+],
+"38": [
+"Ritsu Doan",
+"Eintracht Frankfurt",
+false
+],
+"39": [
+"Oscar Højlund",
+"Eintracht Frankfurt",
+false
+],
+"40": [
+"Younes Ebnoutalib",
+"Eintracht Frankfurt",
+false
+],
+"41": [
+"Can Uzun",
+"Eintracht Frankfurt",
+false
+],
+"42": [
+"Jonathan Burkardt",
+"Eintracht Frankfurt",
+false
+],
+"43": [
+"Keita Kosugi",
+"Eintracht Frankfurt",
+true
+],
+"44": [
+"Jean-Mattéo Bahoya",
+"Eintracht Frankfurt",
+false
+],
+"45": [
+"Matthias Ginter",
+"SC Freiburg",
+false
+],
+"46": [
+"Vincenzo Grifo",
+"SC Freiburg",
+false
+],
+"47": [
+"Derry Scherhant",
+"SC Freiburg",
+false
+],
+"48": [
+"Bruno Ogbus",
+"SC Freiburg",
+false
+],
+"49": [
+"Cyriaque Irié",
+"SC Freiburg",
+false
+],
+"50": [
+"Yuito Suzuki",
+"SC Freiburg",
+false
+],
+"51": [
+"Niklas Beste",
+"SC Freiburg",
+false
+],
+"52": [
+"Philipp Lienhart",
+"SC Freiburg",
+false
+],
+"53": [
+"Patrick Osterhage",
+"SC Freiburg",
+false
+],
+"54": [
+"Jordy Makengo",
+"SC Freiburg",
+false
+],
+"55": [
+"Otto Stange",
+"Hamburger SV",
+true
+],
+"56": [
+"Sambi Lokonga",
+"Hamburger SV",
+false
+],
+"57": [
+"Nicolas Capaldo",
+"Hamburger SV",
+false
+],
+"58": [
+"Nicolai Remberg",
+"Hamburger SV",
+false
+],
+"59": [
+"Rayan Philippe",
+"Hamburger SV",
+false
+],
+"60": [
+"Warmed Omari",
+"Hamburger SV",
+false
+],
+"61": [
+"Kofi Amoako",
+"Hamburger SV",
+true
+],
+"62": [
+"Yannick Eduardo",
+"TSG Hoffenheim",
+true
+],
+"63": [
+"Fisnik Asllani",
+"TSG Hoffenheim",
+false
+],
+"64": [
+"Adam Hložek",
+"TSG Hoffenheim",
+false
+],
+"65": [
+"Wouter Burger",
+"TSG Hoffenheim",
+false
+],
+"66": [
+"Andrej Kramarić",
+"TSG Hoffenheim",
+false
+],
+"67": [
+"Leon Avdullahu",
+"TSG Hoffenheim",
+false
+],
+"68": [
+"Vladimír Coufal",
+"TSG Hoffenheim",
+false
+],
+"69": [
+"Alessandro Vogt",
+"TSG Hoffenheim",
+true
+],
+"70": [
+"Saïd El Mala",
+"1. FC Köln",
+false
+],
+"71": [
+"Rav van den Berg",
+"1. FC Köln",
+false
+],
+"72": [
+"Ragnar Ache",
+"1. FC Köln",
+false
+],
+"73": [
+"Ísak Jóhannesson",
+"1. FC Köln",
+false
+],
+"74": [
+"Timo Hübers",
+"1. FC Köln",
+false
+],
+"75": [
+"Jan Thielmann",
+"1. FC Köln",
+false
+],
+"76": [
+"Youssoupha Niang",
+"1. FC Köln",
+true
+],
+"77": [
+"Nicolas Seiwald",
+"RB Leipzig",
+false
+],
+"78": [
+"Ayodele Thomas",
+"RB Leipzig",
+true
+],
+"79": [
+"Samba Konaté",
+"RB Leipzig",
+true
+],
+"80": [
+"Christoph Baumgartner",
+"RB Leipzig",
+false
+],
+"81": [
+"Assan Ouédraogo",
+"RB Leipzig",
+false
+],
+"82": [
+"Antonio Nusa",
+"RB Leipzig",
+false
+],
+"83": [
+"Yan Diomande",
+"RB Leipzig",
+false
+],
+"84": [
+"Rômulo Cardoso",
+"RB Leipzig",
+false
+],
+"85": [
+"Abdoul Koné",
+"RB Leipzig",
+true
+],
+"86": [
+"Rocco Reitz",
+"RB Leipzig",
+false
+],
+"87": [
+"Conrad Harder",
+"RB Leipzig",
+false
+],
+"88": [
+"David Raum",
+"RB Leipzig",
+false
+],
+"89": [
+"Kennet Eichhorn",
+"Bayer 04 Leverkusen",
+true
+],
+"90": [
+"Montrell Culbreath",
+"Bayer 04 Leverkusen",
+true
+],
+"91": [
+"Robert Andrich",
+"Bayer 04 Leverkusen",
+false
+],
+"92": [
+"Axel Tape",
+"Bayer 04 Leverkusen",
+false
+],
+"93": [
+"Ernest Poku",
+"Bayer 04 Leverkusen",
+false
+],
+"94": [
+"Malik Tillman",
+"Bayer 04 Leverkusen",
+false
+],
+"95": [
+"Ibrahim Maza",
+"Bayer 04 Leverkusen",
+false
+],
+"96": [
+"Exequiel Palacios",
+"Bayer 04 Leverkusen",
+false
+],
+"97": [
+"Christian Kofane",
+"Bayer 04 Leverkusen",
+false
+],
+"98": [
+"Edmond Tapsoba",
+"Bayer 04 Leverkusen",
+false
+],
+"99": [
+"Kaishu Sano",
+"1. FSV Mainz 05",
+false
+],
+"100": [
+"Nadiem Amiri",
+"1. FSV Mainz 05",
+false
+],
+"101": [
+"Eric Martel",
+"1. FSV Mainz 05",
+false
+],
+"102": [
+"Lennard Maloney",
+"1. FSV Mainz 05",
+false
+],
+"103": [
+"Jae-Sung Lee",
+"1. FSV Mainz 05",
+false
+],
+"104": [
+"Kacper Potulski",
+"1. FSV Mainz 05",
+false
+],
+"105": [
+"Phillip Tietz",
+"1. FSV Mainz 05",
+false
+],
+"106": [
+"Kevin Stöger",
+"Borussia Mönchengladbach",
+false
+],
+"107": [
+"Hugo Bolin",
+"Borussia Mönchengladbach",
+true
+],
+"108": [
+"Wael Mohya",
+"Borussia Mönchengladbach",
+false
+],
+"109": [
+"Tim Kleindienst",
+"Borussia Mönchengladbach",
+false
+],
+"110": [
+"Iaia Manco Danfa",
+"Borussia Mönchengladbach",
+true
+],
+"111": [
+"Franck Honorat",
+"Borussia Mönchengladbach",
+false
+],
+"112": [
+"Shuto Machino",
+"Borussia Mönchengladbach",
+false
+],
+"113": [
+"Robin Hack",
+"Borussia Mönchengladbach",
+false
+],
+"114": [
+"Cassiano Kiala",
+"FC Bayern München",
+true
+],
+"115": [
+"Jonathan Tah",
+"FC Bayern München",
+false
+],
+"116": [
+"Maycon Cardozo",
+"FC Bayern München",
+true
+],
+"117": [
+"Michael Olise",
+"FC Bayern München",
+false
+],
+"118": [
+"Jamal Musiala",
+"FC Bayern München",
+false
+],
+"119": [
+"Lennart Karl",
+"FC Bayern München",
+false
+],
+"120": [
+"Luis Díaz",
+"FC Bayern München",
+false
+],
+"121": [
+"Harry Kane",
+"FC Bayern München",
+false
+],
+"122": [
+"Joshua Kimmich",
+"FC Bayern München",
+false
+],
+"123": [
+"Tom Bischof",
+"FC Bayern München",
+false
+],
+"124": [
+"Felix Götze",
+"SC Paderborn 07",
+false
+],
+"125": [
+"Laurin Curda",
+"SC Paderborn 07",
+false
+],
+"126": [
+"Luka Duric",
+"SC Paderborn 07",
+true
+],
+"127": [
+"Santiago Castañeda",
+"SC Paderborn 07",
+true
+],
+"128": [
+"Steffen Tigges",
+"SC Paderborn 07",
+false
+],
+"129": [
+"Stefano Marino",
+"SC Paderborn 07",
+true
+],
+"130": [
+"Mertcan Ayhan",
+"FC Schalke 04",
+true
+],
+"131": [
+"Soufiane El-Faouzi",
+"FC Schalke 04",
+true
+],
+"132": [
+"Adil Aouchiche",
+"FC Schalke 04",
+false
+],
+"133": [
+"Dejan Ljubičić",
+"FC Schalke 04",
+false
+],
+"134": [
+"Timo Becker",
+"FC Schalke 04",
+false
+],
+"135": [
+"Kenan Karaman",
+"FC Schalke 04",
+false
+],
+"136": [
+"Junior Adamu",
+"FC Schalke 04",
+false
+],
+"137": [
+"Chema",
+"VfB Stuttgart",
+false
+],
+"138": [
+"Angelo Stiller",
+"VfB Stuttgart",
+false
+],
+"139": [
+"Finn Jeltsch",
+"VfB Stuttgart",
+false
+],
+"140": [
+"Bilal El Khannouss",
+"VfB Stuttgart",
+false
+],
+"141": [
+"Deniz Undav",
+"VfB Stuttgart",
+false
+],
+"142": [
+"Jamie Leweling",
+"VfB Stuttgart",
+false
+],
+"143": [
+"Dennis Seimen",
+"VfB Stuttgart",
+true
+],
+"144": [
+"Josha Vagnoman",
+"VfB Stuttgart",
+false
+],
+"145": [
+"Ezechiel Banzuzi",
+"RB Leipzig",
+false
+],
+"146": [
+"Lennart Karl",
+"FC Bayern München",
+false
+],
+"147": [
+"Yan Diomande",
+"RB Leipzig",
+false
+],
+"148": [
+"Andrija Maksimović",
+"RB Leipzig",
+false
+],
+"149": [
+"Saïd El Mala",
+"1. FC Köln",
+false
+],
+"150": [
+"Fisnik Asllani",
+"TSG Hoffenheim",
+false
+],
+"151": [
+"Alexander Røssing-Lelesiit",
+"Hamburger SV",
+false
+],
+"152": [
+"Jeanuël Belocian",
+"Bayer 04 Leverkusen",
+false
+],
+"153": [
+"Finn Jeltsch",
+"VfB Stuttgart",
+false
+],
+"154": [
+"Wouter Burger",
+"TSG Hoffenheim",
+false
+],
+"155": [
+"Christian Kofane",
+"Bayer 04 Leverkusen",
+false
+],
+"156": [
+"Rômulo Cardoso",
+"RB Leipzig",
+false
+],
+"157": [
+"Chema",
+"VfB Stuttgart",
+false
+],
+"158": [
+"Noah Darvich",
+"SV Elversberg",
+false
+],
+"159": [
+"Karim Coulibaly",
+"SV Werder Bremen",
+false
+],
+"160": [
+"Paul Seguin",
+"Hertha BSC",
+false
+],
+"161": [
+"Josip Brekalo",
+"Hertha BSC",
+false
+],
+"162": [
+"Joel Grodowski",
+"DSC Arminia Bielefeld",
+false
+],
+"163": [
+"Marius Wörl",
+"DSC Arminia Bielefeld",
+true
+],
+"164": [
+"Maximilian Wittek",
+"VfL Bochum 1848",
+false
+],
+"165": [
+"Mats Pannewig",
+"VfL Bochum 1848",
+true
+],
+"166": [
+"Mehmet Aydin",
+"Eintracht Braunschweig",
+false
+],
+"167": [
+"Max Marie",
+"Eintracht Braunschweig",
+true
+],
+"168": [
+"Tolcay Ciğerci",
+"FC Energie Cottbus",
+false
+],
+"169": [
+"Erik Engelhardt",
+"FC Energie Cottbus",
+false
+],
+"170": [
+"Fabian Nürnberger",
+"SV Darmstadt 98",
+false
+],
+"171": [
+"Patric Pfeiffer",
+"SV Darmstadt 98",
+false
+],
+"172": [
+"Niklas Hauptmann",
+"SG Dynamo Dresden",
+false
+],
+"173": [
+"Christoph Daferner",
+"SG Dynamo Dresden",
+false
+],
+"174": [
+"Shinta Appelkamp",
+"SpVgg Greuther Fürth",
+false
+],
+"175": [
+"Maximilian Dietz",
+"SpVgg Greuther Fürth",
+true
+],
+"176": [
+"Hayate Matsuda",
+"Hannover 96",
+true
+],
+"177": [
+"Benjamin Källman",
+"Hannover 96",
+false
+],
+"178": [
+"Patrick Mainka",
+"1. FC Heidenheim 1846",
+false
+],
+"179": [
+"Tim Siersleben",
+"1. FC Heidenheim 1846",
+false
+],
+"180": [
+"Naatan Skyttä",
+"1. FC Kaiserslautern",
+false
+],
+"181": [
+"Mika Haas",
+"1. FC Kaiserslautern",
+true
+],
+"182": [
+"Rafael Pinto Pedrosa",
+"Karlsruher SC",
+true
+],
+"183": [
+"Marvin Wanitzek",
+"Karlsruher SC",
+false
+],
+"184": [
+"Alexander Bernhardsson",
+"Holstein Kiel",
+false
+],
+"185": [
+"Jonas Therkelsen",
+"Holstein Kiel",
+true
+],
+"186": [
+"Mateusz Zukowski",
+"1. FC Magdeburg",
+false
+],
+"187": [
+"Doyoung Yoon",
+"1. FC Magdeburg",
+false
+],
+"188": [
+"Julian Justvan",
+"1. FC Nürnberg",
+false
+],
+"189": [
+"Winners Osawe",
+"1. FC Nürnberg",
+true
+],
+"190": [
+"Jannik Müller",
+"VfL Osnabrück",
+false
+],
+"191": [
+"Robin Meißner",
+"VfL Osnabrück",
+false
+],
+"192": [
+"Jackson Irvine",
+"FC St. Pauli",
+false
+],
+"193": [
+"Martijn Kaars",
+"FC St. Pauli",
+false
+],
+"194": [
+"Aaron Zehnter",
+"VfL Wolfsburg",
+false
+],
+"195": [
+"Dzenan Pejcinovic",
+"VfL Wolfsburg",
+false
+],
+"196": [
+"FC Bayern München Champions 2025/26",
+"FC Bayern München",
+false
+],
+"197": [
+"Harry Kane",
+"FC Bayern München",
+false
+],
+"198": [
+"Michael Olise",
+"FC Bayern München",
+false
+],
+"199": [
+"Gregor Kobel",
+"Borussia Dortmund",
+false
+],
+"200": [
+"Yan Diomande",
+"RB Leipzig",
+false
+]
+}

@@ -1308,7 +1308,7 @@ function rk_cl_map( $serie, $kat, $jahr ) {
 			array( 'taxonomy' => 'product_cat', 'field' => 'slug', 'terms' => $kat ),
 		),
 	) );
-	$teams = 'Arizona Cardinals|Atlanta Falcons|Baltimore Ravens|Buffalo Bills|Carolina Panthers|Chicago Bears|Cincinnati Bengals|Cleveland Browns|Dallas Cowboys|Denver Broncos|Detroit Lions|Green Bay Packers|Houston Texans|Indianapolis Colts|Jacksonville Jaguars|Kansas City Chiefs|Las Vegas Raiders|Los Angeles Chargers|Los Angeles Rams|Miami Dolphins|Minnesota Vikings|New England Patriots|New Orleans Saints|New York Giants|New York Jets|Philadelphia Eagles|Pittsburgh Steelers|San Francisco 49ers|Seattle Seahawks|Tampa Bay Buccaneers|Tennessee Titans|Washington Commanders';
+	$teams = 'Arizona Cardinals|Atlanta Falcons|Baltimore Ravens|Buffalo Bills|Carolina Panthers|Chicago Bears|Cincinnati Bengals|Cleveland Browns|Dallas Cowboys|Denver Broncos|Detroit Lions|Green Bay Packers|Houston Texans|Indianapolis Colts|Jacksonville Jaguars|Kansas City Chiefs|Las Vegas Raiders|Los Angeles Chargers|Los Angeles Rams|Miami Dolphins|Minnesota Vikings|New England Patriots|New Orleans Saints|New York Giants|New York Jets|Philadelphia Eagles|Pittsburgh Steelers|San Francisco 49ers|Seattle Seahawks|Tampa Bay Buccaneers|Tennessee Titans|Washington Commanders|FC Bayern München|Bayer 04 Leverkusen|SV Werder Bremen|RB Leipzig|Eintracht Frankfurt|1\. FSV Mainz 05|VfB Stuttgart|FC Schalke 04|Borussia Dortmund|TSG Hoffenheim|SG Dynamo Dresden|SC Freiburg|1\. FC Köln|Eintracht Braunschweig|1\. FC Union Berlin|FC Energie Cottbus|Borussia Mönchengladbach|1\. FC Kaiserslautern|VfL Bochum 1848|Hamburger SV|SV Darmstadt 98|FC Augsburg|1\. FC Nürnberg|1\. FC Magdeburg|VfL Wolfsburg|VfL Osnabrück|FC St\. Pauli|Holstein Kiel|SpVgg Greuther Fürth|SC Paderborn 07|1\. FC Heidenheim 1846|Hannover 96|DSC Arminia Bielefeld|SV Elversberg|Karlsruher SC|Hertha BSC';
 	foreach ( $ids as $id ) {
 		$t = html_entity_decode( get_the_title( $id ), ENT_QUOTES );
 		if ( false === strpos( $t, $jahr ) || ! preg_match( '/#(\d+)\s(.*)$/', $t, $m ) ) {
@@ -1319,7 +1319,7 @@ function rk_cl_map( $serie, $kat, $jahr ) {
 			continue;
 		}
 		$l = preg_replace( '/\s*' . preg_quote( $jahr, '/' ) . '\s.*$/', '', $m[2] );
-		$l = preg_replace( '/\b(' . $teams . ')\b/', '', $l );
+		$l = preg_replace( '/(?<![\pL\d])(' . $teams . ')(?![\pL\d])/u', '', $l );
 		$l = preg_replace( '/\b(AFC|NFC)\b.*\bLeaders\b/', '', $l );
 		$l = trim( preg_replace( '/\s+/', ' ', $l ) );
 		$map[ (int) $m[1] ][] = array(
@@ -2241,4 +2241,24 @@ add_filter( 'get_the_archive_title', function ( $title ) {
 	}
 	return $title;
 }, 20 );
+
+// Produktseite: Link zur passenden Set Checkliste im Ratgeber (interne Verlinkung).
+add_action( 'woocommerce_single_product_summary', function () {
+	global $product;
+	if ( ! $product ) {
+		return;
+	}
+	$id    = $product->get_id();
+	$title = get_the_title( $id );
+	$map   = array(
+		array( 'topps-flagship-bundesliga', 'fussball', '2026-27 Topps Flagship Bundesliga', '/ratgeber/2026-27-topps-flagship-bundesliga-checkliste/', '2026-27 Topps Flagship Bundesliga Checkliste' ),
+		array( 'topps-flagship', 'nfl', '2026 Topps Flagship', '/ratgeber/2026-topps-flagship-nfl-checkliste/', '2026 Topps Flagship NFL Checkliste' ),
+	);
+	foreach ( $map as $m ) {
+		if ( false !== strpos( $title, $m[2] ) && has_term( $m[0], 'pa_serie', $id ) && has_term( $m[1], 'product_cat', $id ) ) {
+			echo '<p class="rk-cl-hint" style="margin:6px 0 14px;font-size:14px;opacity:.85">Alle Karten des Sets mit Nummern: <a href="' . esc_url( home_url( $m[3] ) ) . '">' . esc_html( $m[4] ) . '</a></p>';
+			return;
+		}
+	}
+}, 13 );
 

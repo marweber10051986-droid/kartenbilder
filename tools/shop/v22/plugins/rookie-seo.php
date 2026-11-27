@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Rookie Business SEO
  * Description: Schlanke SEO Grundlage: Titel, Meta Descriptions, Canonical, Open Graph, strukturierte Daten, noindex für Warenkorb und Kasse, Kategorietexte, Bild Titel und Alt Texte.
- * Version: 1.8.2
+ * Version: 1.8.3
  * Author: Rookie Business
  */
 
@@ -65,7 +65,7 @@ function rk_seo_cat_texts() {
 			'title' => 'Fußball Karten kaufen: Topps Bundesliga, Donruss und Panini',
 			'desc'  => 'Fußball Sammelkarten einzeln kaufen: Topps Flagship Bundesliga 2026/27, Donruss Road to FIFA World Cup 26, Panini. Echte Scans, Versand ab 1,10 €.',
 			'h2'    => 'Fußball Sammelkarten einzeln kaufen',
-			'text'  => '<p>Soccer Cards als Einzelkarten: Topps Flagship Bundesliga 2026/27 mit Rookies, Base Karten und Inserts wie Stars of the Bundesliga, Chrome Icons, Global Gladiators oder Matchwinner. Dazu Donruss Road to FIFA World Cup 26, Topps Chrome, Panini und Inserts wie Net Marvels oder Zero Gravity. Stars wie Lionel Messi, Michael Olise oder Manuel Neuer, Rookies und Nationalspieler aus ganz Europa.</p><p>Jede Fußball Karte ist echt gescannt. Versand innerhalb Deutschlands ab 1,10 €, in die EU für 14,49 € mit Sendungsnummer.</p>',
+			'text'  => '<p>Soccer Cards als Einzelkarten: Topps Flagship Bundesliga 2026/27 mit Rookies, Base Karten und Inserts wie Stars of the Bundesliga, Chrome Icons, Global Gladiators oder Matchwinner. Dazu Donruss Road to FIFA World Cup 26, Topps Chrome, Panini und Inserts wie Net Marvels oder Zero Gravity. Stars wie Lionel Messi, Michael Olise oder Manuel Neuer, Rookies und Nationalspieler aus ganz Europa.</p><p>Welche Karte welche Nummer hat, siehst du in unserer <a href="/ratgeber/2026-27-topps-flagship-bundesliga-checkliste/">2026-27 Topps Flagship Bundesliga Checkliste</a> mit allen 200 Karten.</p><p>Jede Fußball Karte ist echt gescannt. Versand innerhalb Deutschlands ab 1,10 €, in die EU für 14,49 € mit Sendungsnummer.</p>',
 		),
 		'pokemon'     => array(
 			'title' => 'Pokémon Karten einzeln kaufen: Singles, V, ex und Holos',
@@ -986,6 +986,7 @@ add_action( 'template_redirect', function () {
 	if ( is_404() ) {
 		$map  = array(
 			'kyrie-irving-3-dallas-mavericks-2025-26-topps-chrome-update-nba-2' => 'kyrie-irving-3-dallas-mavericks-2025-26-topps-chrome-update-nba',
+			'isak-johannesson-73-1-fc-koeln-2026-27-topps-flagship-bundesliga-2' => 'isak-johannesson-73-1-fc-koeln-2026-27-topps-flagship-bundesliga',
 		);
 		$path = trim( (string) wp_parse_url( isset( $_SERVER['REQUEST_URI'] ) ? $_SERVER['REQUEST_URI'] : '', PHP_URL_PATH ), '/' ); // phpcs:ignore
 		$slug = basename( $path );
