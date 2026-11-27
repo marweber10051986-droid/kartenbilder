@@ -2266,3 +2266,82 @@ add_action( 'woocommerce_single_product_summary', function () {
 	}
 }, 13 );
 
+
+// Pokémon Mega Sale Banner auf der Startseite zwischen "Such dir deine Liga aus" und "Frisch gezogen" (27.11.2026).
+function rk_mega_sale_banner() {
+	$term = get_term_by( 'slug', 'pokemon-mega-sale', 'product_cat' );
+	if ( ! $term || ! $term->count ) {
+		return '';
+	}
+	$link  = get_term_link( $term );
+	$cards = get_transient( 'rk_mega_cards' );
+	if ( false === $cards ) {
+		$cards = array();
+		$ids   = function_exists( 'wc_get_products' ) ? wc_get_products( array( 'category' => array( 'pokemon-mega-sale' ), 'status' => 'publish', 'stock_status' => 'instock', 'limit' => 40, 'return' => 'ids', 'orderby' => 'rand' ) ) : array();
+		foreach ( $ids as $id ) {
+			if ( false === strpos( get_the_title( $id ), ' Holo ' ) ) {
+				continue;
+			}
+			$src = get_the_post_thumbnail_url( $id, 'medium' );
+			if ( $src ) {
+				$cards[] = array( $src, get_the_title( $id ) );
+			}
+			if ( count( $cards ) >= 3 ) {
+				break;
+			}
+		}
+		set_transient( 'rk_mega_cards', $cards, 6 * HOUR_IN_SECONDS );
+	}
+	$imgs = '';
+	foreach ( $cards as $i => $c ) {
+		$imgs .= '<img class="rk-mega__card rk-mega__card--' . ( $i + 1 ) . '" src="' . esc_url( $c[0] ) . '" alt="' . esc_attr( $c[1] ) . '" width="300" height="419" loading="lazy">';
+	}
+	$css = '<style>'
+	. '.rk-mega{max-width:var(--wp--style--global--content-size,1180px);margin:28px auto 0!important;padding:0 var(--wp--style--root--padding-right,20px);box-sizing:content-box}'
+	. '.rk-mega__a{position:relative;isolation:isolate;overflow:hidden;display:grid;grid-template-columns:1.25fr 1fr;align-items:center;gap:20px;min-height:300px;padding:44px 48px;background:radial-gradient(120% 140% at 85% 50%,#ff4a3d 0%,#e3201b 45%,#a50d12 100%);color:#fff!important;text-decoration:none!important;box-shadow:0 20px 50px -20px rgba(215,25,31,.6)}'
+	. '.rk-mega__a::before{content:"";position:absolute;inset:0;z-index:-1;background:repeating-linear-gradient(-55deg,rgba(255,255,255,.06) 0 2px,transparent 2px 22px)}'
+	. '.rk-mega__a::after{content:"SALE";position:absolute;z-index:-1;right:-20px;bottom:-60px;font-family:var(--rk-display);font-weight:800;font-size:260px;line-height:1;letter-spacing:-.02em;color:rgba(0,0,0,.12)}'
+	. '.rk-mega__kicker{display:inline-block;background:#111;color:#fff;font-family:var(--rk-mono);font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:6px 12px;transform:rotate(-2deg);margin-bottom:16px}'
+	. '.rk-mega__h{font-family:var(--rk-display)!important;font-weight:800;text-transform:uppercase;font-size:clamp(40px,6vw,84px)!important;line-height:.88!important;letter-spacing:-.01em;margin:0 0 14px!important;color:#fff!important;text-shadow:0 4px 0 rgba(0,0,0,.18)}'
+	. '.rk-mega__sub{font-family:var(--rk-display);font-weight:800;text-transform:uppercase;font-size:clamp(18px,2.1vw,26px);line-height:1.1;margin:0 0 22px;color:#fff}'
+	. '.rk-mega__row{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}'
+	. '.rk-mega__price{display:flex;align-items:baseline;gap:12px;background:#fff;color:#d7191f;padding:8px 18px 6px;transform:rotate(-3deg);box-shadow:0 10px 24px rgba(0,0,0,.25)}'
+	. '.rk-mega__price del{font-family:var(--rk-mono);font-size:18px;color:#111;opacity:.55}'
+	. '.rk-mega__price b{font-family:var(--rk-display);font-weight:800;font-size:clamp(38px,4.4vw,56px);line-height:1}'
+	. '.rk-mega__price small{font-family:var(--rk-mono);font-size:12px;color:#111;text-transform:uppercase;letter-spacing:.08em}'
+	. '.rk-mega__btn{display:inline-flex;align-items:center;gap:10px;background:#111;color:#fff;font-family:var(--rk-mono);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:15px 22px;border:2px solid #111;transition:background .2s,color .2s}'
+	. '.rk-mega__a:hover .rk-mega__btn{background:#fff;color:#111}'
+	. '.rk-mega__count{flex-basis:100%;font-family:var(--rk-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.85}'
+	. '.rk-mega__fan{position:relative;height:280px}'
+	. '.rk-mega__card{position:absolute;top:50%;left:50%;width:170px!important;height:auto!important;max-width:none!important;margin:0!important;border-radius:8px;box-shadow:0 18px 34px rgba(0,0,0,.45);transition:transform .35s ease}'
+	. '.rk-mega__card--1{transform:translate(-125%,-50%) rotate(-13deg)}'
+	. '.rk-mega__card--2{transform:translate(-50%,-56%) rotate(0deg);z-index:2}'
+	. '.rk-mega__card--3{transform:translate(25%,-50%) rotate(13deg)}'
+	. '.rk-mega__a:hover .rk-mega__card--1{transform:translate(-138%,-52%) rotate(-17deg)}'
+	. '.rk-mega__a:hover .rk-mega__card--2{transform:translate(-50%,-62%) scale(1.04)}'
+	. '.rk-mega__a:hover .rk-mega__card--3{transform:translate(38%,-52%) rotate(17deg)}'
+	. '@media(max-width:900px){.rk-mega__a{grid-template-columns:1fr;padding:34px 26px 10px}.rk-mega__fan{height:230px}.rk-mega__card{width:140px!important}.rk-mega__a::after{font-size:170px}}'
+	. '@media(max-width:480px){.rk-mega{padding:0 16px}.rk-mega__a{padding:28px 20px 6px}.rk-mega__fan{height:200px}.rk-mega__card{width:118px!important}}'
+	. '.rk-mega + .rk-section{padding-top:56px!important}'
+	. '@media(prefers-reduced-motion:reduce){.rk-mega__card{transition:none}}'
+	. '</style>';
+	return $css . '<section class="rk-mega" aria-label="Pokémon Mega Sale">'
+		. '<a class="rk-mega__a" href="' . esc_url( $link ) . '">'
+		. '<div class="rk-mega__txt">'
+		. '<span class="rk-mega__kicker">Nur für kurze Zeit</span>'
+		. '<h2 class="rk-mega__h">Pokémon<br>Mega Sale</h2>'
+		. '<p class="rk-mega__sub">Alle Pokémon Karten nur 0,50 € pro Stück</p>'
+		. '<div class="rk-mega__row">'
+		. '<span class="rk-mega__price"><del>2,00 €</del><b>0,50 €</b><small>pro Karte</small></span>'
+		. '<span class="rk-mega__btn">Zum Mega Sale <span aria-hidden="true">→</span></span>'
+		. '<span class="rk-mega__count">' . (int) $term->count . ' japanische Karten · Holos, Reverse Holos und Rares · echte Scans</span>'
+		. '</div></div>'
+		. '<div class="rk-mega__fan" aria-hidden="true">' . $imgs . '</div>'
+		. '</a></section>';
+}
+add_filter( 'render_block_core/html', function ( $content ) {
+	if ( is_front_page() && false !== strpos( $content, 'rk-section rk-lg' ) && false === strpos( $content, 'rk-mega' ) ) {
+		$content .= rk_mega_sale_banner();
+	}
+	return $content;
+}, 20 );
