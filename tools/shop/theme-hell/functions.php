@@ -1979,7 +1979,19 @@ add_filter( 'render_block', function ( $content, $block ) {
 		$title = wp_strip_all_tags( apply_filters( 'woocommerce_product_' . $key . '_tab_title', $tab['title'], $key ) );
 		$out  .= '<details class="rk-acd__item" id="tab-' . esc_attr( $key ) . '"><summary>' . esc_html( $title ) . '</summary><div class="rk-acd__in">' . $inner . '</div></details>';
 	}
-	return $out . '</div>';
+	$out .= '</div>';
+	$start = strpos( $content, '<div class="woocommerce-tabs' );
+	$end   = false === $start ? false : strpos( $content, '<style>.rk-rel{', $start );
+	if ( false === $end && false !== $start ) {
+		$end = strpos( $content, '<section class="rk-rel"', $start );
+	}
+	if ( false === $start ) {
+		return $content;
+	}
+	if ( false === $end ) {
+		$end = strrpos( $content, '</div>' ); // nur der äußere Block bleibt
+	}
+	return substr( $content, 0, $start ) . $out . substr( $content, $end );
 }, 20, 2 );
 
 // v2.2 Dunkel: neue Elemente (Konto, Karten verkaufen, Ankauf) im dunklen Look (26.11.2026).
