@@ -1318,7 +1318,7 @@ function rk_cl_map( $serie, $kat, $jahr ) {
 		if ( ! $p || ! $p->is_in_stock() ) {
 			continue;
 		}
-		$l = preg_replace( '/\s*' . preg_quote( $jahr, '/' ) . '\s.*$/', '', $m[2] );
+		$l = preg_replace( '/\s*' . preg_quote( $jahr, '/' ) . '\S*\s.*$/', '', $m[2] );
 		$l = preg_replace( '/(?<![\pL\d])(' . $teams . ')(?![\pL\d])/u', '', $l );
 		$l = preg_replace( '/\b(AFC|NFC)\b.*\bLeaders\b/', '', $l );
 		$l = trim( preg_replace( '/\s+/', ' ', $l ) );
