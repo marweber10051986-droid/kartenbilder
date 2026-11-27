@@ -1998,7 +1998,10 @@ add_filter( 'render_block', function ( $content, $block ) {
 
 // Mengenrabatt beendet (27.11.2026): alten Satz aus gespeicherten Produkttexten ausblenden.
 add_filter( 'the_content', function ( $c ) {
-	return ( false === strpos( $c, 'Mengenrabatt' ) ) ? $c : str_replace( array( ' Ab 10 Karten gibt es automatisch Mengenrabatt.', 'Ab 10 Karten gibt es automatisch Mengenrabatt.' ), '', $c );
+	if ( false === strpos( $c, 'Mengenrabatt' ) || ! function_exists( 'is_product' ) || ! is_product() ) {
+		return $c;
+	}
+	return preg_replace( '/\s*[^.<>]*Mengenrabatt[^.<>]*\./u', '', $c );
 }, 30 );
 
 // v2.2 Dunkel: neue Elemente (Konto, Karten verkaufen, Ankauf) im dunklen Look (26.11.2026).
