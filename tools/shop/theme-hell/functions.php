@@ -1956,6 +1956,32 @@ add_filter( 'render_block', function ( $content, $block ) {
 }, 10, 2 );
 
 
+// Produktseite: Zusätzliche Informationen und Rezensionen als eingeklappte Felder (27.11.2026).
+add_filter( 'render_block', function ( $content, $block ) {
+	if ( 'woocommerce/product-details' !== ( $block['blockName'] ?? '' ) || ! is_product() ) {
+		return $content;
+	}
+	$tabs = apply_filters( 'woocommerce_product_tabs', array() );
+	if ( ! $tabs ) {
+		return $content;
+	}
+	$out = '<div class="rk-acd">';
+	foreach ( $tabs as $key => $tab ) {
+		if ( empty( $tab['callback'] ) || ! is_callable( $tab['callback'] ) ) {
+			continue;
+		}
+		ob_start();
+		call_user_func( $tab['callback'], $key, $tab );
+		$inner = ob_get_clean();
+		if ( '' === trim( wp_strip_all_tags( $inner, true ) ) && false === strpos( $inner, '<form' ) ) {
+			continue;
+		}
+		$title = wp_strip_all_tags( apply_filters( 'woocommerce_product_' . $key . '_tab_title', $tab['title'], $key ) );
+		$out  .= '<details class="rk-acd__item" id="tab-' . esc_attr( $key ) . '"><summary>' . esc_html( $title ) . '</summary><div class="rk-acd__in">' . $inner . '</div></details>';
+	}
+	return $out . '</div>';
+}, 20, 2 );
+
 // v2.2 Dunkel: neue Elemente (Konto, Karten verkaufen, Ankauf) im dunklen Look (26.11.2026).
 add_action( 'wp_head', function () {
 	echo '<style id="rk-dunkel">' . <<<'RK_DARK'
@@ -2041,6 +2067,16 @@ add_action( 'wp_head', function () {
 .rk-pv__ic{flex:none;width:22px;height:22px;display:grid;place-items:center;border:1px solid rgba(255,59,48,.55);border-radius:50%;color:var(--rk-red);font:700 12px var(--rk-mono)}
 .rk-pv__more{justify-self:start;margin-top:2px;font-family:var(--rk-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--rk-paper)!important;text-decoration:none;border-bottom:1px solid var(--rk-red);padding-bottom:3px}
 .rk-pv__more:hover{color:var(--rk-red)!important}
+/* Produktseite: eingeklappte Felder */
+.rk-acd{max-width:1340px;margin:30px auto 10px;display:grid;gap:10px}
+.rk-acd__item{border:1px solid var(--rk-line);background:var(--rk-panel)}
+.rk-acd__item summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 20px;font-family:var(--rk-mono);font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--rk-paper)}
+.rk-acd__item summary::-webkit-details-marker{display:none}
+.rk-acd__item summary::after{content:"+";color:var(--rk-red);font-size:22px;line-height:1;font-family:var(--rk-body)}
+.rk-acd__item[open] summary::after{content:"−"}
+.rk-acd__item summary:hover{color:var(--rk-red)}
+.rk-acd__in{padding:0 20px 20px}
+.rk-acd__in > h2:first-child,.rk-acd__in .woocommerce-Reviews-title{display:none}
 RK_DARK
 	. '</style>'; // phpcs:ignore
 }, 999 );
