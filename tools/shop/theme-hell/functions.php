@@ -156,7 +156,7 @@ function rk_latest_grid( $limit = 20 ) {
 		}
 		$rc     = ( false !== stripos( $name, 'Rookie' ) ) ? '<i class="rk-ng__rc">RC</i>' : '';
 		$img_id = $p->get_image_id();
-		$img    = $img_id ? wp_get_attachment_image( $img_id, 'woocommerce_single', false, array( 'loading' => 'lazy', 'alt' => $name, 'sizes' => '(max-width: 640px) 45vw, 220px' ) ) : wc_placeholder_img( 'woocommerce_single' );
+		$img    = $img_id ? wp_get_attachment_image( $img_id, 'medium', false, array( 'loading' => 'lazy', 'alt' => $name, 'sizes' => '(max-width: 640px) 45vw, 220px' ) ) : wc_placeholder_img( 'woocommerce_single' );
 		$items .= '<li class="rk-ng__item"><a href="' . esc_url( $p->get_permalink() ) . '" title="' . esc_attr( $name ) . '">'
 			. '<span class="rk-ng__img">' . $img . '</span>'
 			. '<span class="rk-ng__set">' . esc_html( $line ) . '</span>'
@@ -1419,7 +1419,7 @@ function rk_rg_card( $p, $big = false ) {
 	$img = get_the_post_thumbnail_url( $p, $big ? 'large' : 'medium_large' );
 	$out = '<a class="rk-rg-card' . ( $big ? ' rk-rg-card--big' : '' ) . '" href="' . esc_url( get_permalink( $p ) ) . '">';
 	if ( $img ) {
-		$out .= '<span class="rk-rg-card__img"><img src="' . esc_url( $img ) . '" alt="" loading="lazy" decoding="async" width="1200" height="675"></span>';
+		$out .= '<span class="rk-rg-card__img"><img src="' . esc_url( $img ) . '" alt="' . esc_attr( get_the_title( $p ) ) . '" loading="lazy" decoding="async" width="1200" height="675"></span>';
 	}
 	$out .= '<span class="rk-rg-card__body"><span class="rk-rg-tag">' . esc_html( rk_rg_tag( $p->post_name ) ) . '</span>';
 	$out .= '<span class="rk-rg-card__title">' . esc_html( get_the_title( $p ) ) . '</span>';
@@ -2211,3 +2211,34 @@ add_action( 'wp_head', function () {
 RK_DARK
 	. '</style>'; // phpcs:ignore
 }, 999 );
+
+// v2.3 SEO und Speed (27.11.2026)
+// Startseite: das Hero Hintergrundbild ist das LCP Element, deshalb früh laden.
+add_action( 'wp_head', function () {
+	if ( is_front_page() ) {
+		echo '<link rel="preload" as="image" href="' . esc_url( content_url( '/uploads/2026/11/rookie-laden-hero.jpg' ) ) . '" fetchpriority="high">' . "\n"; // phpcs:ignore
+	}
+}, 1 );
+// Kommentar und Kategorie Feeds: keine Links mehr im Kopf, Produkt Feeds per 301 aufs Produkt (Google crawlt sonst /produkt/.../feed/).
+add_action( 'wp', function () {
+	remove_action( 'wp_head', 'feed_links_extra', 3 );
+} );
+add_action( 'template_redirect', function () {
+	if ( is_feed() && is_singular() ) {
+		wp_safe_redirect( get_permalink( get_queried_object_id() ), 301 );
+		exit;
+	}
+	if ( is_feed() && ( is_tax( 'product_cat' ) || is_tax( 'product_tag' ) ) ) {
+		wp_safe_redirect( get_term_link( get_queried_object() ), 301 );
+		exit;
+	}
+}, 1 );
+// Kategorie Überschrift (H1): "NFL Karten" statt nur "NFL".
+add_filter( 'get_the_archive_title', function ( $title ) {
+	if ( is_tax( 'product_cat' ) ) {
+		$name = single_term_title( '', false );
+		return ( false === stripos( $name, 'karten' ) ) ? $name . ' Karten' : $name;
+	}
+	return $title;
+}, 20 );
+

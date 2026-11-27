@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Rookie Business SEO
  * Description: Schlanke SEO Grundlage: Titel, Meta Descriptions, Canonical, Open Graph, strukturierte Daten, noindex für Warenkorb und Kasse, Kategorietexte, Bild Titel und Alt Texte.
- * Version: 1.8.1
+ * Version: 1.8.2
  * Author: Rookie Business
  */
 
@@ -62,10 +62,10 @@ function rk_seo_cat_texts() {
 			'text'  => '<p>Baseball Sammelkarten von Topps, Topps Chrome, Stadium Club, Heritage und Bowman. Rookie Cards, Autographs, Parallels und Stars wie Shohei Ohtani. Jede Karte einzeln, mit echtem Scan.</p><p>Filtere nach Mannschaft, Position, Kartenart und Serie.</p>',
 		),
 		'fussball'    => array(
-			'title' => 'Fußball Sammelkarten kaufen: Panini, Topps und Donruss',
-			'desc'  => 'Fußball Sammelkarten und Tradingcards einzeln kaufen: Donruss Road to FIFA World Cup 26, Topps, Panini. Echte Scans, Versand in Deutschland ab 1,10 €.',
+			'title' => 'Fußball Karten kaufen: Topps Bundesliga, Donruss und Panini',
+			'desc'  => 'Fußball Sammelkarten einzeln kaufen: Topps Flagship Bundesliga 2026/27, Donruss Road to FIFA World Cup 26, Panini. Echte Scans, Versand ab 1,10 €.',
 			'h2'    => 'Fußball Sammelkarten einzeln kaufen',
-			'text'  => '<p>Soccer Cards als Einzelkarten: Donruss Road to FIFA World Cup 26, Topps Chrome, Panini und Inserts wie Net Marvels oder Zero Gravity. Stars wie Lionel Messi, Rookies und Nationalspieler aus ganz Europa und der Welt.</p><p>Jede Fußball Karte ist echt gescannt. Versand innerhalb Deutschlands ab 1,10 €, in die EU für 14,49 € mit Sendungsnummer.</p>',
+			'text'  => '<p>Soccer Cards als Einzelkarten: Topps Flagship Bundesliga 2026/27 mit Rookies, Base Karten und Inserts wie Stars of the Bundesliga, Chrome Icons, Global Gladiators oder Matchwinner. Dazu Donruss Road to FIFA World Cup 26, Topps Chrome, Panini und Inserts wie Net Marvels oder Zero Gravity. Stars wie Lionel Messi, Michael Olise oder Manuel Neuer, Rookies und Nationalspieler aus ganz Europa.</p><p>Jede Fußball Karte ist echt gescannt. Versand innerhalb Deutschlands ab 1,10 €, in die EU für 14,49 € mit Sendungsnummer.</p>',
 		),
 		'pokemon'     => array(
 			'title' => 'Pokémon Karten einzeln kaufen: Singles, V, ex und Holos',
