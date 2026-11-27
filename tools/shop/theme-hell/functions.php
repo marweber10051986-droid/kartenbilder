@@ -465,7 +465,7 @@ function rk_wuehlkiste_section() {
 		. '</div><a class="rk-link-arrow" href="' . esc_url( $link ) . '">Ab in die Kiste <span aria-hidden="true">↗</span></a></div>'
 		. '<div class="rk-wk__stats">'
 		. '<div class="rk-wk__stat"><b>0,80<i>€</i></b><span>pro Karte, egal ob Star oder Rollenspieler</span></div>'
-		. '<div class="rk-wk__stat"><b>10 = 7,20<i>€</i></b><span>zehn Karten mit 10 % Mengenrabatt</span></div>'
+		. '<div class="rk-wk__stat"><b>70<i>€</i></b><span>ab hier Versand in DE gratis</span></div>'
 		. '<div class="rk-wk__stat"><b>' . $total . '</b><span>Karten zum Durchwühlen, täglich neu gemischt</span></div>'
 		. '</div>'
 		. '<div class="rk-car" style="--rk-car-dur:' . (int) $secs . 's"><ul class="rk-car__track">' . $track . '</ul></div>'
@@ -576,18 +576,20 @@ add_action( 'woocommerce_single_product_summary', function () {
 	echo rk_ebay_css() . '<div class="rk-ebp"><span class="rk-eb__stars" aria-hidden="true">★★★★★</span><span>' . (int) $s['quote'] . ' % positive Bewertungen auf <a href="' . esc_url( $s['profil'] ) . '" target="_blank" rel="noopener">eBay</a>, raus innerhalb von 1 Werktag</span></div>'; // phpcs:ignore
 }, 35 );
 
-/* Direkt unter dem Preis: Mengenrabatt und Gratisversand (26.11.2026) */
+/* Direkt unter dem Preis: Gratisversand ab 70 € (Mengenrabatt am 27.11.2026 beendet) */
 add_action( 'woocommerce_single_product_summary', function () {
 	$shop = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : home_url( '/' );
 	echo '<div class="rk-pv">'
-		. '<div class="rk-pv__row"><span class="rk-pv__ic" aria-hidden="true">%</span><span><b>Mengenrabatt</b> 10 % ab 10 Karten, 20 % ab 20, 25 % ab 30. Wird im Warenkorb automatisch abgezogen.</span></div>'
 		. '<div class="rk-pv__row"><span class="rk-pv__ic" aria-hidden="true">€</span><span><b>Ab 70 €</b> versandkostenfrei in DE, darunter nur 1,10 € pro Bestellung.</span></div>'
-		. '<a class="rk-pv__more" href="' . esc_url( $shop ) . '">Mehr Karten sammeln und sparen <span aria-hidden="true">↗</span></a>'
+		. '<a class="rk-pv__more" href="' . esc_url( $shop ) . '">Mehr Karten entdecken <span aria-hidden="true">↗</span></a>'
 		. '</div>'; // phpcs:ignore
 }, 11 );
 
-/* Mengenrabatt Fortschritt im Warenkorb (Stufen: 10 = 10 %, 20 = 20 %, 30 = 25 %) */
+/* Mengenrabatt Fortschritt im Warenkorb: seit 27.11.2026 aus (Mengenrabatt beendet) */
 add_filter( 'render_block', function ( $content, $block ) {
+	if ( ! defined( 'RK_MENGENRABATT_AN' ) ) {
+		return $content;
+	}
 	if ( empty( $block['blockName'] ) || 'woocommerce/cart' !== $block['blockName'] ) {
 		return $content;
 	}
@@ -610,7 +612,7 @@ add_filter( 'render_block', function ( $content, $block ) {
  * dort gibt es den grossen Balken. Schliessbar bis sich die Menge aendert.
  * ------------------------------------------------------------------ */
 add_action( 'wp_footer', function () {
-	if ( is_admin() || ( function_exists( 'is_cart' ) && ( is_cart() || is_checkout() ) ) ) {
+	if ( ! defined( 'RK_MENGENRABATT_AN' ) || is_admin() || ( function_exists( 'is_cart' ) && ( is_cart() || is_checkout() ) ) ) {
 		return;
 	}
 	$cart = function_exists( 'wc_get_cart_url' ) ? wc_get_cart_url() : '/warenkorb/';
@@ -1993,6 +1995,11 @@ add_filter( 'render_block', function ( $content, $block ) {
 	}
 	return substr( $content, 0, $start ) . $out . substr( $content, $end );
 }, 20, 2 );
+
+// Mengenrabatt beendet (27.11.2026): alten Satz aus gespeicherten Produkttexten ausblenden.
+add_filter( 'the_content', function ( $c ) {
+	return ( false === strpos( $c, 'Mengenrabatt' ) ) ? $c : str_replace( array( ' Ab 10 Karten gibt es automatisch Mengenrabatt.', 'Ab 10 Karten gibt es automatisch Mengenrabatt.' ), '', $c );
+}, 30 );
 
 // v2.2 Dunkel: neue Elemente (Konto, Karten verkaufen, Ankauf) im dunklen Look (26.11.2026).
 add_action( 'wp_head', function () {
