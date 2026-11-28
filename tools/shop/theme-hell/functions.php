@@ -2427,16 +2427,25 @@ function rk_grail_banner() {
 		$p      = wc_get_product( $id );
 		$title  = $p->get_name();
 		$player = trim( (string) $p->get_attribute( 'Spieler' ) );
-		if ( '' === $player ) {
-			$player = trim( preg_replace( '/\s#.*$/u', '', $title ) );
-			$player = preg_replace( '/\s+-\s+.*$/u', '', $player );
-		}
-		$rest = trim( preg_replace( '/^.*?#\S+\s*/u', '', $title ) );
-		if ( $rest === $title ) {
-			$rest = (string) $p->get_attribute( 'Set' );
+		if ( false !== strpos( $title, '#' ) ) {
+			if ( '' === $player ) {
+				$player = trim( preg_replace( '/\s#.*$/u', '', $title ) );
+			}
+			$player = trim( preg_replace( '/\s+Rookie$/u', '', $player ) );
+			$rest   = trim( preg_replace( '/^.*?#\S+\s*/u', '', $title ) );
+		} else {
+			// TCG Titel ohne #: Name bis zum ersten Wort mit Ziffer, Rest darunter.
+			$w = preg_split( '/\s+/u', preg_replace( '/\s+-\s+/u', ' ', $title ) );
+			$n = array();
+			while ( $w && ! preg_match( '/\d/u', $w[0] ) && count( $n ) < 3 ) {
+				$n[] = array_shift( $w );
+			}
+			$player = $n ? implode( ' ', $n ) : $title;
+			$rest   = implode( ' ', $w );
 		}
 		$rest  = preg_replace( '/\s+(NFL|NBA|MLB|NHL)$/u', '', $rest );
 		$num   = preg_match( '/#(\S+)/u', $title, $m ) ? '#' . $m[1] : '';
+		$rest  = preg_replace( '/^#\S+\s*/u', '', $rest );
 		$price = number_format( (float) $p->get_price(), 2, ',', '.' ) . ' €';
 		$img   = get_the_post_thumbnail_url( $id, 'medium' );
 		$slabs .= '<li class="rk-grail__it"><a class="rk-grail__slab" href="' . esc_url( get_permalink( $id ) ) . '">'
@@ -2467,8 +2476,8 @@ function rk_grail_banner() {
 	. '.rk-grail__slab:hover{transform:translateY(-6px);box-shadow:inset 0 0 0 1px rgba(214,170,74,.8),0 22px 40px rgba(0,0,0,.6),0 0 0 1px rgba(214,170,74,.35)}'
 	. '.rk-grail__label{display:grid;gap:3px;background:#fbfaf6;color:#111;border-radius:5px 5px 2px 2px;padding:7px 8px 6px;border-bottom:3px solid #c8102e;min-height:52px}'
 	. '.rk-grail__ln{display:flex;justify-content:space-between;align-items:baseline;gap:6px}'
-	. '.rk-grail__ln b{font-family:var(--rk-display);font-weight:800;text-transform:uppercase;font-size:15px;line-height:1.05;letter-spacing:.01em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}'
-	. '.rk-grail__ln i{font-style:normal;font-family:var(--rk-display);font-weight:800;font-size:16px;line-height:1;color:#c8102e;white-space:nowrap}'
+	. '.rk-grail__ln b{flex:1 1 auto;font-family:var(--rk-display);font-weight:800;text-transform:uppercase;font-size:14px;line-height:1.05;letter-spacing:.01em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}'
+	. '.rk-grail__ln i{flex:none;font-style:normal;font-family:var(--rk-display);font-weight:800;font-size:16px;line-height:1;color:#c8102e;white-space:nowrap}'
 	. '.rk-grail__ls{font-family:var(--rk-mono);font-size:10px;line-height:1.25;color:#555;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}'
 	. '.rk-grail__win{position:relative;display:grid;place-items:center;margin-top:7px;padding:10px 8px;border-radius:3px 3px 6px 6px;background:#141414;aspect-ratio:3/4;overflow:hidden}'
 	. '.rk-grail__win img{width:auto!important;height:100%!important;max-width:100%!important;object-fit:contain;margin:0!important;aspect-ratio:226/300;display:block}'
