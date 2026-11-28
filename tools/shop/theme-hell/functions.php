@@ -2359,7 +2359,163 @@ function rk_mega_sale_banner() {
 }
 add_filter( 'render_block_core/html', function ( $content ) {
 	if ( is_front_page() && false !== strpos( $content, 'rk-section rk-lg' ) && false === strpos( $content, 'rk-mega' ) ) {
-		$content .= rk_mega_sale_banner();
+		$content .= rk_mega_sale_banner() . rk_grail_banner();
 	}
 	return $content;
 }, 20 );
+
+/* ------------------------------------------------------------------
+ * Holy Grails (28.11.2026): unter dem Pokémon Banner, die großen Namen.
+ * Alle Karten ab 5 € (ohne Mega Sale), als "Slabs" mit Label.
+ * Auswahl: täglich 6 zufällige aus den 30 teuersten, nach Preis sortiert.
+ * Alle ansehen: /shop/?grails=1
+ * ------------------------------------------------------------------ */
+define( 'RK_GRAIL_MIN', 5 );
+
+function rk_grail_query_args( $limit ) {
+	return array(
+		'post_type'      => 'product',
+		'post_status'    => 'publish',
+		'posts_per_page' => $limit,
+		'fields'         => 'ids',
+		'no_found_rows'  => true,
+		'meta_key'       => '_price',
+		'orderby'        => 'meta_value_num',
+		'order'          => 'DESC',
+		'meta_query'     => array(
+			'relation' => 'AND',
+			array( 'key' => '_price', 'value' => RK_GRAIL_MIN, 'compare' => '>=', 'type' => 'DECIMAL(10,2)' ),
+			array( 'key' => '_stock_status', 'value' => 'instock' ),
+		),
+		'tax_query'      => array(
+			array( 'taxonomy' => 'product_cat', 'field' => 'slug', 'terms' => array( 'pokemon-mega-sale' ), 'operator' => 'NOT IN' ),
+			array( 'taxonomy' => 'product_visibility', 'field' => 'name', 'terms' => array( 'exclude-from-catalog' ), 'operator' => 'NOT IN' ),
+		),
+	);
+}
+
+function rk_grail_data() {
+	$data = get_transient( 'rk_grail_data' );
+	if ( false === $data ) {
+		$top = get_posts( rk_grail_query_args( 30 ) );
+		$cnt = new WP_Query( array_merge( rk_grail_query_args( 1 ), array( 'no_found_rows' => false ) ) );
+		shuffle( $top );
+		$data = array( 'ids' => array_slice( $top, 0, 10 ), 'count' => (int) $cnt->found_posts );
+		set_transient( 'rk_grail_data', $data, 12 * HOUR_IN_SECONDS );
+	}
+	return $data;
+}
+
+function rk_grail_banner() {
+	$data = rk_grail_data();
+	$ids  = array();
+	foreach ( (array) $data['ids'] as $id ) {
+		if ( 'publish' === get_post_status( $id ) && 'instock' === get_post_meta( $id, '_stock_status', true ) && has_post_thumbnail( $id ) ) {
+			$ids[] = $id;
+		}
+	}
+	if ( count( $ids ) < 3 ) {
+		return '';
+	}
+	$ids = array_slice( $ids, 0, 6 );
+	usort( $ids, function ( $a, $b ) {
+		return (float) get_post_meta( $b, '_price', true ) <=> (float) get_post_meta( $a, '_price', true );
+	} );
+	$link  = add_query_arg( 'grails', '1', wc_get_page_permalink( 'shop' ) );
+	$slabs = '';
+	foreach ( $ids as $i => $id ) {
+		$p      = wc_get_product( $id );
+		$title  = $p->get_name();
+		$player = trim( (string) $p->get_attribute( 'Spieler' ) );
+		if ( '' === $player ) {
+			$player = trim( preg_replace( '/\s#.*$/u', '', $title ) );
+			$player = preg_replace( '/\s+-\s+.*$/u', '', $player );
+		}
+		$rest = trim( preg_replace( '/^.*?#\S+\s*/u', '', $title ) );
+		if ( $rest === $title ) {
+			$rest = (string) $p->get_attribute( 'Set' );
+		}
+		$rest  = preg_replace( '/\s+(NFL|NBA|MLB|NHL)$/u', '', $rest );
+		$num   = preg_match( '/#(\S+)/u', $title, $m ) ? '#' . $m[1] : '';
+		$price = number_format( (float) $p->get_price(), 2, ',', '.' ) . ' €';
+		$img   = get_the_post_thumbnail_url( $id, 'medium' );
+		$slabs .= '<li class="rk-grail__it"><a class="rk-grail__slab" href="' . esc_url( get_permalink( $id ) ) . '">'
+			. '<span class="rk-grail__label"><span class="rk-grail__ln"><b>' . esc_html( $player ) . '</b><i>' . esc_html( $price ) . '</i></span>'
+			. '<span class="rk-grail__ls">' . esc_html( trim( $num . ' ' . wp_trim_words( $rest, 6, '…' ) ) ) . '</span></span>'
+			. '<span class="rk-grail__win"><img src="' . esc_url( $img ) . '" alt="' . esc_attr( $title ) . '" width="226" height="300" loading="' . ( $i < 3 ? 'eager' : 'lazy' ) . '" decoding="async"></span>'
+			. '</a></li>';
+	}
+	$css = '<style>'
+	. '.rk-grail{max-width:var(--wp--style--global--content-size,1180px);margin:28px auto 0!important;padding:0 var(--wp--style--root--padding-right,20px);box-sizing:content-box}'
+	. '.rk-grail__box{position:relative;isolation:isolate;overflow:hidden;padding:44px 48px 40px;background:#0a0a0a;color:#fff;border:1px solid #2a2418;box-shadow:0 24px 60px -24px rgba(214,170,74,.35)}'
+	. '.rk-grail__box::before{content:"";position:absolute;inset:0;z-index:-2;background:radial-gradient(70% 90% at 12% 0%,rgba(214,170,74,.22),transparent 60%),radial-gradient(60% 80% at 100% 100%,rgba(200,16,46,.16),transparent 60%)}'
+	. '.rk-grail__box::after{content:"";position:absolute;inset:0;z-index:-1;opacity:.5;background:repeating-linear-gradient(90deg,rgba(255,255,255,.025) 0 1px,transparent 1px 64px)}'
+	. '.rk-grail__head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:18px 28px;margin-bottom:30px}'
+	. '.rk-grail__kick{display:inline-flex;align-items:center;gap:8px;font-family:var(--rk-mono);font-size:12px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#d6aa4a;margin-bottom:12px}'
+	. '.rk-grail__kick::before{content:"";width:28px;height:1px;background:#d6aa4a}'
+	. '.rk-grail__h{font-family:var(--rk-display)!important;font-weight:800;text-transform:uppercase;font-size:clamp(44px,6.4vw,92px)!important;line-height:.86!important;letter-spacing:-.01em;margin:0!important;background:linear-gradient(100deg,#f7e3a8 0%,#d6aa4a 35%,#fff3cf 50%,#b8862b 70%,#f2d488 100%);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent!important;animation:rkGold 7s ease-in-out infinite}'
+	. '@keyframes rkGold{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}'
+	. '.rk-grail__sub{max-width:520px;margin:14px 0 0;font-size:16px;line-height:1.5;color:#cfcfcf}'
+	. '.rk-grail__cta{display:grid;gap:10px;justify-items:end;text-align:right}'
+	. '.rk-grail__n{font-family:var(--rk-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#9a9a9a}'
+	. '.rk-grail__n b{display:block;font-family:var(--rk-display);font-size:44px;line-height:1;letter-spacing:0;color:#fff}'
+	. '.rk-grail__btn{display:inline-flex;align-items:center;gap:10px;background:#d6aa4a;color:#0a0a0a!important;font-family:var(--rk-mono);font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:15px 22px;text-decoration:none!important;border:2px solid #d6aa4a;transition:background .2s,color .2s}'
+	. '.rk-grail__btn:hover{background:transparent;color:#d6aa4a!important}'
+	. '.rk-grail__row{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px}'
+	. '.rk-grail__it{margin:0;min-width:0}'
+	. '.rk-grail__slab{display:flex;flex-direction:column;height:100%;padding:7px;border-radius:10px;background:linear-gradient(160deg,rgba(255,255,255,.22),rgba(255,255,255,.06) 40%,rgba(255,255,255,.14));box-shadow:inset 0 0 0 1px rgba(255,255,255,.28),0 14px 30px rgba(0,0,0,.55);text-decoration:none!important;color:inherit;transition:transform .3s ease,box-shadow .3s ease}'
+	. '.rk-grail__slab:hover{transform:translateY(-6px);box-shadow:inset 0 0 0 1px rgba(214,170,74,.8),0 22px 40px rgba(0,0,0,.6),0 0 0 1px rgba(214,170,74,.35)}'
+	. '.rk-grail__label{display:grid;gap:3px;background:#fbfaf6;color:#111;border-radius:5px 5px 2px 2px;padding:7px 8px 6px;border-bottom:3px solid #c8102e;min-height:52px}'
+	. '.rk-grail__ln{display:flex;justify-content:space-between;align-items:baseline;gap:6px}'
+	. '.rk-grail__ln b{font-family:var(--rk-display);font-weight:800;text-transform:uppercase;font-size:15px;line-height:1.05;letter-spacing:.01em;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}'
+	. '.rk-grail__ln i{font-style:normal;font-family:var(--rk-display);font-weight:800;font-size:16px;line-height:1;color:#c8102e;white-space:nowrap}'
+	. '.rk-grail__ls{font-family:var(--rk-mono);font-size:10px;line-height:1.25;color:#555;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}'
+	. '.rk-grail__win{position:relative;display:grid;place-items:center;margin-top:7px;padding:10px 8px;border-radius:3px 3px 6px 6px;background:#141414;aspect-ratio:3/4;overflow:hidden}'
+	. '.rk-grail__win img{width:auto!important;height:100%!important;max-width:100%!important;object-fit:contain;margin:0!important;aspect-ratio:226/300;display:block}'
+	. '.rk-grail__win::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.18) 50%,transparent 65%);transform:translateX(-120%);transition:transform .7s ease}'
+	. '.rk-grail__slab:hover .rk-grail__win::after{transform:translateX(120%)}'
+	. '@media(max-width:1080px){.rk-grail__row{grid-template-columns:repeat(3,minmax(0,1fr))}}'
+	. '@media(max-width:700px){.rk-grail{padding:0 16px}.rk-grail__box{padding:30px 0 28px}.rk-grail__head{padding:0 20px;margin-bottom:22px}.rk-grail__cta{justify-items:start;text-align:left}.rk-grail__row{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;padding:4px 20px 10px;scrollbar-width:none}.rk-grail__row::-webkit-scrollbar{display:none}.rk-grail__it{flex:0 0 44%;scroll-snap-align:start}}'
+	. '.rk-grail + .rk-section{padding-top:56px!important}'
+	. '@media(prefers-reduced-motion:reduce){.rk-grail__h{animation:none}.rk-grail__slab,.rk-grail__win::after{transition:none}}'
+	. '</style>';
+	return $css . '<section class="rk-grail" aria-labelledby="rk-grail-h"><div class="rk-grail__box">'
+		. '<div class="rk-grail__head"><div>'
+		. '<span class="rk-grail__kick">Die großen Namen · ab ' . RK_GRAIL_MIN . ' €</span>'
+		. '<h2 class="rk-grail__h" id="rk-grail-h">Holy Grails</h2>'
+		. '<p class="rk-grail__sub">Stars, Legenden, Rookies, Parallels und nummerierte Karten. Jede gibt es nur einmal, echt gescannt und sicher im Toploader verschickt.</p>'
+		. '</div><div class="rk-grail__cta">'
+		. '<span class="rk-grail__n"><b>' . (int) $data['count'] . '</b>Holy Grails im Shop</span>'
+		. '<a class="rk-grail__btn" href="' . esc_url( $link ) . '">Alle Holy Grails <span aria-hidden="true">→</span></a>'
+		. '</div></div>'
+		. '<ul class="rk-grail__row">' . $slabs . '</ul>'
+		. '</div></section>';
+}
+add_action( 'woocommerce_update_product', function () { delete_transient( 'rk_grail_data' ); } );
+
+/* /shop/?grails=1: alle Karten ab 5 €, teuerste zuerst, mit eigener Überschrift. */
+add_action( 'pre_get_posts', function ( $q ) {
+	if ( is_admin() || ! $q->is_main_query() || empty( $_GET['grails'] ) ) return;
+	if ( ! ( function_exists( 'is_shop' ) && ( is_shop() || is_product_taxonomy() ) ) ) return;
+	$mq   = (array) $q->get( 'meta_query' );
+	$mq[] = array( 'key' => '_price', 'value' => RK_GRAIL_MIN, 'compare' => '>=', 'type' => 'DECIMAL(10,2)' );
+	$q->set( 'meta_query', $mq );
+	$tq   = (array) $q->get( 'tax_query' );
+	$tq[] = array( 'taxonomy' => 'product_cat', 'field' => 'slug', 'terms' => array( 'pokemon-mega-sale' ), 'operator' => 'NOT IN' );
+	$q->set( 'tax_query', $tq );
+	if ( empty( $_GET['orderby'] ) ) {
+		$q->set( 'meta_key', '_price' );
+		$q->set( 'orderby', 'meta_value_num' );
+		$q->set( 'order', 'DESC' );
+	}
+}, 30 );
+add_filter( 'woocommerce_page_title', function ( $t ) {
+	return ! empty( $_GET['grails'] ) ? 'Holy Grails' : $t;
+} );
+add_filter( 'get_the_archive_title', function ( $t ) {
+	return ( ! empty( $_GET['grails'] ) && function_exists( 'is_shop' ) && is_shop() ) ? 'Holy Grails' : $t;
+}, 30 );
+add_action( 'woocommerce_archive_description', function () {
+	if ( empty( $_GET['grails'] ) ) return;
+	echo '<p class="rk-grail-intro" style="max-width:640px;margin:6px 0 18px;font-size:16px;opacity:.85">Die großen Namen im Shop: alle Karten ab ' . RK_GRAIL_MIN . ' €, die teuersten zuerst. Stars, Legenden, Rookies, Parallels und nummerierte Karten, jede ein Einzelstück mit echten Scans.</p>';
+}, 5 );
