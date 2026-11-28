@@ -134,7 +134,9 @@ function rk_latest_grid( $limit = 20 ) {
 		}
 	}
 	$items = '';
+	$n     = 0;
 	foreach ( $products as $p ) {
+		$n++;
 		$set    = trim( (string) $p->get_attribute( 'Set' ) );
 		$nr     = trim( (string) $p->get_attribute( 'Kartennummer' ) );
 		$var    = trim( (string) $p->get_attribute( 'Variante' ) );
@@ -156,7 +158,7 @@ function rk_latest_grid( $limit = 20 ) {
 		}
 		$rc     = ( false !== stripos( $name, 'Rookie' ) ) ? '<i class="rk-ng__rc">RC</i>' : '';
 		$img_id = $p->get_image_id();
-		$img    = $img_id ? wp_get_attachment_image( $img_id, 'medium', false, array( 'loading' => 'lazy', 'alt' => $name, 'sizes' => '(max-width: 640px) 45vw, 220px' ) ) : wc_placeholder_img( 'woocommerce_single' );
+		$img    = $img_id ? wp_get_attachment_image( $img_id, 'medium', false, array( 'loading' => ( $n <= 10 ? 'eager' : 'lazy' ), 'alt' => $name, 'sizes' => '(max-width: 640px) 45vw, 220px' ) ) : wc_placeholder_img( 'woocommerce_single' );
 		$items .= '<li class="rk-ng__item"><a href="' . esc_url( $p->get_permalink() ) . '" title="' . esc_attr( $name ) . '">'
 			. '<span class="rk-ng__img">' . $img . '</span>'
 			. '<span class="rk-ng__set">' . esc_html( $line ) . '</span>'
@@ -2201,7 +2203,7 @@ add_action( 'wp_head', function () {
 .rk-ng__item a{display:flex;flex-direction:column;height:100%;box-sizing:border-box;padding:14px 14px 16px;background:var(--rk-panel);border:1px solid var(--rk-line);color:var(--rk-paper)!important;text-decoration:none;transition:border-color .15s,transform .15s}
 .rk-ng__item a:hover{border-color:var(--rk-red);transform:translateY(-2px)}
 .rk-ng__img{display:flex;align-items:center;justify-content:center;height:200px;margin:0 0 14px}
-.rk-ng__img img{max-height:200px!important;width:auto!important;max-width:100%!important;height:auto!important;object-fit:contain;display:block;margin:0!important;aspect-ratio:auto!important}
+.rk-ng__img img{height:200px!important;max-height:200px!important;width:auto!important;max-width:100%!important;object-fit:contain;display:block;margin:0!important;aspect-ratio:226/300}
 .rk-ng__set{font-size:12px;line-height:1.4;color:var(--rk-muted);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.8em}
 .rk-ng__name{margin-top:6px;font-size:14px;font-weight:600;line-height:1.3}
 .rk-ng__name small{display:block;font-weight:400;font-size:12px;color:var(--rk-muted);margin-top:2px}
@@ -2211,7 +2213,7 @@ add_action( 'wp_head', function () {
 .rk-ng__price ins{text-decoration:none;color:var(--rk-red)}
 @media(max-width:1150px){.rk-ng__grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:900px){.rk-ng__grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-@media(max-width:640px){.rk-ng__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.rk-ng__img{height:150px}.rk-ng__img img{max-height:150px!important}.rk-ng__item a{padding:10px 10px 12px}}
+@media(max-width:640px){.rk-ng__grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.rk-ng__img{height:150px}.rk-ng__img img{height:150px!important;max-height:150px!important}.rk-ng__item a{padding:10px 10px 12px}}
 /* Ligen: 5 dezente Kacheln (27.11.2026) */
 .rk-lg{padding-top:90px!important;padding-bottom:28px!important}
 .rk-lg > *{max-width:var(--wp--style--global--content-size,1180px);margin-left:auto!important;margin-right:auto!important}
